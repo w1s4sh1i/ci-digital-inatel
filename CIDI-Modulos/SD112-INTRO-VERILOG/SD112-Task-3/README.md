@@ -10,7 +10,7 @@
 
 ## fluxograma
 
-[Esquemático](CID--SD112-A003-table.png)
+[Esquemático](CID-SD112-A003-table.png)
 
 ## Results
 
