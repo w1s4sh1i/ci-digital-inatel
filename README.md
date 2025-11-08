@@ -29,4 +29,9 @@ Repositório para catalogação das atividades de suporte e compreensão do cont
 
 > [Mais informações ...] ()
 
-## 
+## Cursos e Plataformas de suporte ao aprendizado 
+
+|Curso / Plataforma   |DESCRIPTION                                 		 |:white_square_button: |
+|HDLBits			  |       											 | :white_check_mark:	|
+
+

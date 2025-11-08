@@ -1,13 +1,13 @@
 /*
 Program: CI Digital 02/2025
 Class: Introdução à Verilog  
-Class-ID: D112
+Class-ID: SD112
 Advisor: Felipe Rocha 
 Advisor-Contact: felipef.rocha@inatel.br
 Institute: INATEL - Santa Rita do Sapucaí / MG  
 Development: André Bezerra 
 Student-Contact: andrefrbezerra@gmail.com
-Task-ID: A003
+Task-ID: A-003
 Type: Testbench
 Data: octuber, 17 2025
 */
@@ -28,7 +28,8 @@ module gate_not_tb;
 	
 	initial begin
 		
-		$dumpfile("cid-A122-A003.vcd"); // Specify the VCD file name
+		// Specify the VCD file name
+		$dumpfile("cid-A112-A003.vcd"); 
         $dumpvars(0, gate_not_tb); 
 		
 		$monitor(
@@ -38,7 +39,8 @@ module gate_not_tb;
 
 		data_in = 1'b0; 
 		
-		for(; i < TEST_NUMBER; i++) begin
+		// sv -> for(integer i = 0; i < TEST_NUMBER; ++i)
+		for(; i < TEST_NUMBER; i = i + 1) begin
 			#DELAY;                                                      
 			data_in = ~data_in;
 		end

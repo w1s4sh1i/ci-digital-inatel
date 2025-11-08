@@ -1,3 +1,17 @@
-# Descrição da Atividade
+# Atividade A-001
 
-> Conteúdo descritivo e analítico
+> Álgebra Booleana.
+
+:white_check_mark:
+
+
+- 
+​:white_check_mark: 
+
+## fluxograma
+
+[]()
+
+## Results
+
+[]()

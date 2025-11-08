@@ -1,3 +1,17 @@
-# Descrição da Atividade
+# Atividade A-002
 
-> Conteúdo descritivo e analítico
+> Mintermos, Maxtermos e Mapas de Karnaugh.
+
+:white_check_mark:
+
+
+- 
+​:white_check_mark: 
+
+## fluxograma
+
+[]()
+
+## Results
+
+[]()
