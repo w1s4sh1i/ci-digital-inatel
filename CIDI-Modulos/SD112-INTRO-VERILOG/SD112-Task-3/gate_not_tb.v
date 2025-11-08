@@ -29,7 +29,7 @@ module gate_not_tb;
 	initial begin
 		
 		// Specify the VCD file name
-		$dumpfile("cid-A112-A003.vcd"); 
+		$dumpfile("cid-SD112-A003.vcd"); 
         $dumpvars(0, gate_not_tb); 
 		
 		$monitor(
