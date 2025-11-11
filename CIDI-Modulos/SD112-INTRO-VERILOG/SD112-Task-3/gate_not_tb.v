@@ -15,9 +15,10 @@ Data: octuber, 17 2025
 `timescale 1 ns / 1 ps;
 
 module gate_not_tb;
+	
 	reg data_in;
 	wire data_outl, data_outi;
-	integer i = 1; 
+	integer i; 
 	
 	localparam DELAY = 1, TEST_NUMBER = 5; 
 	
@@ -29,20 +30,20 @@ module gate_not_tb;
 	initial begin
 		
 		// Specify the VCD file name
-		$dumpfile("cid-SD112-A003.vcd"); 
+		$dumpfile("CIDI-SD112-A003.vcd"); 
         $dumpvars(0, gate_not_tb); 
 		
-		$monitor(
-			"%d - Time = %0t | signal = %b -> not-signal: ~ = %b, not = %b"
+		$display("|Sample	|Time	|signal	|not-signal	|~	|not	|");
+		$monitor("|%d	|%0t	|%b	|->	|%b	|%b	|"
 			, i, $time, data_in, data_outl, data_outi
 		);
 
 		data_in = 1'b0; 
-		
+		// #DELAY;		
 		// sv -> for(integer i = 0; i < TEST_NUMBER; ++i)
-		for(; i < TEST_NUMBER; i = i + 1) begin
-			#DELAY;                                                      
-			data_in = ~data_in;
+		for(i = 1; i < TEST_NUMBER; i = i + 1) begin
+        	data_in = ~data_in;
+			#DELAY;
 		end
 	end
 

@@ -10,19 +10,24 @@
 
 ## Executar
 
-> 
+> Comandos para analisar / testar comportamento dos módulos: 
 
 ### GTKwave
 
 ```
-$ vvp gate-note
+$ vvp CID-SD112-A003
 
-$ gtkwave cid-112-A003.vcd
+$ gtkwave CID-SD112-A003.vcd
 ```
 
 ### ModelSim
 
 > 
+
+```
+$ do execute-task.do
+```
+
 
 ## Fluxograma
 
@@ -30,7 +35,9 @@ $ gtkwave cid-112-A003.vcd
 
 ## Results
 
-![Wave Testing](wave-SD112-A003.gif)
+![Wave Testing](CID-SD112-A003-wave.png)
+
+[> Google Drive - General Report](https://docs.google.com/document/d/1XcMPJY77fL6TMtBvcFznFPcfbmsb3IuBN67DL6YdwVo)
 
 
 

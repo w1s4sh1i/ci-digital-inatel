@@ -1,17 +1,32 @@
-# Atividade A-001
+# Atividade A-001 / SD-112
 
-> Álgebra Booleana.
+> Conteúdo descritivo e analítico
 
-:white_check_mark:
+:white_check_mark: Álgebra Booleana
+
+> Atividades resolvidas em sala e com material de suporte: listas de exercícios.
+
+## Executar
+
+> 
+
+### GTKwave
+
+```
+$ vvp <file>
+
+$ gtkwave <file>.vcd
+```
+
+### ModelSim
+
+> 
 
 
-- 
-​:white_check_mark: 
+## Fluxograma
 
-## fluxograma
-
-[]()
+![]()
 
 ## Results
 
-[]()
+![]()

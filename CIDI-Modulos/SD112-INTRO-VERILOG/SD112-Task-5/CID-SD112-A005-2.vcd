@@ -1,0 +1,89 @@
+$date
+	Tue Nov 11 15:29:11 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module fulladder_inst_tb $end
+$var wire 1 ! sum $end
+$var wire 1 " carry_out $end
+$var parameter 32 # DELAY $end
+$var reg 1 $ a $end
+$var reg 1 % b $end
+$var reg 1 & cin $end
+$scope module fai $end
+$var wire 1 $ a $end
+$var wire 1 % b $end
+$var wire 1 " carry_out $end
+$var wire 1 & cin $end
+$var wire 1 ' wsum1 $end
+$var wire 1 ( wcarry2 $end
+$var wire 1 ) wcarry1 $end
+$var wire 1 ! sum $end
+$scope module hf1 $end
+$var wire 1 $ a $end
+$var wire 1 % b $end
+$var wire 1 ) carry $end
+$var wire 1 ' sum $end
+$upscope $end
+$scope module hf2 $end
+$var wire 1 ' a $end
+$var wire 1 & b $end
+$var wire 1 ( carry $end
+$var wire 1 ! sum $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1010 #
+$end
+#0
+$dumpvars
+0)
+0(
+0'
+0&
+0%
+0$
+0"
+0!
+$end
+#10000
+1!
+1&
+#20000
+1'
+0&
+1%
+#30000
+1"
+0!
+1(
+1&
+#40000
+0"
+1!
+0(
+0&
+0%
+1$
+#50000
+1"
+0!
+1(
+1&
+#60000
+0(
+0'
+1)
+0&
+1%
+#70000
+1!
+1&
+#80000

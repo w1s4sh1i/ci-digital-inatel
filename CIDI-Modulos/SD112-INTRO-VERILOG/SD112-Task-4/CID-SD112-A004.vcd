@@ -1,0 +1,45 @@
+$date
+	Tue Nov 11 12:21:26 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module halfadder_tb $end
+$var wire 1 ! sum $end
+$var wire 1 " carry $end
+$var parameter 32 # DELAY $end
+$var reg 1 $ a $end
+$var reg 1 % b $end
+$scope module U1 $end
+$var wire 1 $ a $end
+$var wire 1 % b $end
+$var wire 1 " carry $end
+$var wire 1 ! sum $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1010 #
+$end
+#0
+$dumpvars
+0%
+0$
+0"
+0!
+$end
+#10000
+1!
+1%
+#20000
+0%
+1$
+#30000
+0!
+1"
+1%
+#40000
