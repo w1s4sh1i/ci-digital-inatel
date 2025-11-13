@@ -1,0 +1,57 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/CI DIGITAL/SD122/aula_2_3
+vconversor
+!s110 1761696281
+!i10b 1
+!s100 >_BKXZCgUfNE>Unz9>h[X1
+Z0 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IZ_n]WoGN9NliEB<D[Hibl2
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dD:/CI DIGITAL/SD122/aula_4_5
+w1761695930
+8D:/CI DIGITAL/SD122/aula_4_5/conversor.v
+FD:/CI DIGITAL/SD122/aula_4_5/conversor.v
+!i122 3
+L0 1 20
+Z3 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1761696281.000000
+!s107 D:/CI DIGITAL/SD122/aula_4_5/conversor.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/CI DIGITAL/SD122/aula_4_5/conversor.v|
+!i113 1
+Z4 o-work work
+Z5 tCvgOpt 0
+vconversor_tb
+!s110 1761696282
+!i10b 1
+!s100 QiIf9:c2BW4DMl>3RH<c41
+R0
+IO1b8P4FN8SU3553@0ICO@2
+R1
+R2
+w1761696280
+8D:/CI DIGITAL/SD122/aula_4_5/conversor_tb.v
+FD:/CI DIGITAL/SD122/aula_4_5/conversor_tb.v
+!i122 4
+L0 3 26
+R3
+r1
+!s85 0
+31
+!s108 1761696282.000000
+!s107 D:/CI DIGITAL/SD122/aula_4_5/conversor_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/CI DIGITAL/SD122/aula_4_5/conversor_tb.v|
+!i113 1
+R4
+R5

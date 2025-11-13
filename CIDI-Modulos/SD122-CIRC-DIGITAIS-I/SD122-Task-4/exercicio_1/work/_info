@@ -1,0 +1,57 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/CI DIGITAL/SD122/aula_6_7/exercicio_2
+vdecoder_4to16
+!s110 1761783105
+!i10b 1
+!s100 OUV;OEG>PK4BYA`6dUAFK2
+Z0 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I2omQ4b@;enh6HMiDf<^0b0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dD:/CI DIGITAL/SD122/aula_8_9/exercicio_1
+w1761782014
+8D:/CI DIGITAL/SD122/aula_8_9/exercicio_1/decoder_4x16.v
+FD:/CI DIGITAL/SD122/aula_8_9/exercicio_1/decoder_4x16.v
+!i122 11
+L0 1 35
+Z3 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1761783105.000000
+!s107 D:/CI DIGITAL/SD122/aula_8_9/exercicio_1/decoder_4x16.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/CI DIGITAL/SD122/aula_8_9/exercicio_1/decoder_4x16.v|
+!i113 1
+Z4 o-work work
+Z5 tCvgOpt 0
+vdecoder_4x16_tb
+!s110 1761783106
+!i10b 1
+!s100 @6L2ZinCZ8iY>KhRizTYJ1
+R0
+IV@c>^:z6nDbcYTYd`IhTn1
+R1
+R2
+w1761783088
+8D:/CI DIGITAL/SD122/aula_8_9/exercicio_1/decoder_4x16_tb.v
+FD:/CI DIGITAL/SD122/aula_8_9/exercicio_1/decoder_4x16_tb.v
+!i122 12
+L0 3 37
+R3
+r1
+!s85 0
+31
+!s108 1761783106.000000
+!s107 D:/CI DIGITAL/SD122/aula_8_9/exercicio_1/decoder_4x16_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/CI DIGITAL/SD122/aula_8_9/exercicio_1/decoder_4x16_tb.v|
+!i113 1
+R4
+R5

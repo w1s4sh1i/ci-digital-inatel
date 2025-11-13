@@ -1,0 +1,57 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/CI DIGITAL/SD122/aula_8_9/exercicio_1
+vmux_16x1
+Z0 !s110 1761861554
+!i10b 1
+!s100 =GBjDcP^5j7@=h7GX1]G>2
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I<f6?zOc9ACfVIHkigaA[Z1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dD:/CI DIGITAL/SD122/aula_10_11/ex_01
+w1761861236
+8D:/CI DIGITAL/SD122/aula_10_11/ex_01/mux_16x1.v
+FD:/CI DIGITAL/SD122/aula_10_11/ex_01/mux_16x1.v
+!i122 5
+L0 1 28
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1761861554.000000
+!s107 D:/CI DIGITAL/SD122/aula_10_11/ex_01/mux_16x1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/CI DIGITAL/SD122/aula_10_11/ex_01/mux_16x1.v|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+vtb_mux16x1
+R0
+!i10b 1
+!s100 ii>TYP]==D`c31Z=UP6Wi1
+R1
+I@ef2P>[BWY=gR@7[YiOJP1
+R2
+R3
+w1761861544
+8D:/CI DIGITAL/SD122/aula_10_11/ex_01/mux_tb.v
+FD:/CI DIGITAL/SD122/aula_10_11/ex_01/mux_tb.v
+!i122 6
+L0 2 27
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/CI DIGITAL/SD122/aula_10_11/ex_01/mux_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/CI DIGITAL/SD122/aula_10_11/ex_01/mux_tb.v|
+!i113 1
+R6
+R7

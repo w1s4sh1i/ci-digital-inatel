@@ -1,0 +1,39 @@
+`timescale 1ns/1ps
+
+module decoder_4x16_tb();
+
+    reg enable;
+    reg [3:0] binary_in;
+    wire [15:0] decoder_out;
+
+    decoder_4to16 dec_4x16_tb(
+        .enable(enable),
+        .binary_in(binary_in),
+        .decoder_out(decoder_out)
+    );
+
+    initial begin
+      enable = 1'b0;
+
+      binary_in = 4'h0; #10;
+      binary_in = 4'h1; #10;
+      binary_in = 4'h2; #10;
+      binary_in = 4'h3; #10;
+      binary_in = 4'h4; #10;
+      binary_in = 4'h5; #10;
+      binary_in = 4'h6; #10;
+      binary_in = 4'h7; #10;
+      binary_in = 4'h8; #10;
+      binary_in = 4'h9; #10;
+      binary_in = 4'hA; #10;
+      binary_in = 4'hB; #10;
+      binary_in = 4'hC; #10;
+      binary_in = 4'hD; #10;
+      binary_in = 4'hE; #10;
+      binary_in = 4'hF; #10;
+
+      $finish;
+    end
+    
+
+endmodule

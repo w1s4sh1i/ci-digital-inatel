@@ -1,0 +1,8 @@
+{D:/CI DIGITAL/SD122/aula_6_7/exercicio_2/tb_teclado_x_exc3.v} {1 {vlog -work work -stats=none {D:/CI DIGITAL/SD122/aula_6_7/exercicio_2/tb_teclado_x_exc3.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module tb_teclado_x_exc3
+
+Top level modules:
+	tb_teclado_x_exc3
+
+} {} {}}

@@ -25,6 +25,8 @@
 |A-114		|[](/SD122-Task-14)		            |BASIC		 | :white_square_button:|
 |A-115		|[](/SD122-Task-15)		            |BASIC		 | :white_square_button:|
 
+* Entrega de atividades - 1. 
+
 ## Anotações 
 
 >

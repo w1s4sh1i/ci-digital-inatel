@@ -1,0 +1,57 @@
+$date
+	Mon Nov  3 00:46:58 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module mux_4x1_param_tb $end
+$var wire 4 ! out [3:0] $end
+$var reg 4 " in0 [3:0] $end
+$var reg 4 # in1 [3:0] $end
+$var reg 4 $ in2 [3:0] $end
+$var reg 4 % in3 [3:0] $end
+$var reg 2 & sel [1:0] $end
+$scope module mux $end
+$var wire 4 ' in0 [3:0] $end
+$var wire 4 ( in1 [3:0] $end
+$var wire 4 ) in2 [3:0] $end
+$var wire 4 * in3 [3:0] $end
+$var wire 2 + sel [1:0] $end
+$var reg 4 , out [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b101 ,
+b0 +
+b1000 *
+b100 )
+b11 (
+b101 '
+b0 &
+b1000 %
+b100 $
+b11 #
+b101 "
+b101 !
+$end
+#10000
+b11 !
+b11 ,
+b1 &
+b1 +
+#20000
+b100 !
+b100 ,
+b10 &
+b10 +
+#30000
+b1000 !
+b1000 ,
+b11 &
+b11 +
+#40000

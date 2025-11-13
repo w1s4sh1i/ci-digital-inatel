@@ -1,0 +1,19 @@
+{D:/CI DIGITAL/SD122/aula_2_3/conversor_tb.v} {1 {vlog -work work -stats=none {D:/CI DIGITAL/SD122/aula_2_3/conversor_tb.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module conversor_tb
+
+Top level modules:
+	conversor_tb
+
+} {} {}} {D:/CI DIGITAL/SD122/aula_2_3/conversor.v} {1 {vlog -work work -stats=none {D:/CI DIGITAL/SD122/aula_2_3/conversor.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module S_D
+-- Compiling module S_C
+-- Compiling module S_B
+-- Compiling module S_A
+-- Compiling module top
+
+Top level modules:
+	top
+
+} {} {}}

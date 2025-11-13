@@ -1,0 +1,88 @@
+$date
+	Thu Nov 13 16:28:59 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module multiplex_4x1_tb $end
+$var wire 1 ! f $end
+$var parameter 32 " DELAY $end
+$var reg 1 # A $end
+$var reg 1 $ B $end
+$var reg 1 % C $end
+$scope module DUT $end
+$var wire 1 # A $end
+$var wire 1 $ B $end
+$var wire 1 % C $end
+$var wire 1 & E0 $end
+$var wire 1 ' E1 $end
+$var wire 1 ( E2 $end
+$var wire 1 ) E3 $end
+$var wire 1 ! f $end
+$scope module MUX $end
+$var wire 1 & E0 $end
+$var wire 1 ' E1 $end
+$var wire 1 ( E2 $end
+$var wire 1 ) E3 $end
+$var wire 1 $ S0 $end
+$var wire 1 # S1 $end
+$var wire 1 ! Y $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1010 "
+$end
+#0
+$dumpvars
+0)
+1(
+1'
+0&
+0%
+0$
+0#
+0!
+$end
+#10000
+0'
+0(
+1%
+#20000
+1!
+1'
+1(
+1$
+0%
+#30000
+0!
+0'
+0(
+1%
+#40000
+1!
+1'
+1(
+1#
+0$
+0%
+#50000
+0!
+0'
+0(
+1%
+#60000
+1'
+1(
+1$
+0%
+#70000
+0'
+0(
+1%
+#80000

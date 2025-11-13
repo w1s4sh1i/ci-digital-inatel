@@ -1,0 +1,57 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/20.1
+vtb_teclado_x_exc3
+!s110 1761777463
+!i10b 1
+!s100 X[KL8QZ5_lN`hBBO=h8b<3
+Z0 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I@EcY]<7F8l>2lGHPU5ZZ^0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dD:/CI DIGITAL/SD122/aula_6_7/exercicio_2
+w1761776458
+8D:/CI DIGITAL/SD122/aula_6_7/exercicio_2/tb_teclado_x_exc3.v
+FD:/CI DIGITAL/SD122/aula_6_7/exercicio_2/tb_teclado_x_exc3.v
+!i122 0
+L0 2 22
+Z3 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1761777463.000000
+!s107 D:/CI DIGITAL/SD122/aula_6_7/exercicio_2/tb_teclado_x_exc3.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/CI DIGITAL/SD122/aula_6_7/exercicio_2/tb_teclado_x_exc3.v|
+!i113 1
+Z4 o-work work
+Z5 tCvgOpt 0
+vteclado_x_exc3
+!s110 1761777464
+!i10b 1
+!s100 LH^^DVe[a7Bzmo;8:Y1TH3
+R0
+Izb4mK8gPZ9Oo0>0fRQWQi1
+R1
+R2
+w1761775688
+8D:/CI DIGITAL/SD122/aula_6_7/exercicio_2/teclado_x_exc3.v
+FD:/CI DIGITAL/SD122/aula_6_7/exercicio_2/teclado_x_exc3.v
+!i122 1
+L0 1 22
+R3
+r1
+!s85 0
+31
+!s108 1761777464.000000
+!s107 D:/CI DIGITAL/SD122/aula_6_7/exercicio_2/teclado_x_exc3.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/CI DIGITAL/SD122/aula_6_7/exercicio_2/teclado_x_exc3.v|
+!i113 1
+R4
+R5

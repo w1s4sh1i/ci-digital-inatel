@@ -1,0 +1,176 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/CI DIGITAL/SD112/aula_19
+vconversor
+!s110 1761690422
+!i10b 1
+!s100 ^TD>@Fl><nRQY?J<G3QJk2
+Z0 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IYKUDE3XGf5Fmb]1iKo;6o2
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dD:/CI DIGITAL/SD122/aula_2_3
+w1761690420
+Z3 8D:/CI DIGITAL/SD122/aula_2_3/conversor.v
+Z4 FD:/CI DIGITAL/SD122/aula_2_3/conversor.v
+!i122 3
+L0 1 10
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1761690422.000000
+Z6 !s107 D:/CI DIGITAL/SD122/aula_2_3/conversor.v|
+Z7 !s90 -reportprogress|300|-work|work|-stats=none|D:/CI DIGITAL/SD122/aula_2_3/conversor.v|
+!i113 1
+Z8 o-work work
+Z9 tCvgOpt 0
+vconversor_tb
+!s110 1761690840
+!i10b 1
+!s100 KE>?6gW`^:CY5Z_^]a[;@1
+R0
+I`OVzRfCR:a8X4X:@B?nL72
+R1
+R2
+w1761690808
+8D:/CI DIGITAL/SD122/aula_2_3/conversor_tb.v
+FD:/CI DIGITAL/SD122/aula_2_3/conversor_tb.v
+!i122 6
+L0 2 28
+R5
+r1
+!s85 0
+31
+Z10 !s108 1761690839.000000
+!s107 D:/CI DIGITAL/SD122/aula_2_3/conversor_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/CI DIGITAL/SD122/aula_2_3/conversor_tb.v|
+!i113 1
+R8
+R9
+vS_A
+Z11 !s110 1761690839
+!i10b 1
+!s100 KnG1Q`Sh=njdaKOCCk19n3
+R0
+IKfBW<IHdnZS5Wg0AL[zg:1
+R1
+R2
+Z12 w1761690686
+R3
+R4
+!i122 5
+L0 22 6
+R5
+r1
+!s85 0
+31
+R10
+R6
+R7
+!i113 1
+R8
+R9
+n@s_@a
+vS_B
+R11
+!i10b 1
+!s100 Pcd=U5@Rn7z8YnD9_Dm`40
+R0
+I0>ORbOalSLgj3aR6MmYfH3
+R1
+R2
+R12
+R3
+R4
+!i122 5
+L0 15 6
+R5
+r1
+!s85 0
+31
+R10
+R6
+R7
+!i113 1
+R8
+R9
+n@s_@b
+vS_C
+R11
+!i10b 1
+!s100 _CfVZ]11z2YG`XCKLERMm3
+R0
+Ize;OJ:JXaFgQcNmC`8Nb62
+R1
+R2
+R12
+R3
+R4
+!i122 5
+L0 8 6
+R5
+r1
+!s85 0
+31
+R10
+R6
+R7
+!i113 1
+R8
+R9
+n@s_@c
+vS_D
+R11
+!i10b 1
+!s100 kElJWKOI95jhi>eDWXPMW2
+R0
+IW9dnRN8TS<3C4Q=VF8X<?0
+R1
+R2
+R12
+R3
+R4
+!i122 5
+L0 1 6
+R5
+r1
+!s85 0
+31
+R10
+R6
+R7
+!i113 1
+R8
+R9
+n@s_@d
+vtop
+R11
+!i10b 1
+!s100 ZkZb6HdS13elZ`Uk`IcMh1
+R0
+IMF4OM0GkiHWL4cEm39j_91
+R1
+R2
+R12
+R3
+R4
+!i122 5
+L0 29 9
+R5
+r1
+!s85 0
+31
+R10
+R6
+R7
+!i113 1
+R8
+R9

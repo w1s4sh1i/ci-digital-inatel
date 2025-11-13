@@ -1,0 +1,83 @@
+$date
+	Sun Nov  2 18:43:17 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module display_7seg_tb $end
+$var wire 7 ! out [6:0] $end
+$var reg 4 " in [3:0] $end
+$var integer 32 # i [31:0] $end
+$scope module ss_tb $end
+$var wire 4 $ in [3:0] $end
+$var reg 7 % out [6:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1 %
+b0 $
+b0 #
+b0 "
+b1 !
+$end
+#10
+b1001111 !
+b1001111 %
+b1 "
+b1 $
+b1 #
+#20
+b10010 !
+b10010 %
+b10 "
+b10 $
+b10 #
+#30
+b110 !
+b110 %
+b11 "
+b11 $
+b11 #
+#40
+b1001100 !
+b1001100 %
+b100 "
+b100 $
+b100 #
+#50
+b100100 !
+b100100 %
+b101 "
+b101 $
+b101 #
+#60
+b100000 !
+b100000 %
+b110 "
+b110 $
+b110 #
+#70
+b1111 !
+b1111 %
+b111 "
+b111 $
+b111 #
+#80
+b0 !
+b0 %
+b1000 "
+b1000 $
+b1000 #
+#90
+b100 !
+b100 %
+b1001 "
+b1001 $
+b1001 #
+#100
+b1010 #
