@@ -15,7 +15,7 @@ Data: octuber, 17 2025
 `timescale 1 ns / 1 ps;
 module paridade_tb;
 
-    localparam WIDTH = 8;
+    localparam WIDTH = 8, DELAY = 10;
 
     reg [WIDTH-1:0] in;
     wire            out;
@@ -27,21 +27,35 @@ module paridade_tb;
 
     initial begin
         
-       	in = 8'b00000000;#10;
-        in = 8'b00000001;#10;
-        
-        in = 8'b10000010;#10;
-        in = 8'b00000011;#10;
+		in = 8'b00000000;
+		#DELAY
+		
+		in = 8'b00000001;
+		#DELAY
 
-        in = 8'b10101010;#10;
-        in = 8'b00101010;#10;
+		in = 8'b10000010;
+		#DELAY
+		
+		in = 8'b00000011;
+		#DELAY
 
-        in = 8'b01110001;#10;
-        in = 8'b11100011;#10;
+		in = 8'b10101010;
+		#DELAY
+		
+		in = 8'b00101010;
+		#DELAY
 
-        in = 8'b10001010;#10;
-        in = 8'b11111111;#20;
+		in = 8'b01110001;
+		#DELAY
+		
+		in = 8'b11100011;
+		#DELAY
 
+		in = 8'b10001010;
+		#DELAY
+		
+		in = 8'b11111111;
+		#(DELAY*2);
         $finish; 
         
     end

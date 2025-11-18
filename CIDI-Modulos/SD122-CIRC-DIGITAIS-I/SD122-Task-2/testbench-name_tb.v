@@ -1,5 +1,5 @@
 /*
-Program: CI Digital 02/2025
+Program: CI Digital T2/2025
 Class: Introdução à Verilog  
 Class-ID: SD122
 Advisor: Felipe Rocha 

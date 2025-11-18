@@ -2,13 +2,18 @@
 
 > Conteúdo descritivo e analítico
 
-:white_check_mark:
+> Descrição Comportamental
 
+:white_check_mark: Implementar de forma comportamental o circuito apresentado acima.
+
+:white_check_mark: Pesquisar qual a funcionalidade do circuito implementado e responda: Qual o nome dado a este tipo de circuito?
+
+-
+
+:white_check_mark: Como seria possível substituir o valor da constante por um valor configurável dinamicamente?
 
 - 
 
-
-​:white_check_mark: 
 
 
 ## Executar
@@ -38,6 +43,6 @@ $ do execute-task.do
 
 ## Results
 
-![](CID-SD112-A011-wave.png)
+![Descrição Comportamental](CID-SD112-A011-wave.png)
 
 [> Google Drive - General Report](https://docs.google.com/document/d/1XcMPJY77fL6TMtBvcFznFPcfbmsb3IuBN67DL6YdwVo)

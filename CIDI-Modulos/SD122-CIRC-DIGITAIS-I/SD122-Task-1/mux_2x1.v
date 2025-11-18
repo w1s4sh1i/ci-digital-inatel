@@ -1,6 +1,26 @@
-// RTL          -> com portas lógicas
-// estrutural   -> com instancias 
-// comportamental   -> é o que usa always
+/*
+Program: CI Digital T2/2025
+Class: Introdução à Verilog  
+Class-ID: D122
+Advisor: Felipe Rocha 
+Advisor-Contact: felipef.rocha@inatel.br
+Institute: INATEL - Santa Rita do Sapucaí / MG  
+Development: André Bezerra 
+Student-Contact: andrefrbezerra@gmail.com
+Task-ID: A-101
+Type: Laboratory
+Data: octuber, 29 2025
+*/
+
+`timescale 1 ns / 1 ps;
+
+/* 
+1 - RTL          	-> portas lógicas
+2 - Estrutural   	-> instancias 
+3 - Comportamental	-> always or initial
+*/
+
+// Separar os arquivos
 
 // 1ª Parte do Exercício 2
 module mux2(a, b, sel, y);

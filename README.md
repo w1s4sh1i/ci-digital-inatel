@@ -6,7 +6,8 @@ Repositório para catalogação das atividades de suporte e compreensão do cont
 |:----: 	|:----                                          					|:----		 | :----:               |
 |SD100		|[Introdução à Microeletrônica](/CIDI-Modulos/SD100-INTRO-MICROEL)  |BASIC		 | :white_check_mark:	|
 |SD112  	|[Introdução a Verilog](/CIDI-Modulos/SD112-INTRO-VERILOG)			|BASIC		 | :white_check_mark:   |
-|SD122  	|[Circuitos Digitais I](/CIDI-Modulos/SD122-CIRC-DIGITAIS-I)		|BASIC		 | :white_square_button:|
+|SD122  	|[Circuitos Digitais I](/CIDI-Modulos/SD122-CIRC-DIGITAIS-I)		|BASIC		 | :white_check_mark:	|
+|SD132 		|[Circuitos Digitais II](/CIDI-Modulos/SD132-CIRC-DIGITAIS-II)       |BASIC		 | :white_square_button:|
 |SDXXX 		|                                               |			 | :white_square_button:|
 |SDXXX 		|                                               |			 | :white_square_button:|
 |SDXXX 		|                                               |ADVANCED	 | :white_square_button:|
@@ -24,6 +25,12 @@ Repositório para catalogação das atividades de suporte e compreensão do cont
 > [Mais informações ...] ()
 
 ## SD122 - Circuitos Digitais I 
+
+> Descrição
+
+> [Mais informações ...] ()
+
+## SD132 - Circuitos Digitais II 
 
 > Descrição
 

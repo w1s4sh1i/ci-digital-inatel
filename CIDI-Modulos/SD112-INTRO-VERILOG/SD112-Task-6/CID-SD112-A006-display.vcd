@@ -1,0 +1,115 @@
+$date
+	Fri Nov 14 13:23:35 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module display_tb $end
+$var wire 7 ! display_out [6:0] $end
+$var parameter 32 " DELAY $end
+$var reg 4 # display_in [3:0] $end
+$var reg 1 $ dp $end
+$scope module U1 $end
+$var wire 4 % display_in [3:0] $end
+$var wire 1 $ dp $end
+$var reg 7 & display_out [6:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1010 "
+$end
+#0
+$dumpvars
+b1111110 &
+b0 %
+0$
+b0 #
+b1111110 !
+$end
+#10000
+b110000 !
+b110000 &
+b1 #
+b1 %
+#20000
+b1101101 !
+b1101101 &
+b10 #
+b10 %
+#30000
+b1111001 !
+b1111001 &
+b11 #
+b11 %
+#40000
+b110011 !
+b110011 &
+b100 #
+b100 %
+#50000
+b1011011 !
+b1011011 &
+b101 #
+b101 %
+#60000
+b1011111 !
+b1011111 &
+b110 #
+b110 %
+#70000
+b1110000 !
+b1110000 &
+b111 #
+b111 %
+#80000
+b1111111 !
+b1111111 &
+b1000 #
+b1000 %
+#90000
+b1111011 !
+b1111011 &
+b1001 #
+b1001 %
+#100000
+b1110111 !
+b1110111 &
+b1010 #
+b1010 %
+#110000
+b11111 !
+b11111 &
+b1011 #
+b1011 %
+#120000
+b1001110 !
+b1001110 &
+b1100 #
+b1100 %
+#130000
+b111101 !
+b111101 &
+b1101 #
+b1101 %
+#140000
+b1001111 !
+b1001111 &
+b1110 #
+b1110 %
+#150000
+b1000111 !
+b1000111 &
+b1111 #
+b1111 %
+#160000
+b0 !
+b0 &
+b111x #
+b111x %
+1$
+#170000

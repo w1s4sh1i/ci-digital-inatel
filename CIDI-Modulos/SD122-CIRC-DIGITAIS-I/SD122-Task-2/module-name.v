@@ -1,7 +1,7 @@
 /*
-Program: CI Digital 02/2025
+Program: CI Digital T2/2025
 Class: Introdução à Verilog  
-Class-ID: D122
+Class-ID: SD122
 Advisor: Felipe Rocha 
 Advisor-Contact: felipef.rocha@inatel.br
 Institute: INATEL - Santa Rita do Sapucaí / MG  

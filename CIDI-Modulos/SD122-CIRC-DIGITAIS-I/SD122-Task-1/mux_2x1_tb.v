@@ -1,6 +1,18 @@
-`timescale 1ns/1ps
-`include "mux_2x1.v"
+/*
+Program: CI Digital T2/2025
+Class: Introdução à Verilog  
+Class-ID: SD122
+Advisor: Felipe Rocha 
+Advisor-Contact: felipef.rocha@inatel.br
+Institute: INATEL - Santa Rita do Sapucaí / MG  
+Development: André Bezerra 
+Student-Contact: andrefrbezerra@gmail.com
+Task-ID: A-101
+Type: Testbench
+Data: octuber, 29 2025
+*/
 
+`timescale 1 ns / 1 ps;
 module mux_2x1_tb;
 
     //reg a, b, sel; // 1ª Parte
@@ -22,21 +34,23 @@ module mux_2x1_tb;
     //always begin #1 a = !a; end
     //always begin #2 b = !b; end
 
-    always begin #1 D[0] = !D[0]; end
-    always begin #2 D[1] = !D[1]; end
-    always begin #4 sel = !sel; end
+    always begin #1 D[0] = !D[0];	end
+    always begin #2 D[1] = !D[1];	end
+    always begin #4 sel = !sel;		end
 
     initial begin
+      
       $dumpfile("mux_2x1_tb.vcd");
       $dumpvars(0, mux_2x1_tb);
+      
       // se 1 -> a, 0 -> b
       sel = 1'b0;
       //a = 1'b0;
       //b = 1'b0;
       D = 2'd0;
+      
       #10;
       $finish;
-
     end
 
 endmodule

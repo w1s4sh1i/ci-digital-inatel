@@ -1,0 +1,240 @@
+$date
+	Mon Nov 17 15:56:56 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module testbench_ff_tb $end
+$var wire 1 ! Q_out $end
+$var parameter 32 " DELAY $end
+$var reg 1 # D_in $end
+$var reg 1 $ clk $end
+$var reg 1 % nrst_in $end
+$var reg 1 & vdd $end
+$scope module main_tb $end
+$var wire 1 # D $end
+$var wire 1 $ clk $end
+$var wire 1 % nrst_in $end
+$var wire 1 & vdd $end
+$var wire 1 ' bg_wire $end
+$var wire 1 ! Q $end
+$scope module r_sync $end
+$var wire 1 $ clk $end
+$var wire 1 % nrest $end
+$var wire 1 & vdd $end
+$var wire 1 ( q_ff2 $end
+$var wire 1 ) q_ff1 $end
+$var wire 1 ' out $end
+$scope module sync_FF1 $end
+$var wire 1 & D $end
+$var wire 1 $ clk $end
+$var wire 1 % rst $end
+$var reg 1 ) Q $end
+$upscope $end
+$scope module sync_FF2 $end
+$var wire 1 ) D $end
+$var wire 1 $ clk $end
+$var wire 1 % rst $end
+$var reg 1 ( Q $end
+$upscope $end
+$scope module sync_FF3 $end
+$var wire 1 ( D $end
+$var wire 1 $ clk $end
+$var wire 1 % rst $end
+$var reg 1 ' Q $end
+$upscope $end
+$upscope $end
+$scope module syncOUT_FF $end
+$var wire 1 # D $end
+$var wire 1 $ clk $end
+$var wire 1 ' rst $end
+$var reg 1 ! Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1010 "
+$end
+#0
+$dumpvars
+x)
+x(
+x'
+1&
+0%
+0$
+0#
+x!
+$end
+#1
+0)
+0(
+0'
+0!
+1$
+#2
+0$
+#3
+1$
+#4
+0$
+#5
+1$
+#6
+0$
+#7
+1$
+#8
+0$
+#9
+1$
+#10
+1)
+0$
+1%
+#11
+1(
+1$
+#12
+0$
+#13
+1'
+1$
+#14
+0$
+#15
+1$
+#16
+0$
+#17
+1$
+#18
+0$
+#19
+1$
+#20
+0$
+0&
+1#
+#21
+0)
+1!
+1$
+#22
+0$
+#23
+0(
+1$
+#24
+0$
+#25
+0'
+1$
+#26
+0$
+#27
+0!
+1$
+#28
+0$
+#29
+1$
+#30
+0$
+1&
+0#
+#31
+1)
+1$
+#32
+0$
+#33
+1(
+1$
+#34
+0$
+#35
+1'
+1$
+#36
+0$
+#37
+1$
+#38
+0$
+#39
+1$
+#40
+0$
+1#
+#41
+1!
+1$
+#42
+0$
+#43
+1$
+#44
+0$
+#45
+1$
+#46
+0$
+#47
+1$
+#48
+0$
+#49
+1$
+#50
+0$
+0%
+#51
+0)
+0(
+0'
+1$
+#52
+0$
+#53
+0!
+1$
+#54
+0$
+#55
+1$
+#56
+0$
+#57
+1$
+#58
+0$
+#59
+1$
+#60
+0$
+#61
+1$
+#62
+0$
+#63
+1$
+#64
+0$
+#65
+1$
+#66
+0$
+#67
+1$
+#68
+0$
+#69
+1$
+#70
+0$

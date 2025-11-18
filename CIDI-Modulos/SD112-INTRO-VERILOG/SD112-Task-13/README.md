@@ -2,14 +2,15 @@
 
 > Conteúdo descritivo e analítico
 
-:white_check_mark:
+> Primitivas
 
+:white_check_mark: Pesquisar e implemente em Verilog, utilizando primitivas built-in de transistores, o modelo de uma porta lógica AND.
 
-- 
+:white_check_mark: Escrever um código em Verilog que implemente um MUX 2:1, utilizando primitivas built-in.
 
+:white_check_mark: Implementar um flip-flop tipo D com reset assíncrono como uma UDP.
 
-​:white_check_mark: 
-
+:white_check_mark: Definir uma testbench, simule e valide a implementação do exercício anterior.
 
 ## Executar
 
@@ -38,6 +39,6 @@ $ do execute-task.do
 
 ## Results
 
-![](CID-SD112-A013-wave.png)
+![Primitivas](CID-SD112-A013-wave.png)
 
 [> Google Drive - General Report](https://docs.google.com/document/d/1XcMPJY77fL6TMtBvcFznFPcfbmsb3IuBN67DL6YdwVo)

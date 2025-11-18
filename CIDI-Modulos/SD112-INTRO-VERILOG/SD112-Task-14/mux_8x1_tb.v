@@ -15,7 +15,8 @@ Data: octuber, 17 2025
 `timescale 1 ns / 1 ps;
 
 module mux_8x1_tb;
-
+	
+	localparam DELAY = 10; 
     reg  [7:0] in; 
     reg  [2:0] sel;  
     wire       out;
@@ -31,11 +32,13 @@ module mux_8x1_tb;
         
      begin
 
+		// $ 
+		
         for (i = 0; i < 8; i = i + 1) begin
             in  = 8'b00000000;  
             in[i] = 1'b1;        
             sel = i;             
-            #10;  
+            #DELAY;  
             
         end
 
@@ -49,11 +52,11 @@ module mux_8x1_tb;
 
         sel = 3'b0;
         in = 8'b0;
-        #5;
+        #DELAY; 
 
         mux;
 
-        #10;
+        #DELAY; 
        $finish; 
     end
 
