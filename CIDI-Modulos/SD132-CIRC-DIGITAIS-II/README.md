@@ -6,7 +6,7 @@
 |TID   		|TASK                               					|LEVEL		 | :white_check_mark:	|
 |:----: 	|:----                              					|:----		 | :----:               |
 |A-201		|[Latches e Flip-Flops](/SD132-Task-1)		            |BASIC		 | :white_check_mark:	|
-|A-202		|[ ](/SD132-Task-2)										|BASIC		 | :white_square_button:|
+|A-202		|[Registradores de Deslocamento](/SD132-Task-2)			|BASIC		 | :white_check_mark:	|
 |A-203		|[ ](/SD132-Task-3)										|BASIC		 | :white_square_button:|
 |A-204		|[ ](/SD132-Task-4)										|BASIC		 | :white_square_button:|
 |A-205		|[ ](/SD132-Task-5)										|BASIC		 | :white_square_button:|
@@ -29,7 +29,7 @@
 ## Referências
 
 1. []();
-2. []();;
-3. []();;
-4. []();;
-5. []();;
+2. []();
+3. []();
+4. []();
+5. []();

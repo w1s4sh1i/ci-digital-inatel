@@ -144,6 +144,69 @@ endmodule
 
 // Module pos
 
+module top_module ( 
+    input a, 
+    input b, 
+    input c,
+    input d,
+    output out1,
+    output out2
+);
+    mod_a (out1, out2, a, b, c, d);
+    
+endmodule
 
+// Dff
+
+module top_module (
+    input clk,    // Clocks are used in sequential circuits
+    input d,
+    output reg q 
+);//
+
+    always @(posedge clk) begin
+        q = d;  
+    end 
+endmodule
+
+// Dff8
+
+// Apenas o ffd já seria uma boa resposta.
+module ffd (
+    	input clk, d,
+        output q
+);
+    always @(posedge clk) begin
+        q <= d;
+    end 
+endmodule
+
+module top_module (
+    input clk,
+    input [7:0] d,
+    output [7:0] q
+);
+    genvar i;
+    generate
+        for (i = 0; i < 8; i = i + 1) begin : my_block_gen
+            ffd (clk, d[i], q[i]);
+        end
+    endgenerate
+endmodule
+
+// Dff8r
+
+module top_module (
+    input clk,
+    input reset,            // Synchronous reset
+    input [7:0] d,
+    output [7:0] q
+);
+    always @(posedge clk) begin
+        q <= (reset) ? 8'b0 : d; 
+    end 
+endmodule
+
+// 
 
 

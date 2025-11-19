@@ -1,0 +1,132 @@
+$date
+	Tue Nov 18 23:30:13 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module circuit_test3_tb $end
+$var wire 1 ! s $end
+$var parameter 32 " DELAY $end
+$var reg 1 # a $end
+$var reg 1 $ b $end
+$var reg 1 % c $end
+$var reg 1 & d $end
+$scope module UUT $end
+$var wire 1 # a $end
+$var wire 1 ' and_1 $end
+$var wire 1 $ b $end
+$var wire 1 % c $end
+$var wire 1 & d $end
+$var wire 1 ( n_a $end
+$var wire 1 ) n_b $end
+$var wire 1 * n_c $end
+$var wire 1 + n_d $end
+$var wire 1 , nor_1 $end
+$var wire 1 - nor_2 $end
+$var wire 1 . or_1 $end
+$var wire 1 ! s $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1010 "
+$end
+#0
+$dumpvars
+0.
+1-
+0,
+0+
+1*
+1)
+1(
+0'
+1&
+0%
+0$
+0#
+1!
+$end
+#10000
+0-
+0*
+1.
+1+
+1%
+0&
+#20000
+1,
+0)
+1'
+1*
+1$
+0%
+#30000
+0.
+0+
+0,
+1&
+#40000
+0*
+1.
+1+
+1,
+1%
+0&
+#50000
+0+
+0,
+1&
+#60000
+0(
+1)
+0'
+1*
+1+
+0,
+1#
+0$
+0%
+0&
+#70000
+1-
+0.
+0+
+1&
+#80000
+0-
+0*
+1.
+1+
+1%
+0&
+#90000
+1,
+0)
+1*
+1$
+0%
+#100000
+1-
+0.
+0+
+0,
+1&
+#110000
+0-
+1!
+0*
+1.
+1+
+1,
+1%
+0&
+#120000
+0+
+0,
+1&
+#130000

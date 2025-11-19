@@ -14,34 +14,39 @@ Data: octuber, 25 2025
 
 `timescale 1 ns / 1 ps;
 
-module A11_1_tb;
-
+module delay_action_tb;
+	
+	localparam DELAY = 10;
 	reg clk, rst;
 	wire out;
+	wire [3:0] counter; 
 
-	A11_1 U2 (.clk(clk),.rst(rst),
-		     .out(out)
+	delay_action UUT (
+		.clk(clk), .rst(rst),
+		.out(out), .out_counter(counter)
 	);
-
-	always #10 clk = ~clk;
+	
+	always #5 clk = ~clk;
 
 	initial begin
 		
 		// Specify the VCD file name
 		$dumpfile("CIDI-SD112-A011.vcd"); 
-        $dumpvars(0, A11_1_tb); 
+        	$dumpvars(0, delay_action_tb); 
 		
 		// Editar
-		$display("|Clock |Reset |Out |");
-		$monitor("|%b |%b | %b |", clk, rst, out);
+		$display("|Count |Reset	|Out	|");
+		$monitor("|%d	|%b	| %b	|", counter, rst, out);
 		
-		{clk,rst} = 2'b01; 
-		#600; 
+		{clk,rst} = 2'b11; 
+		#DELAY; 
+		
+		rst = 1'b0;
+		#(DELAY*20);
 		
 		rst = 1'b1;
-		#200;
+		#DELAY;
 		
-		#30
 		$finish;
 	end
 

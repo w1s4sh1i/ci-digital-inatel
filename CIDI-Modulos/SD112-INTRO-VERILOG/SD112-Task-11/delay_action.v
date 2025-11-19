@@ -14,41 +14,39 @@ Data: octuber, 25 2025
 
 `timescale 1 ns / 1 ps;
 
-module A11_1 #(parameter CONST = 10)(
-    input clk, rst,
-    output  reg out
-);
-reg [3:0] out_counter;
-reg en;
+// [x] Ação de limitação do clock, com base em um valor de referência (CONST) e reativação dependente do reset.  
 
-	always @ (posedge clk, posedge rst) begin
+module delay_action #(parameter CONST = 10)(
+	input clk, rst,
+	output reg out,
+	output reg [3:0] out_counter // controll analysis -> remover 
+);
+	
+	// reg [3:0] out_counter // controll analysis -> remover 
+	wire en;
+	
+	assign en = (CONST == out_counter) & ~rst;
+
+	always @(posedge clk, posedge rst) begin // always @(*) begin
 		
 		if (rst)begin
 		     out_counter <= 4'b0000;
-		     en <= 1'b0;
 		end else if (!en) begin
 		      out_counter <= out_counter + 1;
 		end else begin
 		      out_counter <= out_counter;
 		end
-		   
+		
+		/*
+	    	out_counter <= (out_counter + (!en)) & (~rst);
+	    	out <= (rst) ? 1'b0 : en;
+		*/  
 	end
 	
 	always @(posedge clk, posedge rst) begin
-		if (rst) begin
-		    out <= 1'b0;
-		end else begin
-		    out <= en;
-		end
-	end
-
-	always @ (out_counter) begin
 		
-		if (CONST == out_counter) begin
-		    en <= 1'b1;
-		end else
-		    en <= 1'b0;
-	
+		out <= (rst) ? 1'b0 : en;
+		
 	end
 	
 endmodule

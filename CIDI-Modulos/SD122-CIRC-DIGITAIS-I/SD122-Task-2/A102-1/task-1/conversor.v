@@ -9,7 +9,7 @@ Development: André Bezerra
 Student-Contact: andrefrbezerra@gmail.com
 Task-ID: A-102
 Type: Laboratory
-Data: octuber, 17 2025
+Data: november, 5 2025
 */
 
 `timescale 1 ns / 1 ps;

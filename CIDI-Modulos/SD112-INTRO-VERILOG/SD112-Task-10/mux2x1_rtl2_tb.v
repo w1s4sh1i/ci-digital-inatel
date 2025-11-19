@@ -28,12 +28,12 @@ module mux2x1_rtl2_tb;
 	initial begin
 	
 		// Specify the VCD file name
-		$dumpfile("CIDI-SD112-A010-3.vcd"); 
+		$dumpfile("CIDI-SD112-A010-3-rlt2.vcd"); 
         $dumpvars(0, mux2x1_rtl2_tb); 
         
 		// Editar
-		$display("|input 1|input 2|select |out |");
-		$monitor("|%b |%b |%b | %b |", in1, in2, select, out);
+		$display("|input 1|input 2|select |out	|");
+		$monitor("|%b	|%b	|%b	|%b	|", in1, in2, select, out);
 		
 		// select = 0
 		{select, in2, in1} = 3'b001;

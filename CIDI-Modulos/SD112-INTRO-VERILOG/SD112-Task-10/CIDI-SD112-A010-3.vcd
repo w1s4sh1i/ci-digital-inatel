@@ -1,0 +1,69 @@
+$date
+	Tue Nov 18 20:48:15 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module mux2x1_rtl2_tb $end
+$var wire 1 ! out $end
+$var parameter 32 " DELAY $end
+$var reg 1 # in1 $end
+$var reg 1 $ in2 $end
+$var reg 1 % select $end
+$scope module UUT $end
+$var wire 1 & and1 $end
+$var wire 1 ' and2 $end
+$var wire 1 # in1 $end
+$var wire 1 $ in2 $end
+$var wire 1 ( n_select $end
+$var wire 1 ) or1 $end
+$var wire 1 ! out $end
+$var wire 1 % select $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1111 "
+$end
+#0
+$dumpvars
+1)
+1(
+0'
+1&
+0%
+0$
+1#
+1!
+$end
+#15000
+0!
+0)
+0&
+1$
+0#
+#30000
+1!
+1)
+1&
+1#
+#45000
+0!
+0)
+0&
+0(
+1%
+0$
+#60000
+1!
+1)
+1'
+1$
+0#
+#75000
+1#
+#90000

@@ -28,9 +28,11 @@ module circuit_test3_tb;
 	initial begin
 	
 		// Specify the VCD file name
-		$dumpfile("CIDI-SD112-A010-4.vcd"); 
+		$dumpfile("CIDI-SD112-A010-4-ex3.vcd"); 
 		$dumpvars(0, circuit_test3_tb); 
-		
+	
+		$display("|a |b |c |d |out	|");
+		$monitor("|%b |%b |%b |%b |%b		|", a, b, c, d, s); 
 		// for(i = 0; i < SAMPLES-1; i = i + 1) begin 
 		// 		{a,b,c,d} = 4'di; #DELAY;
 		// ... end
