@@ -16,8 +16,8 @@ Data: octuber, 17 2025
 
 module mux_8x1_tb;
 	
-	localparam DELAY = 10; 
-    reg  [7:0] in; 
+	localparam DELAY = 10, WIDTH = 8; 
+    reg  [WIDTH-1 : 0] in; 
     reg  [2:0] sel;  
     wire       out;
 
@@ -34,10 +34,10 @@ module mux_8x1_tb;
 
 		// $ 
 		
-        for (i = 0; i < 8; i = i + 1) begin
-            in  = 8'b00000000;  
-            in[i] = 1'b1;        
-            sel = i;             
+        for (i = 0; i < WIDTH; i = i + 1) begin
+            in  	= {8{1'b0}};  
+            sel 	= i;
+            in[sel] = 1'b1;        
             #DELAY;  
             
         end
@@ -49,15 +49,22 @@ module mux_8x1_tb;
 
 
    	initial begin
+   	
+   		// Specify the VCD file name
+		$dumpfile("CIDI-SD112-A014-2-mx81.vcd"); 
+        	$dumpvars(0, mux_8x1_tb); 
+		
+		$display("|Input	 |Select|Ouput  |");
+		$monitor("|%b|%b	|%b	|", in, sel, out);
 
-        sel = 3'b0;
-        in = 8'b0;
-        #DELAY; 
+		sel = 3'b0;
+		in = 8'b0;
+		#DELAY; 
 
-        mux;
+		mux; // task call
 
-        #DELAY; 
-       $finish; 
-    end
+		#DELAY; 
+	       $finish; 
+	end
 
 endmodule

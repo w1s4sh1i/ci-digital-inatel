@@ -17,16 +17,26 @@ module paridade_tb;
 
     localparam WIDTH = 8, DELAY = 10;
 
-    reg [WIDTH-1:0] in;
-    wire            out;
+    reg [WIDTH-1:0]	in;
+    wire           	out;
+    wire		par;
 
     paridade #(.WIDTH(WIDTH)) U1 (
         .in(in),
-        .out(out)
+        .out(out), .par(par)
     );
 
-    initial begin
-        
+	initial begin
+    
+		// Specify the VCD file name
+		$dumpfile("CIDI-SD112-A014-1-par.vcd"); 
+        	$dumpvars(0, paridade_tb); 
+		
+		$display("|Input	  |Ouput|Odd or Even|");
+		$monitor("|%b |%b	|%b	    |", in, out, par);
+
+		// genvar ...; genarate ...
+        	// for () begin ... end ... endgenerate
 		in = 8'b00000000;
 		#DELAY
 		

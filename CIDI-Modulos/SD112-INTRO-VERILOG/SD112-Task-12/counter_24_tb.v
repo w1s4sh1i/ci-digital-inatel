@@ -14,37 +14,40 @@ Data: novembro, 3 2025
 
 `timescale 1 ns / 1 ps;
 
-module tb_counter_24;
+module counter_24_tb;
 
-	reg clk,reset,en;
-    wire [23:0] count;
+	localparam DELAY = 10, WIDTH = 24;
+	reg  clk,reset,en;
+	wire [WIDTH-1 : 0] count;
 
-	counter_24 U1 (
+	counter_24 UUT (
 		.clk(clk),.reset(reset), .en(en),
 		.count(count)
 	);
 
-    
-
-  always #5 clk = ~clk;
+  	always #(DELAY/2) clk = ~clk;
   
-    initial begin
-    clk = 0;
-    reset = 1;
-    en = 0;     
-    #20;
-    reset = 0;
-    #1000;       
-    $finish;
-    end
+	initial begin
+	
+		// Specify the VCD file name
+		$dumpfile("CIDI-SD112-A012-2-count.vcd"); 
+        $dumpvars(0, counter_24_tb); 
+		
+		$display("|Reset  |Enable |Count	 |"); 
+		$monitor("|%b	|%b	|%d|", reset, en, count);
 
-    
+		{clk, reset, en} = 3'b010;     
+		#DELAY;
+		
+		reset = 1'b0;
+		#(DELAY*10);
+		
+		en = 1'b1;
+		#(DELAY*5);
 
-                
+		reset = 1'b1;
+		#DELAY; 
+		$finish;
+	end
+
 endmodule
-
-
-
-
-
-

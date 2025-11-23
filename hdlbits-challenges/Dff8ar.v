@@ -1,0 +1,25 @@
+/*
+Program: [HDLbits challenges](https://hdlbits.01xz.net/wiki/Main_Page)
+Development: BEZERRA, André <w1s4sh1i>
+Student-Contact: andrefrbezerra@gmail.com
+*/
+
+// https://hdlbits.01xz.net/wiki/Dff8ar
+
+module top_module (
+	
+	input clk,
+	input areset, // active high asynchronous reset
+	input [7:0] d,
+	output [7:0] q
+);
+    always @(posedge clk, posedge areset) begin
+        q <= (areset) ? 8'b0 : d; 
+    end
+     
+endmodule
+
+/* testbench with mismatch
+
+
+*/

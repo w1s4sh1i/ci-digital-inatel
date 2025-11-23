@@ -14,6 +14,8 @@ Data: octuber, 29 2025
 
 `timescale 1 ns / 1 ps;
 
+// [ ] Separar arquivos para testes integrados;
+
 /* 
 1 - RTL          	-> portas lógicas
 2 - Estrutural   	-> instancias 
@@ -41,7 +43,8 @@ assign y = sel ? D[0] : D[1];
 
 endmodule
 
-module mux_est(a, b, sel, y); //estrutural
+//estrutural
+module mux_est(a, b, sel, y); 
     input a, b, sel;
     output y;
 
@@ -66,14 +69,13 @@ module mux_rtl(a, b, sel, y);
 
 endmodule
 
-/*
-    Atividade 3
-*/
+// Atividade 3
+
 module mux4_comport(a, b, sel, y); //comportamental 
     input a, b, sel;
     output reg y;
 
-    always@(*) begin
+    always @(*) begin
         if(sel == 1'b0)
             y = a;
         else

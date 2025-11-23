@@ -8,8 +8,6 @@
 - 
 
 
-​:white_check_mark: 
-
 
 ## Executar
 
@@ -20,7 +18,7 @@
 ```
 $ vvp CIDI-SD122-A101
 
-$ gtkwave CIDI-SD122-A101.vcd
+$ gtkwave CIDI-SD122-A101-1.vcd
 ```
 
 ### ModelSim

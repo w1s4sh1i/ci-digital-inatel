@@ -16,15 +16,16 @@ Data: octuber, 27 2025
 
 primitive flip_flop_D_p (q, d, clk, rst);
     
-    output q;
+    output reg q;
     input  d, clk, rst;
-    reg    q;
+    
+    // reg    q;
 
     table
     // d  clk  rst : q : q+
        0   ?    ?  : ? : 0; 
-       ?   ?    1  : ? : 0;   
-       ?  (?0)  0  : ? : -;
+       ?   ?    1  : ? : 0; 
+       ?  (?0)  0  : ? : -; // Analisar condição 
        0  (01)  0  : ? : 0;   
        1  (01)  0  : ? : 1;
        0  (01)  1  : ? : 0;   

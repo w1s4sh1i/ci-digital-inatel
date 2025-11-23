@@ -1,0 +1,86 @@
+$date
+	Fri Nov 21 18:06:07 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module crossbar_structural_tb $end
+$var wire 1 ! out2 $end
+$var wire 1 " out1 $end
+$var parameter 32 # DELAY $end
+$var reg 1 $ in1 $end
+$var reg 1 % in2 $end
+$var reg 1 & select $end
+$scope module UUT $end
+$var wire 1 $ in1 $end
+$var wire 1 % in2 $end
+$var wire 1 & select $end
+$var wire 1 ! out2 $end
+$var wire 1 " out1 $end
+$scope module mx1 $end
+$var wire 1 ' and1 $end
+$var wire 1 ( and2 $end
+$var wire 1 $ in1 $end
+$var wire 1 % in2 $end
+$var wire 1 ) n_select $end
+$var wire 1 " out $end
+$var wire 1 & select $end
+$upscope $end
+$scope module mx2 $end
+$var wire 1 * and1 $end
+$var wire 1 + and2 $end
+$var wire 1 % in1 $end
+$var wire 1 $ in2 $end
+$var wire 1 , n_select $end
+$var wire 1 ! out $end
+$var wire 1 & select $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1111 #
+$end
+#0
+$dumpvars
+1,
+0+
+0*
+1)
+0(
+1'
+0&
+0%
+1$
+1"
+0!
+$end
+#15000
+1!
+0"
+1*
+0'
+1%
+0$
+#30000
+0"
+0)
+0,
+0*
+0'
+1+
+1&
+0%
+1$
+#45000
+1"
+0!
+1(
+0+
+1%
+0$
+#60000

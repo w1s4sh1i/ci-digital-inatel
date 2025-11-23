@@ -26,9 +26,10 @@ z   0 x x x
 */
 
 // Alternativa 1
-primitive and_table(
+primitive and_ptable(
 	output y, 
-	input a, b
+	input a, 
+	input b
 );
 
 	table
@@ -43,4 +44,3 @@ primitive and_table(
    	endtable
 
 endprimitive
-

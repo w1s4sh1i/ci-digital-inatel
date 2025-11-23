@@ -8,34 +8,23 @@ Institute: INATEL - Santa Rita do Sapucaí / MG
 Development: André Bezerra 
 Student-Contact: andrefrbezerra@gmail.com
 Task-ID: A-012
-Type: Testbench
+Type: Laboratory
 Data: novembro, 3 2025
 */
 
 `timescale 1 ns / 1 ps;
 
-module tb_A12_4;
-
-reg clk, rst;
-wire out;
-
-A12_4 #(.CONST(10), .WIDTH (8)) U2 (.clk(clk),.rst(rst),
-         .out(out)
+module ffd_r ( //  
+	input D, clk, rst,
+	output reg Q
 );
 
-
-
-always #5 clk = ~clk;
-
-initial begin
-    
-    clk <= 0;
-    rst <= 1'b1; 
-    #60; 
-    rst <= 0;
-    #30; 
-    #200;
-    $finish;
-end
+	always @(posedge clk) begin
+		// Q <= D & (~rst); 
+  		if (rst)
+    			Q <= 0;
+  		else
+    			Q <= D;
+	end
 
 endmodule

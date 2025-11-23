@@ -15,36 +15,42 @@ Data: octuber, 29 2025
 `timescale 1 ns / 1 ps;
 module mux_2x1_tb;
 
-    //reg a, b, sel; // 1ª Parte
+    localparam DELAY = 10;
     reg [1:0]D, sel;
     wire y;
 
-   // 1ª Parte do exercicio 2
-   // mux2 mux_2x1_tb(
-   //     .a(a), .b(b), .sel(sel),
-   //     .y(y)
-   // );
-
+	/* 1ª Parte do exercicio 2
+   		mux2 mux_2x1_tb(
+        	.a(a), .b(b), .sel(sel),
+      		.y(y)
+   		);
+	*/
    mux3 upp(
-    .D(D), .sel(sel), 
-    .y(y)
+		.D(D), .sel(sel), 
+		.y(y)
    );
 
-    // 1º Parte
-    //always begin #1 a = !a; end
-    //always begin #2 b = !b; end
-
-    always begin #1 D[0] = !D[0];	end
-    always begin #2 D[1] = !D[1];	end
-    always begin #4 sel = !sel;		end
+    /* 1º Parte
+    	always begin #1 a = !a; end
+    	always begin #2 b = !b; end
+	*/
+	
+    always #1 D[0] = !D[0];
+    always #2 D[1] = !D[1];
+    always #4  sel = !sel;
 
     initial begin
       
-      $dumpfile("mux_2x1_tb.vcd");
-      $dumpvars(0, mux_2x1_tb);
+		// Specify the VCD file name
+		$dumpfile("CIDI-SD122-A101-1.vcd"); 
+        $dumpvars(0, mux_2x1_tb);
+		
+		$display("|Select	|Y	|");
+		$monitor("|%b |%b |", sel, y);
       
       // se 1 -> a, 0 -> b
       sel = 1'b0;
+      
       //a = 1'b0;
       //b = 1'b0;
       D = 2'd0;

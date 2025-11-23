@@ -20,9 +20,9 @@
 ### GTKwave
 
 ```
-$ vvp CIDI-SD112-A014
+$ vvp CIDI-SD112-A014-<...>
 
-$ gtkwave CIDI-SD112-A014.vcd
+$ gtkwave CIDI-SD112-A014-<...>.vcd
 ```
 
 ### ModelSim
@@ -40,6 +40,8 @@ $ do execute-task.do
 
 ## Results
 
-![Codificação de Síntese vs Simulação](CID-SD112-A014-wave.png)
+![Codificação de Síntese vs Simulação 1 - pardd](CID-SD112-A014-1-wave.png)
+![Codificação de Síntese vs Simulação 2 - mux81](CID-SD112-A014-2-wave.png)
+![Codificação de Síntese vs Simulação 3 - dmx38](CID-SD112-A014-3-wave.png)
 
 [> Google Drive - General Report](https://docs.google.com/document/d/1XcMPJY77fL6TMtBvcFznFPcfbmsb3IuBN67DL6YdwVo)

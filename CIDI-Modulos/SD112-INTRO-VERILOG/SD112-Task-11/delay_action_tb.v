@@ -32,7 +32,7 @@ module delay_action_tb;
 		
 		// Specify the VCD file name
 		$dumpfile("CIDI-SD112-A011.vcd"); 
-        	$dumpvars(0, delay_action_tb); 
+        $dumpvars(0, delay_action_tb); 
 		
 		// Editar
 		$display("|Count |Reset	|Out	|");

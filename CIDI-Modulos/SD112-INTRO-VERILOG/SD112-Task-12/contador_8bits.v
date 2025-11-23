@@ -15,20 +15,19 @@ Data: novembro, 3 2025
 `timescale 1 ns / 1 ps;
 
 module contador_8bits #(parameter WIDTH = 8)(
-    input clk,             
-    input rst,  
-    input en,     
-    output reg[WIDTH-1:0] out  
+	input clk, rst, en,     
+	output reg [WIDTH-1:0] out  
 );
+	// assign ...
+  	always @ (posedge clk) begin
 
-
-  always @ (posedge clk) begin
-    if (rst)             
-      out <= {WIDTH{1'b0}};
-    else                    
-      if (~en) 
-        out <= out + 1;
-      else
-        out <= out;
-  end
+		// out <= rst ? {WIDTH{1'b0}} : out + (~en);
+		if (rst)             
+			out <= {WIDTH{1'b0}};
+		else                    
+			if (~en) 
+				out <= out + 1;
+			else
+				out <= out;
+	end
 endmodule

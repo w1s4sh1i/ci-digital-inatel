@@ -19,9 +19,21 @@
 ### GTKwave
 
 ```
-$ vvp CIDI-SD112-A013
+$ vvp CIDI-SD112-A013-and
 
-$ gtkwave CIDI-SD112-A013.vcd
+$ gtkwave CIDI-SD112-A013-and.vcd
+```
+
+```
+$ vvp CIDI-SD112-A013-ffd
+
+$ gtkwave CIDI-SD112-A013-ffd.vcd
+```
+
+```
+$ vvp CIDI-SD112-A013-mux
+
+$ gtkwave CIDI-SD112-A013-mux.vcd
 ```
 
 ### ModelSim
@@ -39,6 +51,8 @@ $ do execute-task.do
 
 ## Results
 
-![Primitivas](CID-SD112-A013-wave.png)
+![Primitivas - AND](CID-SD112-A013-1-wave.png)
+![Primitivas - Flip-flop D](CID-SD112-A013-2-wave.png)
+![Primitivas - Mux](CID-SD112-A013-3-wave.png)
 
 [> Google Drive - General Report](https://docs.google.com/document/d/1XcMPJY77fL6TMtBvcFznFPcfbmsb3IuBN67DL6YdwVo)

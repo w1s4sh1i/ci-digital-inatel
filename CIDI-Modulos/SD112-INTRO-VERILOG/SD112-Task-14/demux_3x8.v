@@ -14,7 +14,7 @@ Data: octuber, 17 2025
 
 `timescale 1 ns / 1 ps;
 
-module demux_3x8 (
+module demux_3x8 ( // #(parameter N = 3, M = 8)(
     input  [2:0] in,
     output reg [7:0] out
  );
@@ -29,7 +29,7 @@ module demux_3x8 (
         end
     endtask
 
-    always @(*) begin
+    always @(*) begin // always demux(in, out);
         demux(in, out);
     end
 

@@ -16,7 +16,9 @@ Data: octuber, 27 2025
 
 primitive mux_2x1_p (
 	output y,
-	input in1, in2, sel
+	input in1, 
+	input in2, 
+	input sel
 );	
 
 	table

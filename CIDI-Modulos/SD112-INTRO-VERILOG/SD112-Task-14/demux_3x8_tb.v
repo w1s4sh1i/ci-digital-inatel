@@ -13,46 +13,52 @@ Data: octuber, 17 2025
 */
 
 `timescale 1 ns / 1 ps;
-module tb_demux_3x8;
+module demux_3x8_tb;
 
 	localparam DELAY = 10;
-    reg [2:0] in;
-    wire [7:0] out;
+    	reg [2:0] in;
+    	wire [7:0] out;
 
-    demux_3x8 U1 (
-        .in(in),
-        .out(out)
-    );
+    	demux_3x8 U1 (
+        	.in(in),
+        	.out(out)
+    	);
 
-    initial begin
+	initial begin
     
-    	// add dump
+		// Specify the VCD file name
+		$dumpfile("CIDI-SD112-A014-3-dmux.vcd"); 
+		$dumpvars(0, demux_3x8_tb); 
+			
+		$display("|Input	|Ouput	  |");
+		$monitor("|%b	|%b |", in, out);
+			
+		in = 3'b000;
+		#DELAY
 
-        in = 3'b000;
-        #DELAY
+		in = 3'b001;
+		#DELAY
 
-        in = 3'b001;
-        #DELAY
+		in = 3'b010;
+		#DELAY
 
-        in = 3'b010;
-        #DELAY
+		in = 3'b011;
+		#DELAY
 
-        in = 3'b011;
-        #DELAY
+		in = 3'b100;
+		#DELAY
 
-        in = 3'b100;
-        #DELAY
+		in = 3'b101; 
+		#DELAY
 
-        in = 3'b101; 
-        #DELAY
+		in = 3'b110; 
+		#DELAY
 
-        in = 3'b110; 
-        #DELAY
+		in = 3'b111; 
+		#DELAY
 
-        in = 3'b111; 
-        #DELAY
-
-        #DELAY $stop; 
-    end
+		#DELAY 
+		$finish; 
+	end
 
 endmodule

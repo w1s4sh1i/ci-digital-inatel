@@ -14,23 +14,21 @@ Data: octuber, 17 2025
 
 `timescale 1 ns / 1 ps;
 
-module paridade #(
-    parameter WIDTH = 4)
-(
-    input   [WIDTH-1:0] in,
-    output             out
+module paridade #(parameter WIDTH = 4) (
+	input   [WIDTH-1:0] in,
+	output             out, par
 );
 
-    function reg calcula_paridade (
-    	input [WIDTH-1:0] dado);
+    function reg calc_paridade (
+    	input [WIDTH-1:0] data);
         
         begin
-                        
-            calcula_paridade = ^dado;
+		calc_paridade = ^data;
         end
     
     endfunction
 
-    assign out = calcula_paridade(in);
+    assign out = calc_paridade(in);
+    assign par = in[0]; // 1 odd or 0 even
 
 endmodule

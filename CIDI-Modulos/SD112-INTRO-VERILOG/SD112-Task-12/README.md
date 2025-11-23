@@ -21,9 +21,21 @@
 ### GTKwave
 
 ```
-$ vvp CIDI-SD112-A012
+$ vvp CIDI-SD112-A012-1-cross
 
-$ gtkwave CIDI-SD112-A012.vcd
+$ gtkwave CIDI-SD112-A012-1-cross.vcd
+```
+
+```
+$ vvp CIDI-SD112-A012-2-<>
+
+$ gtkwave CIDI-SD112-A012-2-<>vcd
+```
+
+```
+$ vvp CIDI-SD112-A012-2-<>
+
+$ gtkwave CIDI-SD112-A012-2-<>vcd
 ```
 
 ### ModelSim
@@ -41,8 +53,8 @@ $ do execute-task.do
 
 ## Results
 
-![Descrição Estrutural](CID-SD112-A012-1-wave.png)
-![Descrição Estrutural](CID-SD112-A012-2-wave.png)
-![Descrição Estrutural](CID-SD112-A012-3-wave.png)
+![Descrição Estrutural - Crossbar](CID-SD112-A012-1-wave.png)
+![Descrição Estrutural - ](CID-SD112-A012-2-wave.png)
+![Descrição Estrutural - ](CID-SD112-A012-3-wave.png)
 
 [> Google Drive - General Report](https://docs.google.com/document/d/1XcMPJY77fL6TMtBvcFznFPcfbmsb3IuBN67DL6YdwVo)

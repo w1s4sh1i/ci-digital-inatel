@@ -25,11 +25,11 @@ module mux_2x1_p_tb;
 	initial begin
 	
 		// Specify the VCD file name
-		$dumpfile("CIDI-SD112-A013-3.vcd"); 
-        $dumpvars(0, mux_2x1_p_tb); 
+		$dumpfile("CIDI-SD112-A013-3-mux.vcd"); 
+        	$dumpvars(0, mux_2x1_p_tb); 
 		
-		$display("|Input 1 |Input 2 |Select |Y |");
-		$monitor("|%b |%b |%b |%b |", in1, in2, sel, y);
+		$display("|Input 1|Input 2|Select |Y |");
+		$monitor("|%b	|%b	|%b	|%b |", in1, in2, sel, y);
 		
 		{sel, in2, in1} = 3'b001;
 		#DELAY;

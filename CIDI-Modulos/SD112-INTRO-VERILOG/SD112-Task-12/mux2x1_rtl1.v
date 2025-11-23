@@ -9,24 +9,22 @@ Development: André Bezerra
 Student-Contact: andrefrbezerra@gmail.com
 Task-ID: A-012
 Type: Laboratory
-Data: novembro, 3 2025
+Data: octuber, 17 2025
 */
 
 `timescale 1 ns / 1 ps;
 
-module DFF (
-    input D, clk,rst,
-    output reg Q
+// Atividade A-012
+
+module mux2x1_rtl1(
+	input in1,in2,select,
+	output out
 );
+	wire n_select, and1, and2;
 
-
-always @(posedge clk)
-begin
-  if (rst)
-    Q <= 0;
-  else
-    Q <= D;
-end
-
-
+	not g1 (n_select, select);
+	and g2 (and1, n_select, in1);
+	and g3 (and2, select, in2);
+	or  g4 (out, and1, and2);
+	
 endmodule
