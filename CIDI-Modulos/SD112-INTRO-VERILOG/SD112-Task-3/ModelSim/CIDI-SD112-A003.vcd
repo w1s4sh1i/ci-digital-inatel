@@ -1,0 +1,55 @@
+$date
+	Sun Nov 23 23:40:27 2025
+$end
+$version
+	ModelSim Version 2020.1
+$end
+$timescale
+	1ps
+$end
+
+$scope module gate_not_tb $end
+$var parameter 32 ! DELAY $end
+$var parameter 32 " TEST_NUMBER $end
+$var reg 1 # data_in $end
+$var wire 1 $ data_outl $end
+$var wire 1 % data_outi $end
+$var integer 32 & i $end
+
+$scope module n1 $end
+$var wire 1 ' signal $end
+$var wire 1 $ not_logic $end
+$var wire 1 % not_instance $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1#
+b1 !
+b101 "
+b1 &
+0$
+0%
+1'
+$end
+#1000
+b10 &
+0#
+0'
+1$
+1%
+#2000
+b11 &
+1#
+1'
+0$
+0%
+#3000
+b100 &
+0#
+0'
+1$
+1%
+#4000
+b101 &

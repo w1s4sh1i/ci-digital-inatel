@@ -14,25 +14,26 @@
 |A-108		|[Reset Síncrono e Assíncrono](SD112-Task-8)	             |BASIC		 | :white_check_mark:   |
 |A-109		|[Estilos de Código](SD112-Task-9)	                         |BASIC		 | :white_check_mark:   |
 |A-110		|[Descrição RTL](SD112-Task-10)	                             |BASIC		 | :white_check_mark:   |
-|A-111		|[Descrição Comportamental](SD112-Task-11)	                 |BASIC		 | :white_square_button:|
-|A-112		|[Descrição Estrutural](SD112-Task-12)	                     |BASIC		 | :white_square_button:|
-|A-113		|[Primitivas](SD112-Task-13)	                             |BASIC		 | :white_square_button:|
-|A-114		|[Codificação de Síntese vs Simulação](SD112-Task-14)	     |BASIC		 | :white_square_button:|
+|A-111		|[Descrição Comportamental](SD112-Task-11)	                 |BASIC		 | :white_check_mark:   |
+|A-112		|[Descrição Estrutural](SD112-Task-12)	                     |BASIC		 | :white_check_mark:   |
+|A-113		|[Primitivas](SD112-Task-13)	                             |BASIC		 | :white_check_mark:   |
+|A-114		|[Codificação de Síntese vs Simulação](SD112-Task-14)	     |BASIC		 | :white_check_mark:   |
 
 
 ## Anotações 
 
+>
 
 ## Referências
 
-1. ;
+1. Digital Systems ; Authors, Ronald Tocci, Neal Widmer, Greg Moss ; Edition, 12 ; Publisher, Pearson Education, 2016 ; ISBN, 0134220145, 9780134220147;
 
-2. ;
+2. Frank Vahid. 2010. Digital Design with RTL Design, Verilog and VHDL (2nd. ed.). Wiley Publishing;
 
-3. ;
+3. Institute of Electrical and Electronics Engineers. (2012). IEEE Standard for SystemVerilog—Unified hardware design, specification, and verification language (IEEE Std 1800-2012);
 
-4. ;
+4. [Icarus Verilog documentation](https://steveicarus.github.io/iverilog/);
 
-5. ;
+5. [HDLBits verilog learn plataform](https://hdlbits.01xz.net/wiki/Main_Page);
 
 

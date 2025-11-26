@@ -1,0 +1,105 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d/home/isi-se-bolsista2
+vgate_not
+Z0 !s110 1763951136
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+!i10b 1
+!s100 UeGiJ3AoZ[:OUj2;@g9021
+I7:Y?;jTA3FF[I6QoA>51S1
+Z2 d/home/isi-se-bolsista2/BAW-Development/0-INATEL-repositorios/0-CI-DIGITAL-INATEL/ci-digital-inatel/CIDI-Modulos/SD112-INTRO-VERILOG/SD112-Task-3/ModelSim
+Z3 w1762867598
+Z4 8/home/isi-se-bolsista2/BAW-Development/0-INATEL-repositorios/0-CI-DIGITAL-INATEL/ci-digital-inatel/CIDI-Modulos/SD112-INTRO-VERILOG/SD112-Task-3/ModelSim/gate_not.v
+Z5 F/home/isi-se-bolsista2/BAW-Development/0-INATEL-repositorios/0-CI-DIGITAL-INATEL/ci-digital-inatel/CIDI-Modulos/SD112-INTRO-VERILOG/SD112-Task-3/ModelSim/gate_not.v
+!i122 30
+L0 17 8
+Z6 OV;L;2020.1;71
+31
+Z7 !s108 1763951136.000000
+Z8 !s107 /home/isi-se-bolsista2/BAW-Development/0-INATEL-repositorios/0-CI-DIGITAL-INATEL/ci-digital-inatel/CIDI-Modulos/SD112-INTRO-VERILOG/SD112-Task-3/ModelSim/gate_not.v|
+Z9 !s90 -reportprogress|300|-work|work|-stats=none|/home/isi-se-bolsista2/BAW-Development/0-INATEL-repositorios/0-CI-DIGITAL-INATEL/ci-digital-inatel/CIDI-Modulos/SD112-INTRO-VERILOG/SD112-Task-3/ModelSim/gate_not.v|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vgate_not_tb
+R0
+R1
+r1
+!s85 0
+!i10b 1
+!s100 Shid9A0J5Jk>WDPk;e3N23
+I[mOPoHdedR^d6VldDdJh[2
+R2
+Z12 w1763951128
+Z13 8/home/isi-se-bolsista2/BAW-Development/0-INATEL-repositorios/0-CI-DIGITAL-INATEL/ci-digital-inatel/CIDI-Modulos/SD112-INTRO-VERILOG/SD112-Task-3/ModelSim/gate_not_tb.v
+Z14 F/home/isi-se-bolsista2/BAW-Development/0-INATEL-repositorios/0-CI-DIGITAL-INATEL/ci-digital-inatel/CIDI-Modulos/SD112-INTRO-VERILOG/SD112-Task-3/ModelSim/gate_not_tb.v
+!i122 31
+L0 17 34
+R6
+31
+R7
+!s107 /home/isi-se-bolsista2/BAW-Development/0-INATEL-repositorios/0-CI-DIGITAL-INATEL/ci-digital-inatel/CIDI-Modulos/SD112-INTRO-VERILOG/SD112-Task-3/ModelSim/gate_not_tb.v|
+Z15 !s90 -reportprogress|300|-work|work|-stats=none|/home/isi-se-bolsista2/BAW-Development/0-INATEL-repositorios/0-CI-DIGITAL-INATEL/ci-digital-inatel/CIDI-Modulos/SD112-INTRO-VERILOG/SD112-Task-3/ModelSim/gate_not_tb.v|
+!i113 1
+R10
+R11
+Xgate_not_tb_v_unit
+Z16 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+R0
+VJT:UDJE9mHP;?Dc5>RkzX0
+r1
+!s85 0
+!i10b 1
+!s100 6gaMVY6MV:YFQj]g<lV]40
+IJT:UDJE9mHP;?Dc5>RkzX0
+!i103 1
+S1
+R2
+R12
+R13
+R14
+!i122 31
+Z17 L0 15 0
+R6
+31
+R7
+Z18 !s107 /home/isi-se-bolsista2/BAW-Development/0-INATEL-repositorios/0-CI-DIGITAL-INATEL/ci-digital-inatel/CIDI-Modulos/SD112-INTRO-VERILOG/SD112-Task-3/ModelSim/gate_not_tb.v|
+R15
+!i113 1
+R10
+R11
+Xgate_not_v_unit
+R16
+R0
+VG_G=ZBi0j?K2oL0kDo9:U0
+r1
+!s85 0
+!i10b 1
+!s100 a5X;eI=6hJ^I7z0Pa6`[41
+IG_G=ZBi0j?K2oL0kDo9:U0
+!i103 1
+S1
+R2
+R3
+R4
+R5
+!i122 30
+R17
+R6
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11

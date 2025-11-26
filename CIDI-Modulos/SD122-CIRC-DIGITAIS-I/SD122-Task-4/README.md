@@ -2,14 +2,9 @@
 
 > Conteúdo descritivo e analítico
 
+> Decodificadores​
+
 :white_check_mark:
-
-
-- 
-
-
-​:white_check_mark: 
-
 
 ## Executar
 
@@ -18,9 +13,9 @@
 ### GTKwave
 
 ```
-$ vvp CIDI-SD122-A104
+$ vvp CIDI-SD122-A104-<...>
 
-$ gtkwave CIDI-SD122-A104.vcd
+$ gtkwave CIDI-SD122-A104-<...>.vcd
 ```
 
 ### ModelSim
@@ -38,6 +33,7 @@ $ do execute-task.do
 
 ## Results
 
-![](CID-SD122-A104-wave.png)
+![Decodificadores​ - 1](CID-SD122-A104-1-wave.png)
+![Decodificadores​ - 2](CID-SD122-A104-2-wave.png)
 
 [> Google Drive - General Report](https://docs.google.com/document/d/1XcMPJY77fL6TMtBvcFznFPcfbmsb3IuBN67DL6YdwVo)

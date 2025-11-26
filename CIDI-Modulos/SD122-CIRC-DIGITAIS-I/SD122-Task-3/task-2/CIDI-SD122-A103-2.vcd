@@ -1,0 +1,80 @@
+$date
+	Wed Nov 26 15:57:40 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module excess3_10x4_tb $end
+$var wire 4 ! out [3:0] $end
+$var parameter 32 " DELAY $end
+$var reg 10 # in [9:0] $end
+$scope module UUT $end
+$var wire 10 $ in [9:0] $end
+$var parameter 32 % M $end
+$var parameter 32 & N $end
+$var reg 4 ' out [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1010 &
+b100 %
+b1010 "
+$end
+#0
+$dumpvars
+b11 '
+b1 $
+b1 #
+b11 !
+$end
+#10000
+b100 !
+b100 '
+b10 #
+b10 $
+#20000
+b101 !
+b101 '
+b100 #
+b100 $
+#30000
+b110 !
+b110 '
+b1000 #
+b1000 $
+#40000
+b111 !
+b111 '
+b10000 #
+b10000 $
+#50000
+b1000 !
+b1000 '
+b100000 #
+b100000 $
+#60000
+b1001 !
+b1001 '
+b1000000 #
+b1000000 $
+#70000
+b1010 !
+b1010 '
+b10000000 #
+b10000000 $
+#80000
+b1011 !
+b1011 '
+b100000000 #
+b100000000 $
+#90000
+b1100 !
+b1100 '
+b1000000000 #
+b1000000000 $
+#100000

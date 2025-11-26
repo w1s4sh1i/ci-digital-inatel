@@ -2,14 +2,9 @@
 
 > Conteúdo descritivo e analítico
 
+> Multiplexadores​
+
 :white_check_mark:
-
-
-- 
-
-
-​:white_check_mark: 
-
 
 ## Executar
 
@@ -18,9 +13,9 @@
 ### GTKwave
 
 ```
-$ vvp CIDI-SD122-A105
+$ vvp CIDI-SD122-A105-<...>
 
-$ gtkwave CIDI-SD122-A105.vcd
+$ gtkwave CIDI-SD122-A105-<...>.vcd
 ```
 
 ### ModelSim
@@ -31,13 +26,14 @@ $ gtkwave CIDI-SD122-A105.vcd
 $ do execute-task.do
 ```
 
-
 ## Fluxograma
 
 ![Esquemático](CID-SD122-A105-schematic.png)
 
 ## Results
 
-![](CID-SD122-A105-wave.png)
+![Multiplexadores​ - 1](CID-SD122-A105-1-wave.png)
+![Multiplexadores​ - 2](CID-SD122-A105-2-wave.png)
+![Multiplexadores​ - 3](CID-SD122-A105-3-wave.png)
 
 [> Google Drive - General Report](https://docs.google.com/document/d/1XcMPJY77fL6TMtBvcFznFPcfbmsb3IuBN67DL6YdwVo)

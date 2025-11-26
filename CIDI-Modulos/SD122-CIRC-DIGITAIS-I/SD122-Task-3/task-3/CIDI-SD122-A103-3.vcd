@@ -1,0 +1,193 @@
+$date
+	Wed Nov 26 16:15:39 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module decoder16x4_tb $end
+$var wire 4 ! out [3:0] $end
+$var parameter 32 " DELAY $end
+$var parameter 32 # WIDTH_IN $end
+$var parameter 32 $ WIDTH_OUT $end
+$var reg 16 % in [15:0] $end
+$scope module UUT $end
+$var wire 16 & in [15:0] $end
+$var wire 4 ' out [3:0] $end
+$var wire 3 ( low_out [2:0] $end
+$var wire 3 ) high_out [2:0] $end
+$var wire 1 * high_active $end
+$var parameter 32 + M $end
+$var parameter 32 , N $end
+$var parameter 32 - WIDTH_OUT $end
+$var parameter 32 . WIDTH_WIRE $end
+$scope module dec_high $end
+$var wire 8 / in [7:0] $end
+$var parameter 32 0 M $end
+$var parameter 32 1 N $end
+$var reg 3 2 out [2:0] $end
+$upscope $end
+$scope module dec_low $end
+$var wire 8 3 in [7:0] $end
+$var parameter 32 4 M $end
+$var parameter 32 5 N $end
+$var reg 3 6 out [2:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1000 5
+b11 4
+b1000 1
+b11 0
+b11 .
+b1000 -
+b10000 ,
+b100 +
+b100 $
+b10000 #
+b1010 "
+$end
+#0
+$dumpvars
+b0 6
+b1 3
+bx 2
+b0 /
+0*
+bx )
+b0 (
+b0 '
+b1 &
+b1 %
+b0 !
+$end
+#10000
+b1 !
+b1 '
+b1 (
+b1 6
+b10 3
+b10 %
+b10 &
+#20000
+b10 !
+b10 '
+b10 (
+b10 6
+b100 3
+b100 %
+b100 &
+#30000
+b11 !
+b11 '
+b11 (
+b11 6
+b1000 3
+b1000 %
+b1000 &
+#40000
+b100 !
+b100 '
+b100 (
+b100 6
+b10000 3
+b10000 %
+b10000 &
+#50000
+b101 !
+b101 '
+b101 (
+b101 6
+b100000 3
+b100000 %
+b100000 &
+#60000
+b110 !
+b110 '
+b110 (
+b110 6
+b1000000 3
+b1000000 %
+b1000000 &
+#70000
+b111 !
+b111 '
+b111 (
+b111 6
+b10000000 3
+b10000000 %
+b10000000 &
+#80000
+bx (
+bx 6
+b0 )
+b0 2
+b0 3
+b1 /
+b1000 !
+b1000 '
+1*
+b100000000 %
+b100000000 &
+#90000
+b1001 !
+b1001 '
+b1 )
+b1 2
+b10 /
+b1000000000 %
+b1000000000 &
+#100000
+b1010 !
+b1010 '
+b10 )
+b10 2
+b100 /
+b10000000000 %
+b10000000000 &
+#110000
+b1011 !
+b1011 '
+b11 )
+b11 2
+b1000 /
+b100000000000 %
+b100000000000 &
+#120000
+b1100 !
+b1100 '
+b100 )
+b100 2
+b10000 /
+b1000000000000 %
+b1000000000000 &
+#130000
+b1101 !
+b1101 '
+b101 )
+b101 2
+b100000 /
+b10000000000000 %
+b10000000000000 &
+#140000
+b1110 !
+b1110 '
+b110 )
+b110 2
+b1000000 /
+b100000000000000 %
+b100000000000000 &
+#150000
+b1111 !
+b1111 '
+b111 )
+b111 2
+b10000000 /
+b1000000000000000 %
+b1000000000000000 &
+#160000

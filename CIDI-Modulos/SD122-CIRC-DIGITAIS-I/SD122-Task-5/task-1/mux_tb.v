@@ -22,7 +22,7 @@ module mux16x1_tb;
     wire        out_tb;
     integer     i;
 
-    mux_16x1 dut (
+    mux16x1 UUT (
         .out(out_tb),
         .in	(data_in_tb),
         .sel(sel_tb)
@@ -30,21 +30,21 @@ module mux16x1_tb;
 
     initial begin
     
-    	$dumpfile("CID-SD122-A105-1.vcd");
+    	$dumpfile("CIDI-SD122-A105-1.vcd");
     	$dumpvars(0, mux16x1_tb);
 
-		$display("|Data in	|Select |Out	|");
-		$monitor("|%b	|%b	|%b	|", data_in_tb, sel_tb, out_tb);
+	$display("|Data in		|Select |Out	|");
+	$monitor("|%b	|%b	|%b	|", data_in_tb, sel_tb, out_tb);
 
         // Inicializar os sinais
         data_in_tb = 16'b0;
         sel_tb     = 4'b0;
-        DELAY;
+        #DELAY;
 
         for (i = 0; i < 16; i = i + 1) begin
             sel_tb = i;
             data_in_tb = (1 << i);  // Deslocar o bit de referência
-            DELAY;
+            #DELAY;
         end
 
         $finish;

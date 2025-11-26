@@ -1,0 +1,59 @@
+$date
+	Wed Nov 26 17:42:39 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module decoderNxM_tb $end
+$var wire 16 ! out [15:0] $end
+$var parameter 32 " DELAY $end
+$var parameter 36 # M $end
+$var parameter 32 $ N $end
+$var reg 4 % in [3:0] $end
+$scope module DUT $end
+$var wire 4 & in [3:0] $end
+$var parameter 36 ' M $end
+$var parameter 32 ( N $end
+$var reg 16 ) out [15:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b100 (
+b10000 '
+b100 $
+b10000 #
+b1010 "
+$end
+#0
+$dumpvars
+b1 )
+b0 &
+b0 %
+b1 !
+$end
+#10000
+b10 !
+b10 )
+b1 %
+b1 &
+#20000
+b1000 !
+b1000 )
+b11 %
+b11 &
+#30000
+b10000000 !
+b10000000 )
+b111 %
+b111 &
+#40000
+b10000000000000 !
+b10000000000000 )
+b1101 %
+b1101 &
+#50000

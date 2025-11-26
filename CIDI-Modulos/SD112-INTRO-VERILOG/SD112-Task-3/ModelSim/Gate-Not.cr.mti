@@ -1,0 +1,21 @@
+/home/isi-se-bolsista2/BAW-Development/0-INATEL-repositorios/0-CI-DIGITAL-INATEL/ci-digital-inatel/CIDI-Modulos/SD112-INTRO-VERILOG/SD112-Task-3/ModelSim/gate_not.v {2 {vlog -work work -stats=none /home/isi-se-bolsista2/BAW-Development/0-INATEL-repositorios/0-CI-DIGITAL-INATEL/ci-digital-inatel/CIDI-Modulos/SD112-INTRO-VERILOG/SD112-Task-3/ModelSim/gate_not.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+** Warning: /home/isi-se-bolsista2/BAW-Development/0-INATEL-repositorios/0-CI-DIGITAL-INATEL/ci-digital-inatel/CIDI-Modulos/SD112-INTRO-VERILOG/SD112-Task-3/ModelSim/gate_not.v(15): (vlog-2283) Extra semicolon in $unit (global) scope.
+** Warning: /home/isi-se-bolsista2/BAW-Development/0-INATEL-repositorios/0-CI-DIGITAL-INATEL/ci-digital-inatel/CIDI-Modulos/SD112-INTRO-VERILOG/SD112-Task-3/ModelSim/gate_not.v(26): (vlog-2284) Empty $unit scope found.
+-- Compiling package gate_not_v_unit
+-- Compiling module gate_not
+
+Top level modules:
+	gate_not
+
+} {} {}} /home/isi-se-bolsista2/BAW-Development/0-INATEL-repositorios/0-CI-DIGITAL-INATEL/ci-digital-inatel/CIDI-Modulos/SD112-INTRO-VERILOG/SD112-Task-3/ModelSim/gate_not_tb.v {2 {vlog -work work -stats=none /home/isi-se-bolsista2/BAW-Development/0-INATEL-repositorios/0-CI-DIGITAL-INATEL/ci-digital-inatel/CIDI-Modulos/SD112-INTRO-VERILOG/SD112-Task-3/ModelSim/gate_not_tb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+** Warning: /home/isi-se-bolsista2/BAW-Development/0-INATEL-repositorios/0-CI-DIGITAL-INATEL/ci-digital-inatel/CIDI-Modulos/SD112-INTRO-VERILOG/SD112-Task-3/ModelSim/gate_not_tb.v(15): (vlog-2283) Extra semicolon in $unit (global) scope.
+** Warning: /home/isi-se-bolsista2/BAW-Development/0-INATEL-repositorios/0-CI-DIGITAL-INATEL/ci-digital-inatel/CIDI-Modulos/SD112-INTRO-VERILOG/SD112-Task-3/ModelSim/gate_not_tb.v(51): (vlog-2284) Empty $unit scope found.
+-- Compiling package gate_not_tb_v_unit
+-- Compiling module gate_not_tb
+
+Top level modules:
+	gate_not_tb
+
+} {} {}}

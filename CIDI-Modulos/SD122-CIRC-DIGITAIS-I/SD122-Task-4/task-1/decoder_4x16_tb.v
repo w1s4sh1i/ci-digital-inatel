@@ -14,14 +14,14 @@ Data: octuber, 17 2025
 
 `timescale 1 ns / 1 ps;
 
-module decoder_4x16_tb();
+module decoder4x16_tb();
 	
 	localparam DELAY = 10; 
-    reg enable;
-    reg [3:0] binary_in;
-    wire [15:0] decoder_out;
+	reg enable;
+	reg [3:0] binary_in;
+	wire [15:0] decoder_out;
 
-    decoder_4to16 dec_4x16_tb(
+    decoder4x16 UUT (
         .enable(enable),
         .binary_in(binary_in),
         .decoder_out(decoder_out)
@@ -31,14 +31,18 @@ module decoder_4x16_tb();
 			
 		// Specify the VCD file name
 		$dumpfile("CIDI-SD122-A104-1.vcd"); 
-		$dumpvars(0, decoder_4x16_tb); 
+		$dumpvars(0, decoder4x16_tb); 
 		
 		// Editar
-		$display("|Input	|Out	|");
-		$monitor("|%b		|%b		|", in, out); 
+		$display("|Input	|Enable	|Out		 |");
+		$monitor("|%b	|%b	|%b|", 
+			    binary_in, enable, decoder_out); 
 	  
-		enable = 1'b1;
+		enable = 1'b0;
+		#DELAY;
 
+		enable = 1'b1;
+		// for ... binary_in = binary_in + 1'b1;
 		binary_in = 4'h0; 
 		#DELAY;
 		
