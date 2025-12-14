@@ -1,0 +1,178 @@
+$date
+  Fri Dec 12 21:47:31 2025
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$scope module standard $end
+$upscope $end
+$scope module textio $end
+$upscope $end
+$scope module std_logic_1164 $end
+$upscope $end
+$scope module std_logic_arith $end
+$upscope $end
+$scope module std_logic_unsigned $end
+$upscope $end
+$scope module numeric_std $end
+$upscope $end
+$scope module testbench_vhdl_types $end
+$var reg 1 ! clk $end
+$var reg 1 " rst $end
+$var reg 3 # sig_cnt[2:0] $end
+$scope module sigvsvar $end
+$var reg 1 $ clk $end
+$var reg 1 % rst $end
+$var reg 3 & signal_cnt[2:0] $end
+$var reg 3 ' signal_counter[2:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+1!
+1"
+b000 #
+1$
+1%
+b000 &
+b000 '
+#5000000
+0!
+0"
+0$
+0%
+#10000000
+1!
+b001 #
+1$
+b001 &
+b001 '
+#15000000
+0!
+0$
+#20000000
+1!
+b010 #
+1$
+b010 &
+b010 '
+#25000000
+0!
+0$
+#30000000
+1!
+b011 #
+1$
+b011 &
+b011 '
+#35000000
+0!
+0$
+#40000000
+1!
+b100 #
+1$
+b100 &
+b100 '
+#45000000
+0!
+0$
+#50000000
+1!
+b101 #
+1$
+b101 &
+b101 '
+#55000000
+0!
+0$
+#60000000
+1!
+b110 #
+1$
+b110 &
+b110 '
+#65000000
+0!
+0$
+#70000000
+1!
+b111 #
+1$
+b111 &
+b111 '
+#75000000
+0!
+0$
+#80000000
+1!
+b000 #
+1$
+b000 &
+b000 '
+#85000000
+0!
+0$
+#90000000
+1!
+b001 #
+1$
+b001 &
+b001 '
+#95000000
+0!
+0$
+#100000000
+1!
+b010 #
+1$
+b010 &
+b010 '
+#105000000
+0!
+0$
+#110000000
+1!
+b011 #
+1$
+b011 &
+b011 '
+#115000000
+0!
+0$
+#120000000
+1!
+b100 #
+1$
+b100 &
+b100 '
+#125000000
+0!
+0$
+#130000000
+1!
+b101 #
+1$
+b101 &
+b101 '
+#135000000
+0!
+0$
+#140000000
+1!
+b110 #
+1$
+b110 &
+b110 '
+#145000000
+0!
+0$
+#150000000
+1!
+b111 #
+1$
+b111 &
+b111 '

@@ -1,10 +1,11 @@
+-- TASK E-104 (VHDL)
 LIBRARY IEEE;
     USE IEEE.std_logic_1164.ALL;
 
-ENTITY testbench IS
-END ENTITY;
+ENTITY testbench_var_vs_signal IS
+END ENTITY testbench_var_vs_signal;
 
-ARCHITECTURE stimulus OF testbench IS
+ARCHITECTURE stimulus OF testbench_var_vs_signal IS
     COMPONENT var_vs_signal IS
         PORT(
             clk                     : IN std_logic;
@@ -20,14 +21,12 @@ ARCHITECTURE stimulus OF testbench IS
 BEGIN
 
     -- clock generation
-    PROCESS
-    BEGIN
+    PROCESS BEGIN
         WAIT FOR period/2;
         clk <= NOT clk;
     END PROCESS;
 
-    PROCESS
-    BEGIN
+    PROCESS BEGIN
         WAIT FOR 20 ns;
         rst <= '0';
         WAIT;
@@ -40,4 +39,5 @@ BEGIN
             signal_cnt          => sig_cnt,
             variable_cnt        => var_cnt
         );
+	
 END ARCHITECTURE;

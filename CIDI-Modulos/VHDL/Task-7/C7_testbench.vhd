@@ -4,6 +4,8 @@ LIBRARY IEEE;
     USE IEEE.std_logic_unsigned.ALL;
     USE IEEE.numeric_std.ALL;
 
+-- [ ] dual_port_memory
+
 ENTITY testbench_single_port_memory IS
 END ENTITY testbench_single_port_memory;
 

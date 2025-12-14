@@ -1,0 +1,60 @@
+$date
+  Fri Dec 12 19:36:57 2025
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$scope module standard $end
+$upscope $end
+$scope module textio $end
+$upscope $end
+$scope module std_logic_1164 $end
+$upscope $end
+$scope module env $end
+$upscope $end
+$scope module testbench_mux_2x1 $end
+$var reg 1 ! sig_a $end
+$var reg 1 " sig_b $end
+$var reg 1 # sig_sel $end
+$var reg 1 $ sig_out $end
+$scope module eut $end
+$var reg 1 % port_a $end
+$var reg 1 & port_b $end
+$var reg 1 ' selector $end
+$var reg 1 ( mux_out $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+0!
+1"
+0#
+0$
+0%
+1&
+0'
+0(
+#10000000
+1#
+1$
+1'
+1(
+#20000000
+0#
+0$
+0'
+0(
+#30000000
+1#
+1$
+1'
+1(
+#40000000
+0#
+0$
+0'
+0(
+#50000000

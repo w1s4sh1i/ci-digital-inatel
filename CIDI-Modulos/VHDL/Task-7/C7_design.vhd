@@ -1,8 +1,10 @@
--- TASK E-106 (VHDL)
+-- TASK E-107 (VHDL)
 LIBRARY IEEE;
     USE IEEE.std_logic_1164.ALL;
     USE IEEE.numeric_std.ALL;
 
+
+-- [ ] dual_port_memory
 ENTITY single_port_memory IS
     PORT (
 		clk   : IN	std_logic;

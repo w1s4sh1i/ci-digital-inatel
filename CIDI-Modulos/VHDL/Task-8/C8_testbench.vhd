@@ -1,11 +1,12 @@
+-- TASK E-108 (VHDL)
 LIBRARY IEEE;
     USE IEEE.std_logic_1164.ALL;
     USE IEEE.numeric_std.ALL;
   
-ENTITY testbench IS
-END ENTITY testbench;
+ENTITY testbench_real_time_clock IS
+END ENTITY testbench_real_time_clock;
   
-ARCHITECTURE stimulus OF testbench IS
+ARCHITECTURE stimulus OF testbench_real_time_clock IS
     -- component a ser instanciado
     COMPONENT real_time_clock IS
         GENERIC(
@@ -73,6 +74,7 @@ BEGIN
                 tb_set <= '1';
             ELSIF (count_clock_pulse - 1 = 301) THEN -- zera o set no 301° pulso de clock
                 tb_set <= '0';
+			-- Falta um ELSE...
             END IF;
         END IF;
     END PROCESS;

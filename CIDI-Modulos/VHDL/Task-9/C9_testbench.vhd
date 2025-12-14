@@ -1,11 +1,12 @@
+-- TASK E-109 (VHDL)
 LIBRARY IEEE;
     USE IEEE.std_logic_1164.ALL;
     USE IEEE.numeric_std.ALL;
   
-ENTITY testbench IS
-END ENTITY testbench;
+ENTITY testbench_read_stimulus IS
+END ENTITY testbench_read_stimulus;
   
-ARCHITECTURE stimulus OF testbench IS
+ARCHITECTURE stimulus OF testbench_read_stimulus IS
     -- componentes da testbench
     COMPONENT read_stimulus IS
         GENERIC(

@@ -1,5 +1,4 @@
-
-
+-- TASK E-101 (VHDL)
 LIBRARY IEEE;
     USE IEEE.std_logic_1164.ALL;
 
@@ -10,19 +9,21 @@ ENTITY mux_2x1 IS
         selector        : IN std_logic;
         mux_out         : OUT std_logic
     );
-    
+
 END ENTITY mux_2x1;
 
-ARCHITECTURE behavioural OF mux_2x1 IS
-BEGIN
+ARCHITECTURE behavioural OF mux_2x1 IS BEGIN
 
     comb_proc : PROCESS(ALL)
-    BEGIN
-        IF (selector = '0') THEN 
+    
+	BEGIN
+    
+		IF (selector = '0') THEN 
             mux_out <= port_A;
         ELSE
             mux_out <= port_B;
         END IF;
-    END PROCESS comb_proc;
+    
+	END PROCESS comb_proc;
 
 END ARCHITECTURE behavioural;
