@@ -1,0 +1,175 @@
+$date
+	Wed Dec  3 19:26:07 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module adder4b_tb $end
+$var wire 4 ! sum [3:0] $end
+$var wire 1 " cout $end
+$var parameter 32 # DELAY $end
+$var parameter 32 $ WIDTH $end
+$var reg 4 % A [3:0] $end
+$var reg 4 & B [3:0] $end
+$var reg 1 ' cin $end
+$scope module DUT $end
+$var wire 4 ( A [3:0] $end
+$var wire 4 ) B [3:0] $end
+$var wire 1 ' cin $end
+$var wire 4 * wc_out [3:0] $end
+$var wire 4 + sum [3:0] $end
+$var wire 1 " cout $end
+$var parameter 32 , WIDTH $end
+$scope module UUT0 $end
+$var wire 1 - a $end
+$var wire 1 . b $end
+$var wire 1 / cin $end
+$var wire 1 0 cout $end
+$var wire 1 1 sum $end
+$upscope $end
+$scope module UUT1 $end
+$var wire 1 2 a $end
+$var wire 1 3 b $end
+$var wire 1 4 cin $end
+$var wire 1 5 cout $end
+$var wire 1 6 sum $end
+$upscope $end
+$scope module UUT2 $end
+$var wire 1 7 a $end
+$var wire 1 8 b $end
+$var wire 1 9 cin $end
+$var wire 1 : cout $end
+$var wire 1 ; sum $end
+$upscope $end
+$scope module UUT3 $end
+$var wire 1 < a $end
+$var wire 1 = b $end
+$var wire 1 > cin $end
+$var wire 1 " cout $end
+$var wire 1 ? sum $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b100 ,
+b100 $
+b1010 #
+$end
+#0
+$dumpvars
+1?
+1>
+0=
+0<
+0;
+1:
+19
+18
+07
+16
+15
+14
+13
+12
+01
+10
+0/
+1.
+1-
+b1010 +
+b1110 *
+b111 )
+b11 (
+0'
+b111 &
+b11 %
+0"
+b1010 !
+$end
+#10000
+1"
+06
+b0 !
+b0 +
+0?
+08
+02
+17
+1<
+b11 &
+b11 )
+b1101 %
+b1101 (
+#20000
+0"
+1?
+0>
+0:
+1;
+09
+05
+16
+04
+00
+b1111 !
+b1111 +
+11
+0.
+03
+18
+0-
+12
+07
+1/
+b100 &
+b100 )
+b1010 %
+b1010 (
+b1 *
+1'
+#30000
+0;
+06
+0?
+b0 !
+b0 +
+01
+08
+02
+0<
+0/
+b0 &
+b0 )
+b0 %
+b0 (
+b0 *
+0'
+#40000
+1"
+1>
+1:
+19
+15
+14
+10
+06
+0;
+0?
+b0 !
+b0 +
+01
+1.
+13
+18
+1=
+1/
+b1111 &
+b1111 )
+b1111 *
+1'
+#50000

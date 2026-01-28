@@ -1,0 +1,103 @@
+$date
+	Fri Dec  5 11:53:33 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module top_module_tb $end
+$var wire 1 ! D3 $end
+$var wire 1 " D2 $end
+$var wire 1 # D1 $end
+$var wire 1 $ D0 $end
+$var wire 1 % B3 $end
+$var wire 1 & B2 $end
+$var wire 1 ' B1 $end
+$var wire 1 ( B0 $end
+$var parameter 32 ) DELAY $end
+$var reg 1 * A $end
+$var reg 1 + B $end
+$scope module UUT $end
+$var wire 1 * A $end
+$var wire 1 + B $end
+$var wire 1 ! D_out4 $end
+$var wire 1 " D_out3 $end
+$var wire 1 # D_out2 $end
+$var wire 1 $ D_out1 $end
+$var wire 1 % B_out4 $end
+$var wire 1 & B_out3 $end
+$var wire 1 ' B_out2 $end
+$var wire 1 ( B_out1 $end
+$scope module MSC0 $end
+$var wire 1 * A $end
+$var wire 1 + B $end
+$var reg 1 & Borrow $end
+$var reg 1 " D $end
+$upscope $end
+$scope module MSC1 $end
+$var wire 1 * A $end
+$var wire 1 + B $end
+$var reg 1 % Borrow $end
+$var reg 1 ! D $end
+$upscope $end
+$scope module MSR0 $end
+$var wire 1 * A $end
+$var wire 1 + B $end
+$var wire 1 ( Borrow $end
+$var wire 1 $ D $end
+$upscope $end
+$scope module MSR1 $end
+$var wire 1 * A $end
+$var wire 1 + B $end
+$var wire 1 ' Borrow $end
+$var wire 1 # D $end
+$var wire 1 , not_A $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1010 )
+$end
+#0
+$dumpvars
+1,
+0+
+0*
+0(
+0'
+0&
+0%
+0$
+0#
+0"
+0!
+$end
+#10000
+1&
+1"
+1%
+1!
+1$
+1(
+1#
+1'
+1+
+#20000
+0%
+0&
+0,
+0(
+0'
+1*
+0+
+#30000
+0"
+0!
+0$
+0#
+1+
+#40000

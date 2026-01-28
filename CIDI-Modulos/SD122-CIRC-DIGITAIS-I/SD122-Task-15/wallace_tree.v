@@ -1,15 +1,15 @@
 /*
 Program: CI Digital T2/2025
-Class: Circuito Digital 1  
-Class-ID: D122
+Class: Circuito Digitais I
+Class-ID: SD122
 Advisor: Felipe Rocha 
-Devicer-Contact: felipef.rocha@inatel.br
+Advisor-Contact: felipef.rocha@inatel.br
 Institute: INATEL - Santa Rita do Sapucaí / MG  
 Development: André Bezerra 
 Student-Contact: andrefrbezerra@gmail.com
-Task-ID: A115
+Task-ID: A-115
 Type: Laboratory
-Data: november, 17 2025
+Data: november, 21 2025
 */
 
 `timescale 1 ns / 10 ps
@@ -17,9 +17,10 @@ Data: november, 17 2025
 // Versão 1.0
 
 module wallace #(parameter N = 4, M = 8)(
-    //inputs and outputs
-    input  [N-1 : 0] A,B,
+
+    input  [N-1 : 0] A, B,
     output [M-1 : 0] prod
+
 );
     //internal variables.
 	wire s11,s12,s13,s14,s15;

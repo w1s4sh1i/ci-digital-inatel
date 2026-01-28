@@ -1,0 +1,88 @@
+# Compile of contador_bcd.v was successful.
+# Compile of tb_contador_bcd.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.tb_contador_bcd
+# vsim -gui work.tb_contador_bcd 
+# Start time: 21:20:15 on Nov 21,2025
+# Loading work.tb_contador_bcd
+# Loading work.contador_bcd
+add wave -position insertpoint  \
+sim:/tb_contador_bcd/CLK_PERIOD \
+sim:/tb_contador_bcd/clk \
+sim:/tb_contador_bcd/reset \
+sim:/tb_contador_bcd/Q1 \
+sim:/tb_contador_bcd/Q2 \
+sim:/tb_contador_bcd/decimal_value
+run -all
+# Tempo=0 | Reset=1 | Clock=0 | Q2= 0 | Q1= 0 | Decimal= 0
+# Tempo=5000 | Reset=1 | Clock=1 | Q2= 0 | Q1= 0 | Decimal= 0
+# Tempo=10000 | Reset=1 | Clock=0 | Q2= 0 | Q1= 0 | Decimal= 0
+# Tempo=15000 | Reset=1 | Clock=1 | Q2= 0 | Q1= 0 | Decimal= 0
+# Tempo=20000 | Reset=0 | Clock=0 | Q2= 0 | Q1= 0 | Decimal= 0
+# Tempo=25000 | Reset=0 | Clock=1 | Q2= 0 | Q1= 1 | Decimal= 1
+# Tempo=30000 | Reset=0 | Clock=0 | Q2= 0 | Q1= 1 | Decimal= 1
+# Tempo=35000 | Reset=0 | Clock=1 | Q2= 0 | Q1= 2 | Decimal= 2
+# Tempo=40000 | Reset=0 | Clock=0 | Q2= 0 | Q1= 2 | Decimal= 2
+# Tempo=45000 | Reset=0 | Clock=1 | Q2= 0 | Q1= 3 | Decimal= 3
+# Tempo=50000 | Reset=0 | Clock=0 | Q2= 0 | Q1= 3 | Decimal= 3
+# Tempo=55000 | Reset=0 | Clock=1 | Q2= 0 | Q1= 4 | Decimal= 4
+# Tempo=60000 | Reset=0 | Clock=0 | Q2= 0 | Q1= 4 | Decimal= 4
+# Tempo=65000 | Reset=0 | Clock=1 | Q2= 0 | Q1= 5 | Decimal= 5
+# Tempo=70000 | Reset=0 | Clock=0 | Q2= 0 | Q1= 5 | Decimal= 5
+# Tempo=75000 | Reset=0 | Clock=1 | Q2= 0 | Q1= 6 | Decimal= 6
+# Tempo=80000 | Reset=0 | Clock=0 | Q2= 0 | Q1= 6 | Decimal= 6
+# Tempo=85000 | Reset=0 | Clock=1 | Q2= 0 | Q1= 7 | Decimal= 7
+# Tempo=90000 | Reset=0 | Clock=0 | Q2= 0 | Q1= 7 | Decimal= 7
+# Tempo=95000 | Reset=0 | Clock=1 | Q2= 0 | Q1= 8 | Decimal= 8
+# Tempo=100000 | Reset=0 | Clock=0 | Q2= 0 | Q1= 8 | Decimal= 8
+# Tempo=105000 | Reset=0 | Clock=1 | Q2= 0 | Q1= 9 | Decimal= 9
+# Tempo=110000 | Reset=0 | Clock=0 | Q2= 0 | Q1= 9 | Decimal= 9
+# Tempo=115000 | Reset=0 | Clock=1 | Q2= 1 | Q1= 0 | Decimal=10
+# Tempo=120000 | Reset=0 | Clock=0 | Q2= 1 | Q1= 0 | Decimal=10
+# Tempo=125000 | Reset=0 | Clock=1 | Q2= 1 | Q1= 1 | Decimal=11
+# Tempo=130000 | Reset=0 | Clock=0 | Q2= 1 | Q1= 1 | Decimal=11
+# Tempo=135000 | Reset=0 | Clock=1 | Q2= 1 | Q1= 2 | Decimal=12
+# Tempo=140000 | Reset=0 | Clock=0 | Q2= 1 | Q1= 2 | Decimal=12
+# Tempo=145000 | Reset=0 | Clock=1 | Q2= 0 | Q1= 0 | Decimal= 0
+# Tempo=150000 | Reset=0 | Clock=0 | Q2= 0 | Q1= 0 | Decimal= 0
+# Tempo=155000 | Reset=0 | Clock=1 | Q2= 0 | Q1= 1 | Decimal= 1
+# Tempo=160000 | Reset=0 | Clock=0 | Q2= 0 | Q1= 1 | Decimal= 1
+# Tempo=165000 | Reset=0 | Clock=1 | Q2= 0 | Q1= 2 | Decimal= 2
+# Tempo=170000 | Reset=0 | Clock=0 | Q2= 0 | Q1= 2 | Decimal= 2
+# Tempo=175000 | Reset=0 | Clock=1 | Q2= 0 | Q1= 3 | Decimal= 3
+# Tempo=180000 | Reset=0 | Clock=0 | Q2= 0 | Q1= 3 | Decimal= 3
+# Tempo=185000 | Reset=0 | Clock=1 | Q2= 0 | Q1= 4 | Decimal= 4
+# Tempo=190000 | Reset=0 | Clock=0 | Q2= 0 | Q1= 4 | Decimal= 4
+# Tempo=195000 | Reset=0 | Clock=1 | Q2= 0 | Q1= 5 | Decimal= 5
+# Tempo=200000 | Reset=0 | Clock=0 | Q2= 0 | Q1= 5 | Decimal= 5
+# Tempo=205000 | Reset=0 | Clock=1 | Q2= 0 | Q1= 6 | Decimal= 6
+# Tempo=210000 | Reset=0 | Clock=0 | Q2= 0 | Q1= 6 | Decimal= 6
+# Tempo=215000 | Reset=0 | Clock=1 | Q2= 0 | Q1= 7 | Decimal= 7
+# Tempo=220000 | Reset=0 | Clock=0 | Q2= 0 | Q1= 7 | Decimal= 7
+# Tempo=225000 | Reset=0 | Clock=1 | Q2= 0 | Q1= 8 | Decimal= 8
+# Tempo=230000 | Reset=0 | Clock=0 | Q2= 0 | Q1= 8 | Decimal= 8
+# Tempo=235000 | Reset=0 | Clock=1 | Q2= 0 | Q1= 9 | Decimal= 9
+# Tempo=240000 | Reset=0 | Clock=0 | Q2= 0 | Q1= 9 | Decimal= 9
+# Tempo=245000 | Reset=0 | Clock=1 | Q2= 1 | Q1= 0 | Decimal=10
+# Tempo=250000 | Reset=0 | Clock=0 | Q2= 1 | Q1= 0 | Decimal=10
+# Tempo=255000 | Reset=0 | Clock=1 | Q2= 1 | Q1= 1 | Decimal=11
+# Tempo=260000 | Reset=0 | Clock=0 | Q2= 1 | Q1= 1 | Decimal=11
+# Tempo=265000 | Reset=0 | Clock=1 | Q2= 1 | Q1= 2 | Decimal=12
+# Tempo=270000 | Reset=0 | Clock=0 | Q2= 1 | Q1= 2 | Decimal=12
+# Tempo=275000 | Reset=0 | Clock=1 | Q2= 0 | Q1= 0 | Decimal= 0
+# Tempo=280000 | Reset=0 | Clock=0 | Q2= 0 | Q1= 0 | Decimal= 0
+# Tempo=285000 | Reset=0 | Clock=1 | Q2= 0 | Q1= 1 | Decimal= 1
+# Tempo=290000 | Reset=0 | Clock=0 | Q2= 0 | Q1= 1 | Decimal= 1
+# Tempo=295000 | Reset=0 | Clock=1 | Q2= 0 | Q1= 2 | Decimal= 2
+# Tempo=300000 | Reset=0 | Clock=0 | Q2= 0 | Q1= 2 | Decimal= 2
+# Tempo=305000 | Reset=0 | Clock=1 | Q2= 0 | Q1= 3 | Decimal= 3
+# Tempo=310000 | Reset=0 | Clock=0 | Q2= 0 | Q1= 3 | Decimal= 3
+# Tempo=315000 | Reset=0 | Clock=1 | Q2= 0 | Q1= 4 | Decimal= 4
+# ** Note: $finish    : C:/Arquivos/tb_contador_bcd.v(33)
+#    Time: 320 ns  Iteration: 0  Instance: /tb_contador_bcd
+# 1
+# Break in Module tb_contador_bcd at C:/Arquivos/tb_contador_bcd.v line 33
+quit -sim
+# End time: 21:22:43 on Nov 21,2025, Elapsed time: 0:02:28
+# Errors: 0, Warnings: 5
+quit

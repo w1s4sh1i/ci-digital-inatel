@@ -1,0 +1,95 @@
+$date
+	Wed Dec  3 22:12:22 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module carry_look_ahead_adder_tb $end
+$var wire 4 ! S [3:0] $end
+$var wire 1 " Cout $end
+$var parameter 32 # DELAY $end
+$var reg 4 $ A [3:0] $end
+$var reg 4 % B [3:0] $end
+$var reg 1 & Cin $end
+$scope module DUT $end
+$var wire 4 ' A [3:0] $end
+$var wire 4 ( B [3:0] $end
+$var wire 1 & Cin $end
+$var wire 4 ) G [3:0] $end
+$var wire 4 * P [3:0] $end
+$var wire 4 + S [3:0] $end
+$var wire 1 " Cout $end
+$var parameter 32 , N $end
+$var reg 5 - C [4:0] $end
+$var integer 32 . i [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b100 ,
+b1010 #
+$end
+#0
+$dumpvars
+b100 .
+b11110 -
+b1000 +
+b110 *
+b1001 )
+b1101 (
+b1011 '
+0&
+b1101 %
+b1011 $
+1"
+b1000 !
+$end
+#10000
+0"
+b1110 -
+b100 .
+b1 )
+b11 %
+b11 (
+b101 $
+b101 '
+#20000
+0"
+b0 -
+b100 .
+b1111 !
+b1111 +
+b0 )
+b1111 *
+b1 %
+b1 (
+b1110 $
+b1110 '
+#30000
+1"
+b0 !
+b0 +
+b11111 -
+b100 .
+1&
+b110 %
+b110 (
+b1001 $
+b1001 '
+#40000
+b11110 -
+b1110 !
+b1110 +
+b100 .
+b1111 )
+b0 *
+0&
+b1111 %
+b1111 (
+b1111 $
+b1111 '
+#50000

@@ -1,0 +1,21 @@
+# Compile of contador_ascendente_4bits.v was successful.
+# Compile of tb_contador_ascendente_4bits.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.tb_contador_ascendente_4bits
+# vsim -gui work.tb_contador_ascendente_4bits 
+# Start time: 19:20:19 on Nov 21,2025
+# Loading work.tb_contador_ascendente_4bits
+# Loading work.contador_ascendente_4bits
+add wave -position insertpoint  \
+sim:/tb_contador_ascendente_4bits/clk \
+sim:/tb_contador_ascendente_4bits/reset \
+sim:/tb_contador_ascendente_4bits/Q
+run -all
+# ** Note: $finish    : C:/Arquivos/tb_contador_ascendente_4bits.v(14)
+#    Time: 210 ps  Iteration: 0  Instance: /tb_contador_ascendente_4bits
+# 1
+# Break in Module tb_contador_ascendente_4bits at C:/Arquivos/tb_contador_ascendente_4bits.v line 14
+quit -sim
+# End time: 19:23:40 on Nov 21,2025, Elapsed time: 0:03:21
+# Errors: 0, Warnings: 5
+quit

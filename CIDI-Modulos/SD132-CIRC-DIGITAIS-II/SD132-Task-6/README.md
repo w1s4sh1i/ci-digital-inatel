@@ -2,14 +2,7 @@
 
 > Conteúdo descritivo e analítico
 
-:white_check_mark:
-
-
-- 
-
-
-​:white_check_mark: 
-
+:white_check_mark: Máquinas de Estado - Mealy 
 
 ## Executar
 
@@ -38,6 +31,6 @@ $ do execute-task.do
 
 ## Results
 
-![](CID-SD132-A206-wave.png)
+![Máquinas de Estado - Mealy](CID-SD132-A206-1-wave.png)
 
 [> Google Drive - General Report](https://docs.google.com/document/d/1ONek1qarL9ffCkK64y7RGFRO1fsGOx6Uon5N0k2VMTU/)

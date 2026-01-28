@@ -1,0 +1,136 @@
+$date
+	Fri Dec  5 10:44:41 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module adder_bcd_tb $end
+$var wire 4 ! S [3:0] $end
+$var wire 1 " Cout $end
+$var parameter 32 # DELAY $end
+$var reg 4 $ A [3:0] $end
+$var reg 4 % B [3:0] $end
+$var reg 1 & Cin $end
+$scope module DUT $end
+$var wire 4 ' A [3:0] $end
+$var wire 4 ( B [3:0] $end
+$var wire 1 & Cin $end
+$var wire 1 " Cout $end
+$var wire 1 ) adjust $end
+$var wire 4 * sum [3:0] $end
+$var wire 1 + carry_out $end
+$var wire 4 , S [3:0] $end
+$scope module somador $end
+$var wire 4 - A [3:0] $end
+$var wire 4 . B [3:0] $end
+$var wire 1 & Cin $end
+$var wire 4 / S [3:0] $end
+$var wire 1 + Cout $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1010 #
+$end
+#0
+$dumpvars
+b0 /
+b0 .
+b0 -
+b0 ,
+0+
+b0 *
+0)
+b0 (
+b0 '
+0&
+b0 %
+b0 $
+0"
+b0 !
+$end
+#10000
+b101 !
+b101 ,
+1"
+1)
+b1111 *
+b1111 /
+b1001 %
+b1001 (
+b1001 .
+b110 $
+b110 '
+b110 -
+#20000
+1+
+b111 !
+b111 ,
+1"
+1)
+b1 *
+b1 /
+1&
+b11 %
+b11 (
+b11 .
+b11 $
+b11 '
+b11 -
+#30000
+b1 !
+b1 ,
+0"
+0)
+0+
+0&
+b101 %
+b101 (
+b101 .
+b100 $
+b100 '
+b100 -
+#40000
+b111 !
+b111 ,
+1"
+1)
+1+
+1&
+b1001 %
+b1001 (
+b1001 .
+b1001 $
+b1001 '
+b1001 -
+#50000
+0+
+b0 !
+b0 ,
+b1010 *
+b1010 /
+0&
+b10 %
+b10 (
+b10 .
+b1000 $
+b1000 '
+b1000 -
+#60000
+b110 !
+b110 ,
+1+
+b0 *
+b0 /
+b1001 %
+b1001 (
+b1001 .
+b1001 $
+b1001 '
+b1001 -
+#70000

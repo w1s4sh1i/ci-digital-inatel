@@ -1,4 +1,4 @@
-# Atividade A-210 / SD-132
+# Atividade A-208 / SD-132
 
 > Conteúdo descritivo e analítico
 
@@ -6,14 +6,9 @@
 
 :white_check_mark: Descrever passo a passo como funciona o algoritmo Shift-and-Add para multiplicação binária.
 
-- 
-
 :white_check_mark: Explicar o papel dos sinais Ad, Sh, Load, Done, St e M.
 
-- 
-
 > Faça o passo a passo do algoritmo Shift-and-Add para as seguintes multiplicações:
-
 
 :white_check_mark: Multiplicando = 9 e Multiplicador = 7;
 
@@ -30,9 +25,9 @@
 ### GTKwave
 
 ```
-$ vvp CIDI-SD132-A210
+$ vvp CIDI-SD132-A208
 
-$ gtkwave CIDI-SD132-A210.vcd
+$ gtkwave CIDI-SD132-A208.vcd
 ```
 
 ### ModelSim
@@ -48,13 +43,13 @@ $ do execute-task.do
 
 > Ferramenta utilizada [Draw.io]();
 
-![Esquemático - 1](CID-SD132-A210-1-schematic.png)
+![Esquemático - 1](CID-SD132-A208-1-schematic.png)
 
 ## Results
 
-![Multiplicador Shift-Add - 1](CID-SD132-A210-1-wave.png)
-![Multiplicador Shift-Add - 2](CID-SD132-A210-2-wave.png)
-![Multiplicador Shift-Add - 3](CID-SD132-A210-3-wave.png)
+![Multiplicador Shift-Add - 1](CID-SD132-A208-1-wave.png)
+![Multiplicador Shift-Add - 2](CID-SD132-A208-2-wave.png)
+![Multiplicador Shift-Add - 3](CID-SD132-A208-3-wave.png)
 
 
 

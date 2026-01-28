@@ -1,0 +1,57 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/20.1
+vcontador_ascendente_4bits
+Z0 !s110 1763763581
+!i10b 1
+!s100 jNUcCL>@S1i_SR;hU;5_b0
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IoWBFiIU=f41ZDY]lfig7<0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dC:/Projeto
+w1763763346
+8C:/Arquivos/contador_ascendente_4bits.v
+FC:/Arquivos/contador_ascendente_4bits.v
+!i122 0
+L0 1 38
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1763763581.000000
+!s107 C:/Arquivos/contador_ascendente_4bits.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Arquivos/contador_ascendente_4bits.v|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+vtb_contador_ascendente_4bits
+R0
+!i10b 1
+!s100 jQZM2[5VKJm60P0cnU==e2
+R1
+IAVo8?a28NP81VaUg=c[b>0
+R2
+R3
+w1763763413
+8C:/Arquivos/tb_contador_ascendente_4bits.v
+FC:/Arquivos/tb_contador_ascendente_4bits.v
+!i122 1
+L0 1 18
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Arquivos/tb_contador_ascendente_4bits.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Arquivos/tb_contador_ascendente_4bits.v|
+!i113 1
+R6
+R7

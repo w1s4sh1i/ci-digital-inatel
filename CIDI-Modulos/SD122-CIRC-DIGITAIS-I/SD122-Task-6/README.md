@@ -8,9 +8,6 @@
 - 
 
 
-​:white_check_mark: 
-
-
 ## Executar
 
 > Comandos para analisar / testar comportamento dos módulos:  
@@ -18,9 +15,9 @@
 ### GTKwave
 
 ```
-$ vvp CIDI-SD122-A106
+$ vvp CIDI-SD122-A106-<...>
 
-$ gtkwave CIDI-SD122-A106.vcd
+$ gtkwave CIDI-SD122-A106-<...>.vcd
 ```
 
 ### ModelSim
@@ -38,6 +35,8 @@ $ do execute-task.do
 
 ## Results
 
-![](CID-SD122-A106-wave.png)
+![](CID-SD122-A106-1-wave.png)
+![](CID-SD122-A106-2-wave.png)
+![](CID-SD122-A106-3-wave.png)
 
 [> Google Drive - General Report](https://docs.google.com/document/d/1XcMPJY77fL6TMtBvcFznFPcfbmsb3IuBN67DL6YdwVo)

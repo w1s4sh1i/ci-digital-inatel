@@ -1,15 +1,15 @@
 /*
 Program: CI Digital T2/2025
-Class: Circuito Digital 1  
+Class: Circuito Digitais I
 Class-ID: SD122
 Advisor: Felipe Rocha 
-Devicer-Contact: felipef.rocha@inatel.br
+Advisor-Contact: felipef.rocha@inatel.br
 Institute: INATEL - Santa Rita do Sapucaí / MG  
 Development: André Bezerra 
 Student-Contact: andrefrbezerra@gmail.com
-Task-ID: A115
-Type: Testbench
-Data: november, 17 2025
+Task-ID: A-115
+Type: Laboratory
+Data: november, 21 2025
 */
 
 `timescale 1 ns / 10 ps
@@ -34,13 +34,17 @@ module wallace_tb;
 	);
 
 	initial begin
-
+	
 		$dumpfile("CIDI-SD122-A115-wallace.vcd"); 
 		$dumpvars(0, wallace_tb); 	
 		
 		$display("|A	|B	|PROD		|");
 		$monitor("|%b 	|%b	|%b	|", A, B, prod);
-		
+	
+	end
+	
+	initial begin
+
 		// Apply inputs for the whole range of A and B.
 		error = 0;
 		

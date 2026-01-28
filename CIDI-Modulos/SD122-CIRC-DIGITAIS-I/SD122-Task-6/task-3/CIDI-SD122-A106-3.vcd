@@ -1,0 +1,79 @@
+$date
+	Fri Nov 28 16:41:09 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module demux1xn_tb $end
+$var wire 8 ! Y [7:0] $end
+$var parameter 32 " DELAY $end
+$var parameter 32 # M $end
+$var parameter 32 $ N $end
+$var reg 1 % D $end
+$var reg 3 & S [2:0] $end
+$scope module dmux $end
+$var wire 1 % D $end
+$var wire 3 ' S [2:0] $end
+$var parameter 32 ( N $end
+$var reg 8 ) Y [7:0] $end
+$var integer 32 * i [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1000 (
+b1000 $
+b11 #
+b1010 "
+$end
+#0
+$dumpvars
+b1000 *
+b0 )
+b0 '
+b0 &
+0%
+b0 !
+$end
+#10000
+b1000 *
+b1 &
+b1 '
+#20000
+b1000 *
+b10 &
+b10 '
+#30000
+b1000 *
+b11 &
+b11 '
+#40000
+b1 !
+b1 )
+b1000 *
+b0 &
+b0 '
+1%
+#50000
+b10 !
+b10 )
+b1000 *
+b1 &
+b1 '
+#60000
+b100 !
+b100 )
+b1000 *
+b10 &
+b10 '
+#70000
+b1000 !
+b1000 )
+b1000 *
+b11 &
+b11 '
+#80000

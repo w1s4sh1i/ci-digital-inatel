@@ -1,0 +1,22 @@
+# Compile of contador_descendente_5bits.v was successful.
+# Compile of tb_contador_descendente_5bits.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.tb_contador_descendente_5bits
+# vsim -gui work.tb_contador_descendente_5bits 
+# Start time: 19:02:39 on Nov 21,2025
+# Loading work.tb_contador_descendente_5bits
+# Loading work.contador_descendente_5bits
+add wave -position insertpoint  \
+sim:/tb_contador_descendente_5bits/clk \
+sim:/tb_contador_descendente_5bits/reset \
+sim:/tb_contador_descendente_5bits/Q
+# Load canceled
+run -all
+# ** Note: $finish    : C:/Arquivos/tb_contador_descendente_5bits.v(19)
+#    Time: 210 ps  Iteration: 0  Instance: /tb_contador_descendente_5bits
+# 1
+# Break in Module tb_contador_descendente_5bits at C:/Arquivos/tb_contador_descendente_5bits.v line 19
+quit -sim
+# End time: 19:08:57 on Nov 21,2025, Elapsed time: 0:06:18
+# Errors: 0, Warnings: 5
+quit

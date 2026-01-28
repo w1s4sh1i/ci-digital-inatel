@@ -1,0 +1,153 @@
+$date
+	Fri Dec  5 12:17:22 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module subtrator_tb $end
+$var wire 1 ! D2 $end
+$var wire 1 " D1 $end
+$var wire 1 # D0 $end
+$var wire 1 $ B2 $end
+$var wire 1 % B1 $end
+$var wire 1 & B0 $end
+$var parameter 32 ' DELAY $end
+$var reg 1 ( A $end
+$var reg 1 ) B $end
+$var reg 1 * BorrowIn $end
+$scope module DUT $end
+$var wire 1 ( A $end
+$var wire 1 ) B $end
+$var wire 1 * BorrowIn $end
+$var wire 1 ! D_3 $end
+$var wire 1 " D_2 $end
+$var wire 1 # D_1 $end
+$var wire 1 $ BorrowOut_3 $end
+$var wire 1 % BorrowOut_2 $end
+$var wire 1 & BorrowOut_1 $end
+$scope module sub1 $end
+$var wire 1 ( A $end
+$var wire 1 ) B $end
+$var wire 1 * BorrowIn $end
+$var wire 1 & BorrowOut $end
+$var wire 1 # D $end
+$upscope $end
+$scope module sub2 $end
+$var wire 1 ( A $end
+$var wire 1 ) B $end
+$var wire 1 * BorrowIn $end
+$var wire 1 % BorrowOut $end
+$var wire 1 " D $end
+$var wire 1 + w1 $end
+$var wire 1 , w2 $end
+$var wire 1 - w3 $end
+$var wire 1 . w4 $end
+$var wire 1 / w5 $end
+$var wire 1 0 w6 $end
+$upscope $end
+$scope module sub3 $end
+$var wire 1 ( A $end
+$var wire 1 ) B $end
+$var wire 1 * BorrowIn $end
+$var reg 1 $ BorrowOut $end
+$var reg 1 ! D $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1010 '
+$end
+#0
+$dumpvars
+00
+1/
+0.
+0-
+1,
+0+
+0*
+0)
+0(
+0&
+0%
+0$
+0#
+0"
+0!
+$end
+#10000
+1$
+1!
+1#
+1&
+1"
+1%
+0/
+1+
+1-
+1.
+1)
+#20000
+0$
+0&
+0%
+0,
+0-
+1(
+0)
+#30000
+0!
+0#
+0"
+1/
+0+
+0.
+1)
+#40000
+1$
+1!
+1&
+1%
+1,
+1#
+1"
+10
+0(
+0)
+1*
+#50000
+0!
+00
+0#
+0"
+0/
+1+
+1-
+1.
+1)
+#60000
+0$
+0&
+0%
+0,
+0-
+1(
+0)
+#70000
+1$
+1!
+1&
+1%
+10
+1#
+1"
+1/
+0+
+0.
+1)
+#80000

@@ -1,0 +1,113 @@
+$date
+	Fri Dec  5 16:24:17 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module ula_tb $end
+$var wire 4 ! resultado [3:0] $end
+$var wire 1 " carry_out $end
+$var wire 1 # Z $end
+$var parameter 32 $ DELAY $end
+$var reg 4 % A [3:0] $end
+$var reg 4 & B [3:0] $end
+$var reg 1 ' cin $end
+$var reg 3 ( seletor [2:0] $end
+$scope module DUT $end
+$var wire 4 ) A [3:0] $end
+$var wire 4 * B [3:0] $end
+$var wire 1 ' carry_in $end
+$var wire 3 + seletor [2:0] $end
+$var wire 1 # Z $end
+$var reg 1 " carry_out $end
+$var reg 4 , resultado [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1010 $
+$end
+#0
+$dumpvars
+b0 ,
+b100 +
+b0 *
+b0 )
+b100 (
+0'
+b0 &
+b0 %
+1#
+0"
+b0 !
+$end
+#10000
+0#
+b10 !
+b10 ,
+b1 &
+b1 *
+b1 %
+b1 )
+#20000
+0#
+b1000 !
+b1000 ,
+b101 &
+b101 *
+b11 %
+b11 )
+#30000
+1"
+1#
+b0 !
+b0 ,
+b1010 %
+b1010 )
+1'
+#40000
+0#
+b1111 !
+b1111 ,
+1"
+b1111 &
+b1111 *
+b1111 %
+b1111 )
+#50000
+0#
+b1000 !
+b1000 ,
+0"
+b1100 &
+b1100 *
+b1010 %
+b1010 )
+b0 (
+b0 +
+#60000
+0#
+b111 !
+b111 ,
+b101 &
+b101 *
+b11 %
+b11 )
+b1 (
+b1 +
+#70000
+1"
+0#
+b100 !
+b100 ,
+b100 &
+b100 *
+b1001 %
+b1001 )
+b101 (
+b101 +
+#80000

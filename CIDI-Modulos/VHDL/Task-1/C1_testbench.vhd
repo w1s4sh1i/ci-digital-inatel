@@ -42,19 +42,19 @@ BEGIN
 	sig_B <= '1'; 
 
 	sig_sel <= '0';
-        WAIT FOR 10 ns;
+    WAIT FOR 10 ns;
         
 	sig_sel <= '1';
-        WAIT FOR 10 ns;
+    WAIT FOR 10 ns;
 
 	sig_sel <= '0';
-        WAIT FOR 10 ns;
+    WAIT FOR 10 ns;
  
 	sig_sel <= '1';
-        WAIT FOR 10 ns;
+    WAIT FOR 10 ns;
 	
 	sig_sel <= '0';
-        WAIT FOR 10 ns;
+    WAIT FOR 10 ns;
         
 	wait; -- Analisar 'finish' ou usar 'wait': aguardar todo processo.
     END PROCESS;

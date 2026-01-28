@@ -17,10 +17,8 @@ Data: november, 26 2025
 module mult4x4_tb;
 
 	localparam DELAY = 1; 
-	reg clk;
-	reg St;
-	reg [3:0] Mplier;
-	reg [3:0] Mcand;
+	reg clk, St;
+	reg [3:0] Mplier, Mcand;
 	
 	wire Done;
 	wire [8:0] ACC;
@@ -29,6 +27,16 @@ module mult4x4_tb;
 		.clk(clk), .St(St), .Mplier(Mplier), .Mcand(Mcand),
 		.Done(Done), .ACC(ACC)
 	);
+	initial begin
+		// Specify the VCD file name
+		$dumpfile("CIDI-SD132-A208-2.vcd"); 
+		$dumpvars(0, mult4x4_tb); 
+		
+		// Editar
+		$display("|ST |Mplier	|Mcand	|Done	|ACC		|");
+		$monitor("|%b	|%b  |%b	|%b	|%b	|", St, Mplier, Mcand, Done, ACC ); 
+	
+	end
 	
 	always #DELAY clk = ~clk; 
 
@@ -41,18 +49,6 @@ module mult4x4_tb;
 		#(DELAY*15); 
 
 		$finish; 
-	end
-	
-	initial begin
-		// Specify the VCD file name
-		$dumpfile("CIDI-SD132-A208-1.vcd"); 
-		$dumpvars(0, mult4x4_tb); 
-		
-		// Editar
-		$display("|Clock  |ST |Mplier	|Mcand	|Done	|ACC		|");
-		$monitor("|%b	|%b  |%b	|%b	|%b	|%b	|", 
-			  clk, St, Mplier, Mcand, Done, ACC
-		); 
 	end
 	
 endmodule

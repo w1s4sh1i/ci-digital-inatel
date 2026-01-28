@@ -2,13 +2,12 @@
 
 > Conteúdo descritivo e analítico
 
+> Somador com carry look-ahead​
+ ​
 :white_check_mark:
 
 
 - 
-
-
-​:white_check_mark: 
 
 
 ## Executar
@@ -38,6 +37,9 @@ $ do execute-task.do
 
 ## Results
 
-![](CID-SD122-A109-wave.png)
+![Somador com carry look-ahead​ - 1](CID-SD122-A109-1-wave.png)
+![Somador com carry look-ahead​ - 2](CID-SD122-A109-2-wave.png)
+![Somador com carry look-ahead​ - 3](CID-SD122-A109-3-wave.png)
+![Somador com carry look-ahead​ - 4](CID-SD122-A109-4-wave.png)
 
 [> Google Drive - General Report](https://docs.google.com/document/d/1XcMPJY77fL6TMtBvcFznFPcfbmsb3IuBN67DL6YdwVo)

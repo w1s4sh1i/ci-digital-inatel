@@ -1,0 +1,82 @@
+$date
+	Sat Dec  6 06:09:01 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module registrador_8bits_tb $end
+$var wire 8 ! q [7:0] $end
+$var parameter 32 " DELAY $end
+$var reg 1 # clk $end
+$var reg 8 $ d [7:0] $end
+$var reg 1 % rst_n $end
+$scope module DUT $end
+$var wire 1 # clk $end
+$var wire 8 & d [7:0] $end
+$var wire 1 % rst_n $end
+$var reg 8 ' q [7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1010 "
+$end
+#0
+$dumpvars
+b0 '
+b0 &
+0%
+b0 $
+0#
+b0 !
+$end
+#5000
+1#
+#10000
+0#
+1%
+#15000
+1#
+#20000
+0#
+b10101010 $
+b10101010 &
+#25000
+b10101010 !
+b10101010 '
+1#
+#30000
+0#
+b1010101 $
+b1010101 &
+#35000
+b1010101 !
+b1010101 '
+1#
+#40000
+0#
+b11111111 $
+b11111111 &
+#45000
+b11111111 !
+b11111111 '
+1#
+#50000
+b0 !
+b0 '
+0#
+0%
+#55000
+1#
+#60000
+0#
+b0 $
+b0 &
+#65000
+1#
+#70000
+0#

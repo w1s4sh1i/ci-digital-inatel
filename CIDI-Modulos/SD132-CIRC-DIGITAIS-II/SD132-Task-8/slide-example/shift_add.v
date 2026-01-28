@@ -1,6 +1,6 @@
 /*
 Program: CI Digital T2/2025
-Class: Introdução à Verilog  
+Class: Circuito Digitais I
 Class-ID: SD132
 Advisor: Felipe Rocha 
 Advisor-Contact: felipef.rocha@inatel.br
@@ -15,10 +15,8 @@ Data: november, 26 2025
 `timescale 1 ns / 1 ps;
 
 module mult4x4 ( // #(paramter N = 4, M = 4)( 
-	input clk,
-	input St,
-	input [3:0] Mplier, // Multiplicador (4)
-	input [3:0] Mcand,  // Multiplicando (4)
+	input clk, St,
+	input [3:0] Mplier, Mcand,
 	output Done,
 	output reg [8:0] ACC // Acumulador (produto parcial + multiplicador)
 );
@@ -29,7 +27,7 @@ module mult4x4 ( // #(paramter N = 4, M = 4)(
 	assign M = ACC[0];
 	
 	// Estado final indica conclusão
-	assign Done = (State == 9) ? 1'b1 : 1'b0;
+	assign Done = (State == 9) ? 1'b1 : 1'b0; // (State == 9) 
 	
 	initial begin
 		State = 4'd0;

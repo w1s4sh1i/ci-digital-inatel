@@ -1,17 +1,16 @@
 /*
 Program: CI Digital T2/2025
-Class: Circuito Digital 1  
+Class: Circuito Digitais I
 Class-ID: SD122
 Advisor: Felipe Rocha 
-Devicer-Contact: felipef.rocha@inatel.br
+Advisor-Contact: felipef.rocha@inatel.br
 Institute: INATEL - Santa Rita do Sapucaí / MG  
 Development: André Bezerra 
 Student-Contact: andrefrbezerra@gmail.com
-Task-ID: A115
+Task-ID: A-115
 Type: Laboratory
-Data: november, 17 2025
+Data: november, 21 2025
 */
-
 `timescale 1 ns / 10 ps
 
 // Versão 2.0 
@@ -30,13 +29,13 @@ module wallace #(parameter N = 4, M = 8)(
 
 );
     //internal variables.
-	wire s11, s12, s13, s14, s15; 		// [4:0] s1 
-	wire s22, s23, s24, s25, s26; 		// [4:0] s2
-	wire s32, s33, s34, s35, s36, s37; 	// [5:0] s3 // s33 
-    wire c11, c12, c13, c14, c15;		// [4:0] c1
-	wire c22, c23, c24, c25, c26;		// [4:0] c2
-	wire c32, c33, c34, c35, c36, c37;	// [5:0] c3 // c33
-    wire [6:0] p0,p1,p2,p3;				// [6:0] p[3:0]  
+	wire s11, s12, s13, s14, s15; 		// s1 [0:4]  
+	wire s22, s23, s24, s25, s26; 		// s2 [0:4] 
+	wire s32, s33, s34, s35, s36, s37; 	// s3 [0:5] // s33 
+    wire c11, c12, c13, c14, c15;		// c1 [0:4] 
+	wire c22, c23, c24, c25, c26;		// c2 [0:4] 
+	wire c32, c33, c34, c35, c36, c37;	// c3 [0:5] // c33
+    wire [6:0] p0,p1,p2,p3;				// [6:0] p [0:3]  
 
 	//initialize the p's
 	/*	genvar i; 

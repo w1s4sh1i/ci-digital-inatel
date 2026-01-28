@@ -1,0 +1,6 @@
+O primeiro byte enviado é o endereço (7 bits) incrementado de um bit R/W. O segundo byte enviado é o valor introduzido para o ponteiro de endereço interno do slave.
+
+Para ler um registo específico no slave, o Master deve definir o ponteiro de endereço interno do slave, escrevendo o endereço do slave anexado com o bit R/W alto. O próximo byte enviado é o valor que o ponteiro de endereço interno deve ter.
+Agora o Master deve enviar um outro start porque o Master vai ler desta vez.
+
+

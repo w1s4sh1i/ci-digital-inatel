@@ -2,13 +2,11 @@
 
 > Conteúdo descritivo e analítico
 
-:white_check_mark:
+> Somadores BCD​
 
+:white_check_mark: ​ Implementação de​​ ​circuito​ ​somador​ ​BCD​;
 
 - 
-
-
-​:white_check_mark: 
 
 
 ## Executar
@@ -38,6 +36,7 @@ $ do execute-task.do
 
 ## Results
 
-![](CID-SD122-A110-wave.png)
+![Somadores BCD​ - 1](CID-SD122-A110-1-wave.png)
+![Somadores BCD​ - 2](CID-SD122-A110-2-wave.png)
 
 [> Google Drive - General Report](https://docs.google.com/document/d/1XcMPJY77fL6TMtBvcFznFPcfbmsb3IuBN67DL6YdwVo)

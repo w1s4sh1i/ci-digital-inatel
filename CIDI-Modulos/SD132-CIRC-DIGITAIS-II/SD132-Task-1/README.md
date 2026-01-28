@@ -4,11 +4,7 @@
 
 :white_check_mark:
 
-
 - 
-
-
-​:white_check_mark: 
 
 
 ## Executar
@@ -38,6 +34,8 @@ $ do execute-task.do
 
 ## Results
 
-![](CID-SD132-A201-wave.png)
+![](CID-SD132-A201-1-wave.png)
+![](CID-SD132-A201-2-wave.png)
+![](CID-SD132-A201-3-wave.png)
 
 [> Google Drive - General Report](https://docs.google.com/document/d/1ONek1qarL9ffCkK64y7RGFRO1fsGOx6Uon5N0k2VMTU/)

@@ -1,0 +1,261 @@
+$date
+	Fri Dec  5 13:14:31 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module sum_sub_4bits_tb $end
+$var wire 4 ! result [3:0] $end
+$var wire 1 " carry_out $end
+$var parameter 32 # DELAY $end
+$var parameter 32 $ WIDTH $end
+$var reg 4 % a [3:0] $end
+$var reg 4 & b [3:0] $end
+$var reg 1 ' sub $end
+$var integer 32 ( i [31:0] $end
+$var integer 32 ) j [31:0] $end
+$var integer 32 * k [31:0] $end
+$scope module UUT $end
+$var wire 4 + a [3:0] $end
+$var wire 4 , b [3:0] $end
+$var wire 1 ' sub $end
+$var reg 1 " carry_out $end
+$var reg 4 - result [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b100 $
+b101 #
+$end
+#0
+$dumpvars
+b0 -
+b0 ,
+b0 +
+b0 *
+b0 )
+b0 (
+0'
+b0 &
+b0 %
+0"
+b0 !
+$end
+#5000
+b10 !
+b10 -
+1'
+b1 *
+#10000
+b1 !
+b1 -
+0'
+b1 &
+b1 ,
+b1 )
+b0 *
+#15000
+b11 !
+b11 -
+1'
+b1 *
+#20000
+b10 !
+b10 -
+0'
+b10 &
+b10 ,
+b10 )
+b0 *
+#25000
+b100 !
+b100 -
+1'
+b1 *
+#30000
+b11 !
+b11 -
+0'
+b11 &
+b11 ,
+b11 )
+b0 *
+#35000
+b101 !
+b101 -
+1'
+b1 *
+#40000
+b1 !
+b1 -
+0'
+b0 &
+b0 ,
+b1 %
+b1 +
+b1 (
+b0 )
+b0 *
+#45000
+b11 !
+b11 -
+1'
+b1 *
+#50000
+b10 !
+b10 -
+0'
+b1 &
+b1 ,
+b1 )
+b0 *
+#55000
+b100 !
+b100 -
+1'
+b1 *
+#60000
+b11 !
+b11 -
+0'
+b10 &
+b10 ,
+b10 )
+b0 *
+#65000
+b101 !
+b101 -
+1'
+b1 *
+#70000
+b100 !
+b100 -
+0'
+b11 &
+b11 ,
+b11 )
+b0 *
+#75000
+b110 !
+b110 -
+1'
+b1 *
+#80000
+b10 !
+b10 -
+0'
+b0 &
+b0 ,
+b10 %
+b10 +
+b10 (
+b0 )
+b0 *
+#85000
+b100 !
+b100 -
+1'
+b1 *
+#90000
+b11 !
+b11 -
+0'
+b1 &
+b1 ,
+b1 )
+b0 *
+#95000
+b101 !
+b101 -
+1'
+b1 *
+#100000
+b100 !
+b100 -
+0'
+b10 &
+b10 ,
+b10 )
+b0 *
+#105000
+b110 !
+b110 -
+1'
+b1 *
+#110000
+b101 !
+b101 -
+0'
+b11 &
+b11 ,
+b11 )
+b0 *
+#115000
+b111 !
+b111 -
+1'
+b1 *
+#120000
+b11 !
+b11 -
+0'
+b0 &
+b0 ,
+b11 %
+b11 +
+b11 (
+b0 )
+b0 *
+#125000
+b101 !
+b101 -
+1'
+b1 *
+#130000
+b100 !
+b100 -
+0'
+b1 &
+b1 ,
+b1 )
+b0 *
+#135000
+b110 !
+b110 -
+1'
+b1 *
+#140000
+b101 !
+b101 -
+0'
+b10 &
+b10 ,
+b10 )
+b0 *
+#145000
+b111 !
+b111 -
+1'
+b1 *
+#150000
+b110 !
+b110 -
+0'
+b11 &
+b11 ,
+b11 )
+b0 *
+#155000
+b1000 !
+b1000 -
+1'
+b1 *
+#160000
+b100 (
+b100 )
+b10 *

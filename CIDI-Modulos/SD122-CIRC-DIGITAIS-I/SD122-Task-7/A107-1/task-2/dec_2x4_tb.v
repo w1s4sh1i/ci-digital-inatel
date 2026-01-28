@@ -1,6 +1,6 @@
 /*
 Program: CI Digital T2/2025
-Class: Introdução à Verilog  
+Class: Circuito Digitais I 
 Class-ID: SD122
 Advisor: Felipe Rocha 
 Advisor-Contact: felipef.rocha@inatel.br

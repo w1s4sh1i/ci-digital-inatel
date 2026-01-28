@@ -1,4 +1,9 @@
 # Folder Path 
+# Command: make CLASS= ... 
+
+# TODO:
+# [ ] Definir Arquivos de depuração na pasta ICARUS; 
+ 
 #mkfile_path := $(abspath $(lastword $(MAKEFILE_LIST)))
 #current_dir := $(notdir $(patsubst %/,%,$(dir $(mkfile_path))))
 
@@ -42,7 +47,7 @@ compile:
 	@mkdir -p $(TASK_DIR)/$(WAVES_DIR)
 	$(GHDL_CMD) -a $(GHDL_FLAGS) $(TASK_DIR)/$(I) $(TASK_DIR)/$(T) 
 	$(GHDL_CMD) -e $(GHDL_FLAGS) $(E)
-	# task < 9, 9 não tem sinais
+	# OBS: task 9 - não tem sinais
 	$(GHDL_CMD) -r $(GHDL_FLAGS) $(E) --vcd=$(TASK_DIR)/$(WAVES_DIR)/$(E).vcd --wave=$(TASK_DIR)/$(WAVES_DIR)/$(E).ghw --stop-time=$(S_TIME)
 	@gtkwave $(TASK_DIR)/$(WAVES_DIR)/$(E).ghw & 
 	@rm *.cf

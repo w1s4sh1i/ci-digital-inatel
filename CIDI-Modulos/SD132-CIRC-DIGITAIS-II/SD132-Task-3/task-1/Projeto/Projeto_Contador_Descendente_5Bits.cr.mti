@@ -1,0 +1,15 @@
+C:/Arquivos/contador_descendente_5bits.v {1 {vlog -work work -stats=none C:/Arquivos/contador_descendente_5bits.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module contador_descendente_5bits
+
+Top level modules:
+	contador_descendente_5bits
+
+} {} {}} C:/Arquivos/tb_contador_descendente_5bits.v {1 {vlog -work work -stats=none C:/Arquivos/tb_contador_descendente_5bits.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module tb_contador_descendente_5bits
+
+Top level modules:
+	tb_contador_descendente_5bits
+
+} {} {}}

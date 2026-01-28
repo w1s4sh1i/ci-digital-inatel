@@ -2,14 +2,13 @@
 
 > Conteúdo descritivo e analítico
 
-:white_check_mark:
+>  Meio subtrator, subtrator completo​ e  ​Subtrator paralelo e Somador-subtrator​
 
+:white_check_mark: Testbench para testar as 4 descrições fornecidas para o​ circuito meio subtrator.
 
-- 
+:white_check_mark: Testbench para testar as 3 descrições fornecidas para o​ circuito subtrator completo.​
 
-
-​:white_check_mark: 
-
+:white_check_mark: Implementar um circuito subtrator de 4-bits baseado em complemento de 2.
 
 ## Executar
 
@@ -38,6 +37,9 @@ $ do execute-task.do
 
 ## Results
 
-![](CID-SD122-A111-wave.png)
+![Meio subtrator - 1](CID-SD122-A111-1-wave.png)
+![Subtrator completo​ - 2](CID-SD122-A111-2-wave.png)
+![Somador-subtrator - 3](CID-SD122-A111-1-wave.png)
+![Somador-subtrator - 4](CID-SD122-A111-1-wave.png)
 
 [> Google Drive - General Report](https://docs.google.com/document/d/1XcMPJY77fL6TMtBvcFznFPcfbmsb3IuBN67DL6YdwVo)

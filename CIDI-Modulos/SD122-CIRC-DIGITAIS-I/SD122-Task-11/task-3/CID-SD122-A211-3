@@ -1,0 +1,106 @@
+#! /usr/local/bin/vvp
+:ivl_version "12.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 12;
+:vpi_module "/usr/local/lib/ivl/system.vpi";
+:vpi_module "/usr/local/lib/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/local/lib/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/local/lib/ivl/v2005_math.vpi";
+:vpi_module "/usr/local/lib/ivl/va_math.vpi";
+S_0x55a5369bcb50 .scope module, "subtrator_4b_com2_tb" "subtrator_4b_com2_tb" 2 17;
+ .timescale -9 -12;
+P_0x55a5369a3d40 .param/l "DELAY" 1 2 20, +C4<00000000000000000000000000001010>;
+P_0x55a5369a3d80 .param/l "N" 1 2 20, +C4<00000000000000000000000000000100>;
+v0x55a5369d4de0_0 .var "A", 3 0;
+v0x55a5369d4ec0_0 .var "B", 3 0;
+v0x55a5369d4f80_0 .net "Cout", 0 0, L_0x55a5369d58d0;  1 drivers
+v0x55a5369d5050_0 .net "D", 3 0, L_0x55a5369d5340;  1 drivers
+S_0x55a53697ecf0 .scope module, "UUT" "subtrator_4b" 2 31, 3 29 0, S_0x55a5369bcb50;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 4 "A";
+    .port_info 1 /INPUT 4 "B";
+    .port_info 2 /INPUT 1 "cin";
+    .port_info 3 /OUTPUT 4 "sum";
+    .port_info 4 /OUTPUT 1 "cout";
+L_0x55a5369a7fc0 .functor NOT 4, v0x55a5369d4ec0_0, C4<0000>, C4<0000>, C4<0000>;
+L_0x55a5369d58d0 .functor BUFZ 1, L_0x55a5369d5790, C4<0>, C4<0>, C4<0>;
+v0x55a5369d4610_0 .net "A", 3 0, v0x55a5369d4de0_0;  1 drivers
+v0x55a5369d46f0_0 .net "B", 3 0, v0x55a5369d4ec0_0;  1 drivers
+v0x55a5369d47b0_0 .net "B_comp", 3 0, L_0x55a5369d5190;  1 drivers
+v0x55a5369d48b0_0 .net *"_ivl_0", 3 0, L_0x55a5369a7fc0;  1 drivers
+L_0x7dcb94bb7018 .functor BUFT 1, C4<0001>, C4<0>, C4<0>, C4<0>;
+v0x55a5369d4970_0 .net/2u *"_ivl_2", 3 0, L_0x7dcb94bb7018;  1 drivers
+v0x55a5369d4a50_0 .net "carry_out", 0 0, L_0x55a5369d5790;  1 drivers
+L_0x7dcb94bb7060 .functor BUFT 1, C4<1>, C4<0>, C4<0>, C4<0>;
+v0x55a5369d4af0_0 .net "cin", 0 0, L_0x7dcb94bb7060;  1 drivers
+v0x55a5369d4bc0_0 .net "cout", 0 0, L_0x55a5369d58d0;  alias, 1 drivers
+v0x55a5369d4c60_0 .net "sum", 3 0, L_0x55a5369d5340;  alias, 1 drivers
+L_0x55a5369d5190 .arith/sum 4, L_0x55a5369a7fc0, L_0x7dcb94bb7018;
+S_0x55a53697eed0 .scope module, "somador_inst" "adder" 3 43, 3 17 0, S_0x55a53697ecf0;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 4 "a";
+    .port_info 1 /INPUT 4 "b";
+    .port_info 2 /INPUT 1 "cin";
+    .port_info 3 /OUTPUT 4 "sum";
+    .port_info 4 /OUTPUT 1 "cout";
+P_0x55a53697f0b0 .param/l "N" 0 3 17, +C4<00000000000000000000000000000100>;
+L_0x55a5369a6ff0 .functor XOR 4, v0x55a5369d4de0_0, L_0x55a5369d5190, C4<0000>, C4<0000>;
+L_0x7dcb94bb70a8 .functor BUFT 1, C4<0001>, C4<0>, C4<0>, C4<0>;
+L_0x55a5369d5340 .functor XOR 4, L_0x55a5369a6ff0, L_0x7dcb94bb70a8, C4<0000>, C4<0000>;
+L_0x55a5369d5420 .functor AND 4, v0x55a5369d4de0_0, L_0x55a5369d5190, C4<1111>, C4<1111>;
+L_0x55a5369d5520 .functor XOR 4, v0x55a5369d4de0_0, L_0x55a5369d5190, C4<0000>, C4<0000>;
+L_0x7dcb94bb70f0 .functor BUFT 1, C4<0001>, C4<0>, C4<0>, C4<0>;
+L_0x55a5369d55c0 .functor AND 4, L_0x7dcb94bb70f0, L_0x55a5369d5520, C4<1111>, C4<1111>;
+L_0x55a5369d5690 .functor OR 4, L_0x55a5369d5420, L_0x55a5369d55c0, C4<0000>, C4<0000>;
+v0x55a5369a8050_0 .net *"_ivl_0", 3 0, L_0x55a5369a6ff0;  1 drivers
+v0x55a5369a7080_0 .net *"_ivl_10", 3 0, L_0x7dcb94bb70f0;  1 drivers
+v0x55a5369d3c90_0 .net *"_ivl_14", 3 0, L_0x55a5369d5520;  1 drivers
+v0x55a5369d3d80_0 .net *"_ivl_16", 3 0, L_0x55a5369d55c0;  1 drivers
+v0x55a5369d3e60_0 .net *"_ivl_18", 3 0, L_0x55a5369d5690;  1 drivers
+v0x55a5369d3f90_0 .net *"_ivl_2", 3 0, L_0x7dcb94bb70a8;  1 drivers
+v0x55a5369d4070_0 .net *"_ivl_8", 3 0, L_0x55a5369d5420;  1 drivers
+v0x55a5369d4150_0 .net "a", 3 0, v0x55a5369d4de0_0;  alias, 1 drivers
+v0x55a5369d4230_0 .net "b", 3 0, L_0x55a5369d5190;  alias, 1 drivers
+v0x55a5369d4310_0 .net "cin", 0 0, L_0x7dcb94bb7060;  alias, 1 drivers
+v0x55a5369d43d0_0 .net "cout", 0 0, L_0x55a5369d5790;  alias, 1 drivers
+v0x55a5369d4490_0 .net "sum", 3 0, L_0x55a5369d5340;  alias, 1 drivers
+L_0x55a5369d5790 .part L_0x55a5369d5690, 0, 1;
+    .scope S_0x55a5369bcb50;
+T_0 ;
+    %vpi_call 2 39 "$dumpfile", "CIDI-SD122-A111-3.vcd" {0 0 0};
+    %vpi_call 2 40 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x55a5369bcb50 {0 0 0};
+    %vpi_call 2 42 "$display", "|A\011|B\011|Cin\011|Cout\011|Sum\011|" {0 0 0};
+    %vpi_call 2 43 "$monitor", "|%b\011|%b\011|1\011|%b\011|%b\011|", v0x55a5369d4de0_0, v0x55a5369d4ec0_0, v0x55a5369d4f80_0, v0x55a5369d5050_0 {0 0 0};
+    %end;
+    .thread T_0;
+    .scope S_0x55a5369bcb50;
+T_1 ;
+    %pushi/vec4 10, 0, 4;
+    %store/vec4 v0x55a5369d4de0_0, 0, 4;
+    %pushi/vec4 3, 0, 4;
+    %store/vec4 v0x55a5369d4ec0_0, 0, 4;
+    %delay 10000, 0;
+    %pushi/vec4 7, 0, 4;
+    %store/vec4 v0x55a5369d4de0_0, 0, 4;
+    %pushi/vec4 5, 0, 4;
+    %store/vec4 v0x55a5369d4ec0_0, 0, 4;
+    %delay 10000, 0;
+    %pushi/vec4 5, 0, 4;
+    %store/vec4 v0x55a5369d4de0_0, 0, 4;
+    %pushi/vec4 6, 0, 4;
+    %store/vec4 v0x55a5369d4ec0_0, 0, 4;
+    %delay 10000, 0;
+    %pushi/vec4 15, 0, 4;
+    %store/vec4 v0x55a5369d4de0_0, 0, 4;
+    %pushi/vec4 1, 0, 4;
+    %store/vec4 v0x55a5369d4ec0_0, 0, 4;
+    %delay 10000, 0;
+    %vpi_call 2 70 "$finish" {0 0 0};
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "subtrator_4b_com2_tb.v";
+    "subtrator_4b_com2.v";

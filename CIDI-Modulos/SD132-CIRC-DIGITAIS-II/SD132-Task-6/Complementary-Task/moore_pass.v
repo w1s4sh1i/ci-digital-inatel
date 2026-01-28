@@ -31,8 +31,8 @@ module moore_pass( // #(parameter PASS = 3'b101)(
 
     // Lógica de transição de estados (sequencial)
     always @(posedge clk or negedge rst_n) begin
-    
-    	estado_atual <= (!rst_n) ? S0 : proximo_estado;
+    // always @(posedge clk or posedge rst_n) begin
+    	estado_atual <= (! ? S0 : proximo_estado; // rst_n
     
     end
 

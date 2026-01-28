@@ -1,0 +1,28 @@
+# do task-execute.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:09:22 on Dec 23,2025
+# vcom -reportprogress 300 -2008 -work work /home/isi-se-bolsista2/BAW-Development/0-INATEL-repositorios/0-CI-DIGITAL-INATEL/ci-digital-inatel/CIDI-Modulos/VHDL/Task-1/C1_design.vhd /home/isi-se-bolsista2/BAW-Development/0-INATEL-repositorios/0-CI-DIGITAL-INATEL/ci-digital-inatel/CIDI-Modulos/VHDL/Task-1/C1_testbench.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux_2x1
+# -- Compiling architecture behavioural of mux_2x1
+# -- Loading package ENV
+# -- Compiling entity testbench_mux_2x1
+# -- Compiling architecture stimulus of testbench_mux_2x1
+# End time: 14:09:22 on Dec 23,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -onfinish stop -c work.testbench_mux_2x1 
+# Start time: 14:09:22 on Dec 23,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading std.env(body)
+# Loading work.testbench_mux_2x1(stimulus)
+# Loading work.mux_2x1(behavioural)
+# .main_pane.wave.interior.cs.body.pw.wf
+# 0 ps
+# 52500 ps
+# End time: 14:21:00 on Dec 23,2025, Elapsed time: 0:11:38
+# Errors: 0, Warnings: 0

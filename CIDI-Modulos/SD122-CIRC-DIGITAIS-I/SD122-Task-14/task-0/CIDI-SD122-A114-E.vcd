@@ -1,0 +1,61 @@
+$date
+	Sat Dec  6 03:44:47 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module ieee754_adder_tb $end
+$var wire 32 ! result [31:0] $end
+$var parameter 32 " DELAY $end
+$var reg 32 # a [31:0] $end
+$var reg 32 $ b [31:0] $end
+$scope module uut $end
+$var wire 32 % a [31:0] $end
+$var wire 32 & b [31:0] $end
+$var wire 32 ' result [31:0] $end
+$var reg 8 ( exp_diff [7:0] $end
+$var reg 8 ) expoente_final [7:0] $end
+$var reg 8 * expoente_maior [7:0] $end
+$var reg 24 + mantissa_a [23:0] $end
+$var reg 24 , mantissa_b [23:0] $end
+$var reg 25 - mantissa_sum [24:0] $end
+$var reg 5 . shift [4:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1010 "
+$end
+#0
+$dumpvars
+b0 .
+b110111000000000000000000 -
+b10001000000000000000000 ,
+b100110000000000000000000 +
+b10000001 *
+b10000001 )
+b1 (
+b1000000110111000000000000000000 '
+b1000000000010000000000000000000 &
+b1000000100110000000000000000000 %
+b1000000000010000000000000000000 $
+b1000000100110000000000000000000 #
+b1000000110111000000000000000000 !
+$end
+#10000
+b1000001010101000000000000000000 !
+b1000001010101000000000000000000 '
+b10000010 )
+b110101000000000000000000 -
+b10000010 *
+b10 (
+b1111000000000000000000 ,
+b1000000011100000000000000000000 $
+b1000000011100000000000000000000 &
+b1000001000110000000000000000000 #
+b1000001000110000000000000000000 %
+#20000
