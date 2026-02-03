@@ -1,104 +1,60 @@
-module MAC_complex (
-    input clk, rst, en,
-    input [7:0] reA,reB,imA,imB,
-    output [31:0] X,Y
+/*
+Program: CI Digital T2/2025
+Class: Circuito Digitais III 
+Class-ID: SD142
+Advisor: Felipe Rocha 
+Advisor-Contact: felipef.rocha@inatel.br
+Institute: INATEL - Santa Rita do Sapucaí / MG  
+Development: André Bezerra 
+Student-Contact: andrefrbezerra@gmail.com
+Task-ID: A-306
+Type: Laboratory
+Data: febuary, 03 2026
+*/
+
+module MAC_complex #(parameter WIDHT_IN = 8, WIDHT_OUT = 32, DEFAULT_RE = {WIDHT_OUT-1{0}}, DEFAULT_IM = {WIDHT_OUT-1{0}}) (
+    input 						clk, rst, en,
+    input	[WIDHT_IN-1  : 0]	reA,reB,imA,imB,
+    output	[WIDHT_OUT-1 : 0]	X, Y
 );
 
-    wire signed [15:0] re_product1;
-    wire signed [15:0] re_product2;
-    wire signed [15:0] im_product1;
-    wire signed [15:0] im_product2;
+    wire signed [WIDHT_IN*2-1 : 0] product1_re;
+    wire signed [WIDHT_IN*2-1 : 0] product2_re;
+    wire signed [WIDHT_IN*2-1 : 0] product1_im;
+    wire signed [WIDHT_IN*2-1 : 0] product2_im;
 
-    wire signed [31:0] re_sum; 
-    wire signed [31:0] im_sum; 
+    wire signed [WIDHT_OUT-1 : 0] sum_re; 
+    wire signed [WIDHT_OUT-1 : 0] sum_im; 
 
-    reg signed [31:0] re_accumulator;
-    reg signed [31:0] im_accumulator;
+    reg signed [WIDHT_OUT-1 : 0] accumulator_re;
+    reg signed [WIDHT_OUT-1 : 0] accumulator_im;
 
-    assign re_product1 = $signed(reA)*$signed(reB);
-    assign re_product2 = ($signed(imA)*$signed(imB)); 
-    assign re_sum = re_accumulator + re_product1 - re_product2;
+	// Parte Real
+    assign product1_re = $signed(reA) * $signed(reB);
+    assign product2_re = $signed(imA) * $signed(imB); 
+    assign sum_re = accumulator_re + product1_re - product2_re;
     
-    assign im_product1 = $signed(reA)*$signed(imB);
-    assign im_product2 = $signed(imA)*$signed(reB);
+    // Parte Imaginária
+    assign product1_im = $signed(reA)*$signed(imB);
+    assign product2_im = $signed(imA)*$signed(reB);
+    assign sum_im = accumulator_im + product1_im + product2_im; 
 
-    assign im_sum = im_accumulator + im_product1 + im_product2; 
-
+	// Saída
+	assign X = accumulator_re;
+    assign Y = accumulator_im;
+    
     always @(posedge clk) begin
-        if (rst) begin
-            re_accumulator <= 0; 
-            im_accumulator <= 0;
-        end else if (en) begin
+        
+        if (en)
             re_accumulator <= re_sum; 
             im_accumulator <= im_sum;
+        else if (rst)
+            re_accumulator <= 0; 
+            im_accumulator <= 0;
+        else
+            re_accumulator <= DEFAULT_RE; 
+            im_accumulator <= DEFAULT_IM;
         end
     end
 
-    assign X = re_accumulator;
-    assign Y = im_accumulator;  
-
-endmodule
-
-
-
-module MAC_complex_tb;
-
-  // Parameters
-
-  //Ports
-  reg clk;
-  reg rst;
-  reg en;
-  reg [7:0] reA,reB,imA,imB;
-  wire [31:0] X,Y;
-
-  integer seed1,seed2,seed3,seed4,i; 
-
-  MAC_complex  MAC_complex_inst (
-    .clk(clk),
-    .rst(rst),
-    .en(en),
-    .reA(reA),
-    .reB(reB),
-    .imA(imA),
-    .imB(imB),
-    .X(X),
-    .Y(Y)
-  );
-
-  always @(posedge clk) begin
-    seed1 <= $time; 
-    seed2 <= $time + 10; 
-    seed3 <= $time + 20; 
-    seed4 <= $time + 30; 
-  end
-
-  always #5  clk = ! clk ;
-
-  initial begin
-    clk <= 0;
-    rst <= 1; 
-    en <= 0; 
-    {reA,reB,imA,imB} <= {4'b0}; 
-    #5; 
-
-    rst <= 0;
-    en <= 1;
-    
-    for (i = 0; i < (10); i = i + 1 ) begin
-        @(posedge clk);
-        reA <= $random(seed1) + $random(seed4);
-        reB <= $random(seed2) + $random(seed3);
-        imA <= $random(seed3);
-        imB <= $random(seed4);   
-        @(posedge clk);
-        $display("(%d + j%d )*(%d +j%d) = (%d + j%d)",reA,imA,reB,imB,X,Y); 
-        @(posedge clk);
-        rst <= 1; 
-        @(posedge clk);
-        rst <= 0; 
-    end 
-    $stop;
-
-  end
 endmodule
