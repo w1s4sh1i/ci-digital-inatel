@@ -18,7 +18,12 @@ TODO:
 
 */
 
-module MAC #(parameter WIDHT_IN = 8, WIDHT_OUT = 32, DEFAULT = {WIDHT_OUT-1{0}}) (
+`timescale 1 ns / 1 ps;
+
+module MAC #(
+	parameter	WIDHT_IN = 8, 
+				WIDHT_OUT = 32
+)(
     input						clk, rst,
     input	[WIDHT_IN-1  : 0]	A, B,
     output	[WIDHT_OUT-1 : 0]	result
@@ -26,20 +31,23 @@ module MAC #(parameter WIDHT_IN = 8, WIDHT_OUT = 32, DEFAULT = {WIDHT_OUT-1{0}})
  
 	wire signed [WIDHT_IN*2-1 : 0] product;
 	wire signed [WIDHT_OUT-1  : 0] sum;
+
 	reg  signed [WIDHT_OUT-1  : 0] accumulator;
 
-	assign product = $signed(A) * $signed(B); // Multiplicador 
-	assign sum = accumulator + product; // Somador
-	assign result = accumulator; // Saída do acumulador
+	// Multiplicador 
+	assign product = $signed(A) * $signed(B); 
+	
+	// Somador
+	assign sum = accumulator + product; 
+	
+	// Saída do acumulador
+	assign result = accumulator;
 	
 	always @( posedge clk or posedge rst ) begin
-		if (en) // Acumulador
-			accumulator <= sum; 
-		else if (rst)
-			accumulator <= {WIDHT_OUT-1{0}};
-		else 
-			accumulator <= DEFAULT;
-		end
+		
+		accumulator <= (rst) ? {WIDHT_OUT{1'b0}} : sum;
+			
 	end
 
 endmodule
+

@@ -1,0 +1,94 @@
+$date
+	Mon Feb 23 03:07:37 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module ram_single_port_tb $end
+$var wire 8 ! q [7:0] $end
+$var parameter 32 " ADDR_WIDTH $end
+$var parameter 32 # DATA_WIDTH $end
+$var reg 6 $ addr [5:0] $end
+$var reg 1 % clk $end
+$var reg 8 & data [7:0] $end
+$var reg 1 ' we $end
+$scope module uut $end
+$var wire 6 ( addr [5:0] $end
+$var wire 1 % clk $end
+$var wire 8 ) data [7:0] $end
+$var wire 8 * q [7:0] $end
+$var wire 1 ' we $end
+$var parameter 32 + ADDR_WIDTH $end
+$var parameter 32 , DATA_WIDTH $end
+$var reg 6 - addr_reg [5:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1000 ,
+b110 +
+b1000 #
+b110 "
+$end
+#0
+$dumpvars
+bx -
+bx *
+b0 )
+b0 (
+0'
+b0 &
+0%
+b0 $
+bx !
+$end
+#5000
+1%
+#10000
+0%
+1'
+b101010 &
+b101010 )
+b11 $
+b11 (
+#15000
+b101010 !
+b101010 *
+b11 -
+1%
+#20000
+0%
+b1100011 &
+b1100011 )
+b1010 $
+b1010 (
+#25000
+b1100011 !
+b1100011 *
+b1010 -
+1%
+#30000
+0%
+b11 $
+b11 (
+0'
+#35000
+1%
+#40000
+0%
+b1010 $
+b1010 (
+#45000
+1%
+#50000
+0%
+b101 $
+b101 (
+#55000
+1%
+#60000
+0%

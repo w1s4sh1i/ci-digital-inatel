@@ -41,7 +41,7 @@ declare -a ADVISOR=(
 )
 
 declare -a CONTACT=(
-						"felipef.rocha@inatel.br"
+					"felipef.rocha@inatel.br"
 )
 
 # declare -A ADVISOR

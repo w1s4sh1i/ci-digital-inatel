@@ -1,0 +1,155 @@
+#! /usr/local/bin/vvp
+:ivl_version "12.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 12;
+:vpi_module "/usr/local/lib/ivl/system.vpi";
+:vpi_module "/usr/local/lib/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/local/lib/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/local/lib/ivl/v2005_math.vpi";
+:vpi_module "/usr/local/lib/ivl/va_math.vpi";
+S_0x63232cf6f630 .scope module, "MAC_tb" "MAC_tb" 2 17;
+ .timescale -9 -12;
+P_0x63232cf60590 .param/l "DELAY" 1 2 21, +C4<00000000000000000000000000001010>;
+P_0x63232cf605d0 .param/l "REPEAT" 1 2 22, +C4<00000000000000000000000000001010>;
+P_0x63232cf60610 .param/l "WIDHT_IN" 1 2 19, +C4<00000000000000000000000000001000>;
+P_0x63232cf60650 .param/l "WIDHT_OUT" 1 2 20, +C4<00000000000000000000000000100000>;
+v0x63232cf8c340_0 .var "A", 7 0;
+v0x63232cf8c420_0 .var "B", 7 0;
+v0x63232cf8c4f0_0 .var "clk", 0 0;
+v0x63232cf8c5f0_0 .var/i "i", 31 0;
+v0x63232cf8c690_0 .net "result", 31 0, L_0x63232cf5fb90;  1 drivers
+v0x63232cf8c730_0 .var "rst", 0 0;
+v0x63232cf8c800_0 .var/i "seed1", 31 0;
+v0x63232cf8c8a0_0 .var/i "seed2", 31 0;
+v0x63232cf8c980_0 .var/i "seed3", 31 0;
+v0x63232cf8ca60_0 .var/i "seed4", 31 0;
+E_0x63232cf6d400 .event posedge, v0x63232cf8be80_0;
+S_0x63232cf33cf0 .scope module, "MAC_testbench" "MAC" 2 29, 3 23 0, S_0x63232cf6f630;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "clk";
+    .port_info 1 /INPUT 1 "rst";
+    .port_info 2 /INPUT 8 "A";
+    .port_info 3 /INPUT 8 "B";
+    .port_info 4 /OUTPUT 32 "result";
+P_0x63232cf58ee0 .param/l "WIDHT_IN" 0 3 24, +C4<00000000000000000000000000001000>;
+P_0x63232cf58f20 .param/l "WIDHT_OUT" 0 3 25, +C4<00000000000000000000000000100000>;
+L_0x63232cf5fb90 .functor BUFZ 32, v0x63232cf8bda0_0, C4<00000000000000000000000000000000>, C4<00000000000000000000000000000000>, C4<00000000000000000000000000000000>;
+v0x63232cf5fd30_0 .net "A", 7 0, v0x63232cf8c340_0;  1 drivers
+v0x63232cf8b9c0_0 .net "B", 7 0, v0x63232cf8c420_0;  1 drivers
+v0x63232cf8baa0_0 .net/s *"_ivl_0", 15 0, L_0x63232cf8cb40;  1 drivers
+v0x63232cf8bb90_0 .net/s *"_ivl_2", 15 0, L_0x63232cf8cc10;  1 drivers
+v0x63232cf8bc70_0 .net/s *"_ivl_6", 31 0, L_0x63232cf8ce40;  1 drivers
+v0x63232cf8bda0_0 .var/s "accumulator", 31 0;
+v0x63232cf8be80_0 .net "clk", 0 0, v0x63232cf8c4f0_0;  1 drivers
+v0x63232cf8bf40_0 .net/s "product", 15 0, L_0x63232cf8cd00;  1 drivers
+v0x63232cf8c020_0 .net "result", 31 0, L_0x63232cf5fb90;  alias, 1 drivers
+v0x63232cf8c100_0 .net "rst", 0 0, v0x63232cf8c730_0;  1 drivers
+v0x63232cf8c1c0_0 .net/s "sum", 31 0, L_0x63232cf8cf60;  1 drivers
+E_0x63232cf34780 .event posedge, v0x63232cf8c100_0, v0x63232cf8be80_0;
+L_0x63232cf8cb40 .extend/s 16, v0x63232cf8c340_0;
+L_0x63232cf8cc10 .extend/s 16, v0x63232cf8c420_0;
+L_0x63232cf8cd00 .arith/mult 16, L_0x63232cf8cb40, L_0x63232cf8cc10;
+L_0x63232cf8ce40 .extend/s 32, L_0x63232cf8cd00;
+L_0x63232cf8cf60 .arith/sum 32, v0x63232cf8bda0_0, L_0x63232cf8ce40;
+    .scope S_0x63232cf33cf0;
+T_0 ;
+    %wait E_0x63232cf34780;
+    %load/vec4 v0x63232cf8c100_0;
+    %flag_set/vec4 8;
+    %jmp/0 T_0.0, 8;
+    %pushi/vec4 0, 0, 32;
+    %jmp/1 T_0.1, 8;
+T_0.0 ; End of true expr.
+    %load/vec4 v0x63232cf8c1c0_0;
+    %jmp/0 T_0.1, 8;
+ ; End of false expr.
+    %blend;
+T_0.1;
+    %assign/vec4 v0x63232cf8bda0_0, 0;
+    %jmp T_0;
+    .thread T_0;
+    .scope S_0x63232cf6f630;
+T_1 ;
+    %vpi_call 2 39 "$dumpfile", "CIDI-SD142-A306-mac.vcd" {0 0 0};
+    %vpi_call 2 40 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x63232cf6f630 {0 0 0};
+    %vpi_call 2 42 "$display", "|clk\011|A * B = Result\011|" {0 0 0};
+    %vpi_call 2 43 "$monitor", "|%d\011|%d * %d = %d\011|", v0x63232cf8c4f0_0, v0x63232cf8c340_0, v0x63232cf8c420_0, v0x63232cf8c690_0 {0 0 0};
+    %end;
+    .thread T_1;
+    .scope S_0x63232cf6f630;
+T_2 ;
+    %delay 1000, 0;
+    %load/vec4 v0x63232cf8c4f0_0;
+    %nor/r;
+    %store/vec4 v0x63232cf8c4f0_0, 0, 1;
+    %jmp T_2;
+    .thread T_2;
+    .scope S_0x63232cf6f630;
+T_3 ;
+    %wait E_0x63232cf6d400;
+    %vpi_func 2 50 "$time" 64 {0 0 0};
+    %addi 0, 0, 64;
+    %pad/u 32;
+    %assign/vec4 v0x63232cf8c800_0, 0;
+    %vpi_func 2 51 "$time" 64 {0 0 0};
+    %addi 100, 0, 64;
+    %pad/u 32;
+    %assign/vec4 v0x63232cf8c8a0_0, 0;
+    %vpi_func 2 52 "$time" 64 {0 0 0};
+    %addi 200, 0, 64;
+    %pad/u 32;
+    %assign/vec4 v0x63232cf8c980_0, 0;
+    %vpi_func 2 53 "$time" 64 {0 0 0};
+    %addi 300, 0, 64;
+    %pad/u 32;
+    %assign/vec4 v0x63232cf8ca60_0, 0;
+    %jmp T_3;
+    .thread T_3;
+    .scope S_0x63232cf6f630;
+T_4 ;
+    %pushi/vec4 1, 0, 2;
+    %split/vec4 1;
+    %assign/vec4 v0x63232cf8c730_0, 0;
+    %assign/vec4 v0x63232cf8c4f0_0, 0;
+    %pushi/vec4 0, 0, 16;
+    %split/vec4 8;
+    %assign/vec4 v0x63232cf8c420_0, 0;
+    %assign/vec4 v0x63232cf8c340_0, 0;
+    %delay 2000, 0;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v0x63232cf8c730_0, 0;
+    %pushi/vec4 0, 0, 32;
+    %store/vec4 v0x63232cf8c5f0_0, 0, 32;
+T_4.0 ;
+    %load/vec4 v0x63232cf8c5f0_0;
+    %cmpi/s 10, 0, 32;
+    %jmp/0xz T_4.1, 5;
+    %wait E_0x63232cf6d400;
+    %vpi_func 2 67 "$random" 32, v0x63232cf8c800_0 {0 0 0};
+    %vpi_func 2 67 "$random" 32, v0x63232cf8c980_0 {0 0 0};
+    %add;
+    %pad/s 8;
+    %assign/vec4 v0x63232cf8c340_0, 0;
+    %vpi_func 2 68 "$random" 32, v0x63232cf8c8a0_0 {0 0 0};
+    %vpi_func 2 68 "$random" 32, v0x63232cf8ca60_0 {0 0 0};
+    %add;
+    %pad/s 8;
+    %assign/vec4 v0x63232cf8c420_0, 0;
+    %delay 5000, 0;
+    %load/vec4 v0x63232cf8c5f0_0;
+    %addi 1, 0, 32;
+    %store/vec4 v0x63232cf8c5f0_0, 0, 32;
+    %jmp T_4.0;
+T_4.1 ;
+    %pushi/vec4 1, 0, 1;
+    %assign/vec4 v0x63232cf8c730_0, 0;
+    %delay 10000, 0;
+    %vpi_call 2 82 "$finish" {0 0 0};
+    %end;
+    .thread T_4;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "MAC_tb.v";
+    "MAC.v";

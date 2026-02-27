@@ -1,3 +1,17 @@
+/*
+Program: CI Digital T2/2025
+Class: Circuito Digitais III
+Class-ID: SD142
+Advisor: Felipe Rocha 
+Advisor-Contact: felipef.rocha@inatel.br
+Institute: INATEL - Santa Rita do Sapucaí / MG  
+Development: André Bezerra 
+Student-Contact: andrefrbezerra@gmail.com
+Task-ID: A-306 (A-312)
+Type: Laboratory
+Data: febuary, 9 2026
+*/
+
 `timescale 1ns /1 ps
 
 

@@ -1,70 +1,90 @@
+/*
+Program: CI Digital T2/2025
+Class: Circuito Digitais III
+Class-ID: SD142
+Advisor: Felipe Rocha 
+Advisor-Contact: felipef.rocha@inatel.br
+Institute: INATEL - Santa Rita do Sapucaí / MG  
+Development: André Bezerra 
+Student-Contact: andrefrbezerra@gmail.com
+Task-ID: A-301 (A-302)
+Type: TestBench
+Data: febuary, 2 2026
+*/
 
-module fifo_8x8_buffer_circular_v_tb;
+`timescale 1 ns / 1 ps
 
-  reg clk;
-  reg reset;
-  reg rd;
-  reg wr;
-  reg [7:0] w_data;
-  wire full;
-  wire empty;
-  wire [7:0] r_data;
+module fifo_8x8_buffer_circular_tb;
 
-  fifo_8x8_buffer_circular_v  fifo_8x8_buffer_circular_v_inst (
-    .clk(clk),
-    .reset(reset),
-    .rd(rd),
-    .wr(wr),
-    .w_data(w_data),
-    .full(full),
-    .empty(empty),
-    .r_data(r_data)
-  );
+	localparam WIDTH = 8; 
+	
+	reg clk, reset, rd, wr;
+	reg [WIDTH-1 : 0] w_data;
+	
+	wire full, empty;
+	wire [WIDTH-1 : 0] r_data;
 
-  always #5  clk = ! clk ;
+	fifo_8x8_buffer_circular UUT (
+		.clk(clk), .reset(reset), .rd(rd), .wr(wr),
+		.w_data(w_data),
+		.full(full), .empty(empty),
+		.r_data(r_data)
+	);
+ 
+	always #5  clk = ! clk;
+	
+	initial begin
+		
+		// Specify the VCD file name
+		$dumpfile("CIDI-SD142-A301-ff8x8.vcd");
+		$dumpvars(0, fifo_8x8_buffer_circular_tb);
+			
+		$display("|TIME	|STORAGE |DATA (write)|DATA (read) |");
+		$monitor("|%0t	|%d	 |%b |%b |", 
+			  $time, full, w_data, r_data
+		);
+		
+	end
 
-  integer i; 
+	integer i; 
 
-  initial begin
-    clk = 0; 
-    reset = 1; 
-    wr = 0; 
-    rd = 0; 
-    #5; 
-    reset = 0; 
+	initial begin
 
-    wr = 1; 
+		clk <= 1'b0; 
+		reset <= 1'b1; 
+		wr <= 1'b0; 
+		rd <= 1'b0; 
 
-    i = 0;
+		#5; 
+		reset <= 1'b0; 
+		wr <= 1'b1; 
+		
+		i = 0;
 
-    $display("---Writing data---");
+		$display("---Writing data---");
 
-    
-    for (i = 0; i < (8); i = i + 1 ) begin
-      @(posedge clk);
-      w_data = $random;
-      if (!full) begin
-          $display("At time %t written data: %b",$time,w_data);
-      end else begin
-          $display("At time %t treid to write data: %b, but buffer already full",$time,w_data);
-      end
-      #5; 
-    end
+		// Task: Processing with 
+		for (i = 0; i < WIDTH; i = i+1 ) begin
+			@(posedge clk);
+			w_data <= $random;
+			#5; 
+		end
 
-    wr = 0; 
+		wr <= 1'b0; 
 
-    $display("---Reading Data---");
+		// [ ] Analisar possibilidade de resgate por referência (mensagem);
+		$display("---Reading Data---");
 
-    rd = 1; 
-    
-    for (i = 0; i < (8); i = i + 1 ) begin
-      @(posedge clk);
-      $display("At time %t reding data: %b",$time,r_data);
-      #5; 
-    end
+		rd <= 1'b1;
 
-  end
+		for (i = 0; i < WIDTH; i = i+1 ) begin
+			@(posedge clk);
+			#5; 
+		end
 
+		#10;
+		$finish;
 
+	end
 
 endmodule

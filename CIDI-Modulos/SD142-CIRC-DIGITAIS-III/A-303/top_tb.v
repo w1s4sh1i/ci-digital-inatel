@@ -4,17 +4,14 @@ module top_tb;
   // Parameters
 
   //Ports
-  reg clk; 
-  reg reset;
-  reg load; 
+  reg clk, reset, load; 
   reg [7:0] datain;
   reg dispin;
+  
   wire [7:0] dataout;
-  wire dispout;
-  wire code_err;
-  wire disp_err;
+  wire dispout, code_err, disp_err;
 
-  top  top_inst (
+  top top_inst (
     .clk(clk),
     .reset(reset),
     .datain(datain),
@@ -25,7 +22,10 @@ module top_tb;
     .disp_err(disp_err)
   );
 
-  always #5  clk = ! clk;
+  always #5 clk = ! clk;
+  
+  // [ ] Data export
+  
   always @(posedge clk) begin
     if (top_inst.datain == top_inst.dataout) begin
       $display("At time: %t datain: %b dataout: %b ",$time,datain,dataout); 
@@ -33,20 +33,25 @@ module top_tb;
   end
 
   initial begin
-    reset <= 1; 
-    clk <= 0;
+    
+    reset <= 1'b1; 
+    clk <= 1'b0;
     #5; 
 
-    reset <= 0; 
+    reset <= 1'b0; 
     datain <= 8'b011_00010; 
-    dispin = 0; 
+    dispin = 1'b0; 
     #5; 
+    
     #500;
     datain <= 8'b000_00000; 
+    
     #500; 
+    
     datain <= 8'b000_10101; 
+    
     #500;
-    $stop;
+    $finish;
     
   end
 
