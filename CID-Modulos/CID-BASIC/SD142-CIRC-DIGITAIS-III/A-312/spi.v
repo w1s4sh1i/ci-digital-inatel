@@ -70,14 +70,14 @@ endmodule
 
 
 module spi_slave (
-    input wire clk , // Clock do sistema
-    input wire reset , // Reset do sistema
-    input wire [7:0] data_in , // Dados a serem enviados
-    input wire CS , // Slave Select
-    input wire CPOL , // Polaridade do clock ( Clock Polarity )
-    input wire CPHA , // Fase do clock ( Clock Phase )
-    input wire SCLK , // Clock SPI
-    input wire MOSI , // Master Output , Slave Input
+    input clk , // Clock do sistema
+    input reset , // Reset do sistema
+    input [7:0] data_in , // Dados a serem enviados
+    input CS , // Slave Select
+    input CPOL , // Polaridade do clock ( Clock Polarity )
+    input CPHA , // Fase do clock ( Clock Phase )
+    input SCLK , // Clock SPI
+    input MOSI , // Master Output , Slave Input
     output reg MISO , // Master Input , Slave Output
     output reg busy , // Indica que a transmissao esta em progresso
     output reg [7:0] data_out // Dados recebidos do mestre
@@ -283,13 +283,13 @@ module spi_master #(
     parameter integer CLK_FREQ = 50000000 , // Frequencia do clock do sistema (em Hz)
     parameter integer SCLK_FREQ = 1000000 // Frequencia desejada do clock SPI (em Hz)
   ) (
-    input wire clk , // Clock do sistema
-    input wire reset , // Reset do sistema
-    input wire [7:0] data_in , // Dados a serem enviados
-    input wire start , // Sinal para iniciar a transmissao
-    input wire CPOL , // Polaridade do clock ( Clock Polarity )
-    input wire CPHA , // Fase do clock ( Clock Phase )
-    input wire MISO , // Master Input , Slave Output
+    input clk , // Clock do sistema
+    input reset , // Reset do sistema
+    input [7:0] data_in , // Dados a serem enviados
+    input start , // Sinal para iniciar a transmissao
+    input CPOL , // Polaridade do clock ( Clock Polarity )
+    input CPHA , // Fase do clock ( Clock Phase )
+    input MISO , // Master Input , Slave Output
     output reg SCLK , // Clock SPI
     output reg MOSI , // Master Output , Slave Input
     output reg CS , // Slave Select
@@ -448,8 +448,7 @@ module spi_master #(
   end
 
   // Logica combinacional para determinar o proximo estado
-  always @ (*)
-  begin
+  always @ (*) begin
     next_state = current_state ; // Valor padrao : permanece no mesmo estado
     case ( current_state )
       IDLE :
@@ -469,61 +468,55 @@ module spi_master #(
     endcase
   end
   // Logica sequencial : Amostragem dos dados
-  always @ (*)
-  begin
+  always @ (*) begin
     if ( reset )
     begin
-      busy <= 0;
-      CS <= 1;
-      load_data <= 0;
-      shift_sample_data <= 0;
-      load_data_out <= 0;
+      busy <= 1'b0;
+      CS <= 1'b1;
+      load_data <= 1'b0;
+      shift_sample_data <= 1'b0;
+      load_data_out <= 1'b0;
     end
-    else
-    begin
+    else begin
       case ( current_state )
-        IDLE :
-        begin
-          CS <= 1; // Escravo desativado
-          busy <= 0;
+        IDLE : begin
+          CS <= 1'b1; // Escravo desativado
+          busy <= 1'b0;
           load_data <= ! CPHA && start ;
-          shift_sample_data <= 0;
-          load_data_out <= 0;
+          shift_sample_data <= 1'b0;
+          load_data_out <= 1'b0;
         end
 
-        LOAD :
-        begin
-          CS <= 0; // Escravo ativado
-          busy <= 1;
-          shift_sample_data <= 0;
+        LOAD : begin
+          CS <= 1'b0; // Escravo ativado
+          busy <= 1'b1;
+          shift_sample_data <= 1'b0;
           load_data <= (! CPHA || ( CPHA && ( edge_pos || edge_neg )) );
-          load_data_out <= 0;
+          load_data_out <= 1'b0;
         end
-        TRANSFER :
-        begin
-          CS <= 0;
-          busy <= 1;
-          load_data <= 0;
-          shift_sample_data <= 1;
-          load_data_out <= 0;
-        end
-
-        DONE :
-        begin
-          CS <= 1;
-          busy <= 0;
-          shift_sample_data <= 0;
-          load_data <= 0;
-          load_data_out <= 1;
+        
+        TRANSFER : begin
+          CS <= 1'b0;
+          busy <= 1'b1;
+          load_data <= 1'b0;
+          shift_sample_data <= 1'b1;
+          load_data_out <= 1'b0;
         end
 
-        default :
-        begin
-          CS <= 1; // Escravo desativado
-          busy <= 0;
-          load_data <= 0;
-          shift_sample_data <= 0;
-          load_data_out <= 0;
+        DONE : begin
+          CS <= 1'b1;
+          busy <= 1'b0;
+          shift_sample_data <= 1'b0;
+          load_data <= 1'b0;
+          load_data_out <= 1'b1;
+        end
+
+        default : begin
+          CS <= 1'b1; // Escravo desativado
+          busy <= 1'b0;
+          load_data <= 1'b0;
+          shift_sample_data <= 1'b0;
+          load_data_out <= 1'b0;
         end
 
       endcase

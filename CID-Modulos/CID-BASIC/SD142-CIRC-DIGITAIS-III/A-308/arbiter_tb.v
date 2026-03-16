@@ -22,26 +22,30 @@ module arbiter_tb;
 	reg	clock;
 	wire	[2 : 0] g;
 
-	arbiter arbiter_inst (
-	.r(r),
-	.resetn(resetn),
-	.clock(clock),
-	.g(g)
+	arbiter UUT (
+		.r(r),
+		.resetn(resetn),
+		.clock(clock),
+		.g(g)
 	);
 
 	always #5  clock = ! clock ;
 
 
 	reg [15*8-1 : 0] string_vector [3 : 0];
+	
 	initial begin
-		string_vector = {"Idle", "gnt1", "gnt2", "gnt3"};
+		string_vector[0] = "Idle";
+		string_vector[1] = "gnt1";
+		string_vector[2] = "gnt2"; 
+		string_vector[3] = "gnt3";
 	end
 
 	integer i,seed;
 
 	// [ ] Data expors - alterar   
 	always @(posedge clock) begin
-		$display("At time: %t Current State: %s, r: %b, g: %b",$time,string_vector[arbiter_inst.Y],r,g);
+		$display("At time: %t Current State: %s, r: %b, g: %b", $time, string_vector[UUT.Y], r, g);
 		seed = $time;
 		r = $random(seed); 
 	end

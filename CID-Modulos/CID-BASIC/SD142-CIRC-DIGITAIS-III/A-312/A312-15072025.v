@@ -18,13 +18,13 @@ module spi_master #(
     parameter integer CLK_FREQ = 50000000,   // Frequência do clock do sistema (em Hz)
     parameter integer SCLK_FREQ = 1000000    // Frequência desejada do clock SPI (em Hz)
 )(
-    input wire clk,             // Clock do sistema
-    input wire reset,           // Reset do sistema
-    input wire [7:0] data_in,   // Dados a serem enviados
-    input wire start,           // Sinal para iniciar a transmissão
-    input wire CPOL,            // Polaridade do clock (Clock Polarity)
-    input wire CPHA,            // Fase do clock (Clock Phase)
-    input wire MISO,            // Master Input, Slave Output
+    input clk,             // Clock do sistema
+    input reset,           // Reset do sistema
+    input [7:0] data_in,   // Dados a serem enviados
+    input start,           // Sinal para iniciar a transmissão
+    input CPOL,            // Polaridade do clock (Clock Polarity)
+    input CPHA,            // Fase do clock (Clock Phase)
+    input MISO,            // Master Input, Slave Output
     output reg SCLK,            // Clock SPI
     output reg MOSI,            // Master Output, Slave Input
     output reg CS,              // Slave Select

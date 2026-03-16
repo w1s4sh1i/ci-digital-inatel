@@ -1,6 +1,7 @@
 /* header */
 
 // 1 - Funões 
+
 module stimulus_from_file #(
     parameter	FILE_NAME = "stimulus.hex",           // File to read
     		 	DATA_WIDTH = 8,                       // Width of data

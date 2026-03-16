@@ -16,8 +16,8 @@ Data: febuary, 9 2026
 
 module cordic_tb;
 
-	localparam WIDTH = 16,
-			  real FREQUENCY = 100e6;      // Clock frequency in Hz
+	localparam WIDTH = 16;
+	localparam real FREQUENCY = 100e6;      // Clock frequency in Hz
 
 	reg         clk, rst;
 	reg  [WIDTH-1 : 0] X, Y,Z;
@@ -30,8 +30,19 @@ module cordic_tb;
 
 	always #5  clk = ! clk;
 
-	// [] dump and monitor; 
-	
+	// [x] Alterar para $monitor;
+	initial begin
+		
+		// Specify the VCD file name
+		$dumpfile("CIDI-SD142-A303-cordic.vcd"); 
+		$dumpvars(0, cordic_tb); 
+
+		// Editar
+		$display("|at time |X |Y |is abs |");
+		$monitor("|%0t |%b |%b |%b |", 
+				$time, X, Y, abs
+		); 
+	end
 
 	// Alterar para $monitor
 	always @(posedge clk) begin

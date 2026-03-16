@@ -12,8 +12,7 @@ Type: Laboratory
 Data: febuary, 9 2026
 */
 
-
-`timescale 1 ns/100 ps
+`timescale 1 ns / 100 ps
 
 module cordic_serial_abs #(
    parameter WIDTH = 16
@@ -22,11 +21,34 @@ module cordic_serial_abs #(
    input [WIDTH-1:0] data_X, data_Y, data_Z,
    output [WIDTH-1:0] abs, tan
 );
-   localparam [11:0] INV_CORDIC_GAIN = 12'b010011011011, INV_CORDIC_GAIN_N = 12'b101100100101;
+	
+	localparam [11:0]	INV_CORDIC_GAIN = 12'b010011011011;
+	localparam [11:0]	INV_CORDIC_GAIN_N = 12'b101100100101;
+    localparam [11:0]	CORDIC_ANGLES [0]:7] = '{
+		                    12'b110010010001, 
+		                    12'b011101101100, 
+		                    12'b001111101100, 
+		                    12'b000111111101, 
+		                    12'b000100000000, 
+		                    12'b000010000000, 
+		                    12'b000001000000, 
+		                    12'b000000100000
+                    	};
+   /*
+   	For iter_val:
+   		0 (45 degrees)
+		1 (26.565 degrees)
+		2 (14.036 degrees)
+		3 (7.125 degrees)
+		4 (3.576 degrees)
+		5 (1.789 degrees)
+		6 (0.895 degrees)
+		7 (0.447 degrees)
+   */
 
-   wire signed [WIDTH + 11 : 0] multiplier_out;
-   wire signed [11 : 0] correction_gain;
-   wire signed [WIDTH-1 : 0]	mux_X, 
+	wire signed [WIDTH + 11 : 0] multiplier_out;
+	wire signed [11 : 0] correction_gain;
+	wire signed [WIDTH-1 : 0]	mux_X, 
    								mux_Y,
    								feedback_X,
    								feedback_Y,
@@ -45,16 +67,6 @@ module cordic_serial_abs #(
    wire sign, clear;
    
    reg select;
-   localparam [11:0] CORDIC_ANGLES [0:7] = '{
-												12'b110010010001,  // For iter_val=0 (45 degrees)
-												12'b011101101100,  // For iter_val=1 (26.565 degrees)
-												12'b001111101100,  // For iter_val=2 (14.036 degrees)
-												12'b000111111101,  // For iter_val=3 (7.125 degrees)
-												12'b000100000000,  // For iter_val=4 (3.576 degrees)
-												12'b000010000000,  // For iter_val=5 (1.789 degrees)
-												12'b000001000000,  // For iter_val=6 (0.895 degrees)
-												12'b000000100000   // For iter_val=7 (0.447 degrees)
-    };
 
    /* Input muxes */
    assign mux_X = select ? feedback_X : data_X;
