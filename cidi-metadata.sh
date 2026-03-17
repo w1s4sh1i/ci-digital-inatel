@@ -23,13 +23,16 @@ declare -A LOCAL=(
 
 
 # ID is a build key 
+# Rever sobre reutizar formatação com ID e module.
 declare -A MODULE=(
 					["SD100"]="Introdução a Microeletrônica"
 					["SD112"]="Introdução a Verilog"
 					["SD122"]="Circuito Digitais I"
 					["SD132"]="Circuito Digitais II"
 					["SD142"]="Circuito Digitais III"
-) 
+					["SD192"]="Projeto Orientado I"
+					#[" "]=" "
+)
 
 # declare -A MODULE=(
 #					["ID"]="CLASS_ID"
@@ -37,11 +40,13 @@ declare -A MODULE=(
 # )
 
 declare -a ADVISOR=(
-					"Felipe Rocha"					
+					["Basic"] = "Felipe Rocha"	
+					["Advanced"] = "Elivander Pereira"				
 )
 
 declare -a CONTACT=(
-					"felipef.rocha@inatel.br"
+					["Basic"] = "felipef.rocha@inatel.br"
+					["Advanced"] = "elivander.pereira@inatel.br"
 )
 
 # declare -A ADVISOR
