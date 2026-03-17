@@ -1,4 +1,4 @@
-# PROGRAMA CID DIGITAL - INATEL - T2/25
+# CID DIGITAL INATEL - T2/25
 
 > description
 
@@ -7,17 +7,17 @@
 > data de finalização:
 
 
-|CID-F   	|MODULE                                      					|LEVEL		 |ADVISOR				| :white_square_button: |
-|:----: 	|:----                                          				|:----		 | :----:               | :----:               	|
-|			|[](/CID-BASIC/)												|BASIC		 | 		                |  :white_check_mark:	|
-| 			|[](/CID-ADVANCED/)                                             |ADVANCED	 | 		                |  :white_square_button:|
+|FID   		|MODULE                     |LEVEL		 | :white_square_button:	|
+|:----: 	|:----                      |:----		 | :----:               	|
+|			|[Básico](/CID-BASIC/)		|BASIC		 | :white_check_mark:		|
+| 			|[Avançado](/CID-ADVANCED/) |ADVANCED	 | :white_square_button:	|
 
-## Análise do program	a
+## Análise do programa
 
 > ;
 
 
-# Folder - <module-id> - <module-name> 
+## Folder - <module-id> - <module-name> 
 
 > <folder-description>
 
