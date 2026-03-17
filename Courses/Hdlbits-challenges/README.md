@@ -4,6 +4,8 @@
 
 **Related Article** - "HDLBits: A Digital Logic Practice Problem Website" (ASEE's CoNECD Conference, 2018).
 
+> Perfil da Plataforma: w1s4sh1i 
+
 ## Challenges list
 
 > SOLUTION: Click on the identification code to analyze the solution to the challenge.
@@ -53,8 +55,6 @@
 |HBC-160	|[](https://hdlbits.01xz.net/wiki/) 						| :white_square_button:	|
 |HBC-170	|[](https://hdlbits.01xz.net/wiki/) 						| :white_square_button:	|
 |HBC-180	|[](https://hdlbits.01xz.net/wiki/) 						| :white_square_button:	|
-
-> Perfil da Plataforma: w1s4sh1i 
 
 ## Anotações 
 
