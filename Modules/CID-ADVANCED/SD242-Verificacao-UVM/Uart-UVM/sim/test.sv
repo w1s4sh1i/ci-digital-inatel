@@ -18,7 +18,7 @@ class uart_test extends uvm_test;
 
     function void build_phase(uvm_phase phase);
     	
-    	// [ ] Alterar 
+    	// [ ] Alterar para data test
         super.build_phase(phase);
         uvm_config_db#(uvm_active_passive_enum)::set(this, "uart_env.rx_ag", "is_active", UVM_ACTIVE);
         uvm_config_db#(uvm_active_passive_enum)::set(this, "uart_env.tx_ag", "is_active", UVM_ACTIVE);
@@ -26,11 +26,18 @@ class uart_test extends uvm_test;
     
     endfunction : build_phase
 
+	// task automatic data_testing(); 
+
+	// task automatic baud_testing()
+	
+	
     task run_phase(uvm_phase phase);
         
+        /* Data - TESTING */
         // Reanalisar estrutura do avaliação do envio e recebimento 
         // [ ] Alterar para o rx_rnd_seq não ser sorteado e comparado com tx_rnd_seq; 
-        random_sequence rx_rnd_seq;
+        random_sequence rx_rnd_seq; //
+        
         random_sequence tx_rnd_seq;
         
         phase.raise_objection(this);
@@ -42,19 +49,18 @@ class uart_test extends uvm_test;
         `uvm_info(get_full_name(), "Starting RANDOM SEQUENCE on TX sequencer...", UVM_LOW)
         
         fork
-            rx_rnd_seq.start(uart_env.rx_ag.rx_sqr);
+            rx_rnd_seq.start(uart_env.rx_ag.rx_sqr); // tx <> reg _bank values
             tx_rnd_seq.start(uart_env.tx_ag.tx_sqr);
         join
         
         // Prevent the test from ending until all transactions have been processed by the scoreboard
-        wait (uart_env.rx_scb.match_count + uart_env.rx_scb.mismatch_count == rx_rnd_seq.item_count);
+        wait (uart_env.rx_scb.match_count + uart_env.rx_scb.mismatch_count == rx_rnd_seq.item_count); // Não precisa 
         wait (uart_env.tx_scb.match_count + uart_env.tx_scb.mismatch_count == tx_rnd_seq.item_count);
+        
+       /* Baud Rate - TESTING */
+        
         #100ns;
-        
-        // Adicionar os testes do baud rate
-        
         phase.drop_objection(this);
-    
     endtask : run_phase
 
 endclass : uart_test
