@@ -3,10 +3,10 @@
 >  - ;
 
 
-|TID   		|TASK                               					|LEVEL		 | :white_check_mark:	|
-|:----: 	|:----                              					|:----		 | :----:               |
-|A-		|[ ]()		            					|ADVANCED		 | :white_check_mark:	|
-|A-		|[ ]()										|ADVANCED		 | :white_square_button:|
+|TID   		|TASK                               					|LEVEL		 	| :white_check_mark:	|
+|:----: 	|:----                              					|:----		 	| :----:               	|
+|A-801		|[ ]()													|ADVANCED		| :white_square_button:	|
+|A-802		|[ ]()													|ADVANCED		| :white_square_button:	|
 
 
 ## Anotações 
