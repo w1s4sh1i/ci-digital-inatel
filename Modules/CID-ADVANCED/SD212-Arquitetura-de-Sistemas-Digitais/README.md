@@ -1,4 +1,4 @@
-# Atividades do Módulo SD-212
+# Atividades do Módulo SD-212: Arquitetura de Sistemas Digitais
 
 >  - ;
 

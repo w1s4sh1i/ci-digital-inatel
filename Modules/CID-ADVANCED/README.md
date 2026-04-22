@@ -5,7 +5,7 @@
 |CID-SD   	|MODULE                                      					|LEVEL		 |ADVISOR				| :white_square_button: |
 |:----: 	|:----                                          				|:----		 | :----:               | :----:               	|
 |SD242 		|[Verificação (UVM)](/CID-ADVANCED/SD242-Verificacao-UVM)       |ADVANCED	 | 		                |  :white_square_button:|
-|SD212 		|[](/CID-ADVANCED/)                                             |ADVANCED	 | 		                |  :white_square_button:|
+|SD212 		|[Arquitetura de Sistemas Digitais](/CID-ADVANCED/SD212-Arquitetura-de-Sistemas-Digitais)|ADVANCED	 | 		                |  :white_square_button:|
 |SD221 		|[](/CID-ADVANCED/)                                             |ADVANCED	 | 		                |  :white_square_button:|
 |SD232 		|[](/CID-ADVANCED/)                                             |ADVANCED	 | 		                |  :white_square_button:|
 |SDXXX 		|[](/CID-ADVANCED/)                                             |ADVANCED	 | 		                |  :white_square_button:|
@@ -17,7 +17,7 @@
 
 > []();
 
-# 8 - SD212 -
+# 8 - SD212 - Arquitetura de Sistemas Digitais
 
 > Description
 

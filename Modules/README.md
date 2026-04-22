@@ -12,11 +12,11 @@
 |SD142 		|[Circuitos Digitais III](/CID-BASIC/SD122-CIRC-DIGITAIS-III)   |BASIC		 |1	   | 		            |  :white_check_mark:   |
 |SD192		|[Projeto Orientado I](/CID-BASIC/SD-192-Trabalho-Orientado-I)  |BASIC		 |1	   | 		            |  :white_check_mark:   |
 |SD242 		|[Verificação (UVM)](/CID-ADVANCED/SD242-Verificacao-UVM)       |ADVANCED	 |2	   |PEREIRA, Elivander	|  :white_square_button:|
-|SD212 		|[](/CID-ADVANCED/)                                             |ADVANCED	 |2	   | 		            |  :white_square_button:|
+|SD212 		|[Arquitetura de Sistemas Digitais](/CID-ADVANCED/)             |ADVANCED	 |2	   | 		            |  :white_square_button:|
 |SD221 		|[](/CID-ADVANCED/)                                             |ADVANCED	 |2	   | 		            |  :white_square_button:|
 |SD232 		|[](/CID-ADVANCED/)                                             |ADVANCED	 |2	   | 		            |  :white_square_button:|
 |SDYYY 		|[](/CID-ADVANCED/)                                             |ADVANCED	 |2	   | 		            |  :white_square_button:|
-|SDZZZ 		|[](/CID-RECIDENCY-or-PROJECT/)                                             |RESIDENCY or PROJECT |3| 				|  :white_square_button:|
+|SDZZZ 		|[](/CID-RECIDENCY-or-PROJECT/)                                 |RESIDENCY or PROJECT |3| 				|  :white_square_button:|
 
 ## Análise do programa
 
