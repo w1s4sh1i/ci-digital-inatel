@@ -1,0 +1,42 @@
+[*]
+[*] GTKWave Analyzer v3.3.127 (w)1999-2026 BSI
+[*] Wed Jun  3 15:50:20 2026
+[*]
+[dumpfile] "/home/bezerra-andre/0-INATEL-Development/BAW/ci-digital-inatel/Modules/CID-ADVANCED/SD212-Arquitetura-de-Sistemas-Digitais/axi4-lite-master/axi4_lite_system.vcd"
+[dumpfile_mtime] "Wed Jun  3 14:52:20 2026"
+[dumpfile_size] 13629
+[savefile] "/home/bezerra-andre/0-INATEL-Development/BAW/ci-digital-inatel/Modules/CID-ADVANCED/SD212-Arquitetura-de-Sistemas-Digitais/axi4-lite-master/axi4-lite.gtkw"
+[timestart] 0
+[size] 1920 1001
+[pos] -25 -22
+*-16.803822 189900 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] axi4_lite_system_tb.
+[treeopen] axi4_lite_system_tb.DUT_system.
+[sst_width] 261
+[signals_width] 222
+[sst_expanded] 1
+[sst_vpaned_height] 294
+@28
+[color] 2
+axi4_lite_system_tb.clk
+[color] 3
+axi4_lite_system_tb.reset
+@22
+axi4_lite_system_tb.addr[31:0]
+@28
+[color] 3
+axi4_lite_system_tb.rd_en
+@22
+axi4_lite_system_tb.rdata_out[31:0]
+@28
+[color] 3
+axi4_lite_system_tb.read_done
+@22
+axi4_lite_system_tb.read_val[31:0]
+axi4_lite_system_tb.wdata_in[31:0]
+@28
+[color] 3
+axi4_lite_system_tb.wr_en
+axi4_lite_system_tb.write_done
+[pattern_trace] 1
+[pattern_trace] 0
