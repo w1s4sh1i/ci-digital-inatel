@@ -1,0 +1,53 @@
+[*]
+[*] GTKWave Analyzer v3.3.127 (w)1999-2026 BSI
+[*] Wed Jun 10 06:05:31 2026
+[*]
+[dumpfile] "/home/bezerra-andre/Downloads/CI-DIGITAL/CID-SD212-SoC-Codes/fpga_rv32_tb.vcd"
+[dumpfile_mtime] "Wed Jun 10 04:33:55 2026"
+[dumpfile_size] 32856
+[savefile] "/home/bezerra-andre/Downloads/CI-DIGITAL/CID-SD212-SoC-Codes/fpga-rv32.gtkw"
+[timestart] 0
+[size] 1920 1001
+[pos] -25 -22
+*-16.282177 341000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] testbench.
+[treeopen] testbench.soc_inst.
+[treeopen] testbench.soc_inst.cpu_riscv.
+[treeopen] testbench.soc_inst.cpu_riscv.genblk1.
+[treeopen] testbench.soc_inst.cpu_riscv.genblk2.
+[sst_width] 261
+[signals_width] 326
+[sst_expanded] 1
+[sst_vpaned_height] 294
+@28
+testbench.soc_inst.clk
+@29
+testbench.soc_inst.resetn
+@22
+testbench.soc_inst.cpu_mem_addr[31:0]
+@28
+testbench.soc_inst.cpu_mem_instr
+@22
+testbench.soc_inst.cpu_mem_rdata[31:0]
+@28
+testbench.soc_inst.cpu_mem_ready
+testbench.soc_inst.cpu_mem_valid
+@22
+testbench.soc_inst.cpu_mem_wdata[31:0]
+testbench.soc_inst.cpu_mem_wstrb[3:0]
+testbench.soc_inst.gpio_mem_rdata[31:0]
+@28
+testbench.soc_inst.gpio_mem_ready
+testbench.soc_inst.gpio_mem_select
+testbench.soc_inst.led
+testbench.soc_inst.led_i
+testbench.soc_inst.led_o
+testbench.soc_inst.led_t
+testbench.soc_inst.rdata_addr_decode
+@22
+testbench.soc_inst.sram_mem_rdata[31:0]
+@28
+testbench.soc_inst.sram_mem_ready
+testbench.soc_inst.sram_mem_select
+[pattern_trace] 1
+[pattern_trace] 0
