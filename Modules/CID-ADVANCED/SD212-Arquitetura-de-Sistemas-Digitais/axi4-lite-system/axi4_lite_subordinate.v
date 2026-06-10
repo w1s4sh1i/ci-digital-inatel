@@ -51,6 +51,7 @@ module axi4_lite_subordinate (
 
     reg [4:0] aw_index;
     reg [4:0] ar_index;
+    
     integer i;
 
     always @(posedge clk) begin

@@ -15,11 +15,11 @@ module axi4_lite_system_tb;
     wire write_done;
 
     // Variáveis para estatísticas de testes (Métricas dinâmicas)
-    integer testes_passivos = 0;
-    integer testes_negativos = 0;
-    integer total_testes = 0;
-    real pct_passivos;
-    real pct_negativos;
+    integer	testes_passivos = 0,
+		testes_negativos = 0,
+    		total_testes = 0;
+    real 	pct_passivos, 
+    		pct_negativos;
     
     // Variável auxiliar para receber leituras
     reg [31:0] read_val = 32'h0; 	 
@@ -47,13 +47,16 @@ module axi4_lite_system_tb;
         input [31:0] target_addr;
         input [31:0] target_data;
         begin
+            
             @(posedge clk);
             addr <= target_addr;
             wdata_in <= target_data;
             wr_en <= 1'b1;
+            
             @(posedge clk);
             wr_en <= 1'b0;
             wait(write_done);
+            
             #1; // Tempo para estabilização
         end
     endtask
@@ -63,12 +66,15 @@ module axi4_lite_system_tb;
         input  [31:0] target_addr;
         output [31:0] data_read;
         begin
+            
             @(posedge clk);
             addr <= target_addr;
             rd_en <= 1'b1;
+            
             @(posedge clk);
             rd_en <= 1'b0;
             wait(read_done);
+            
             #1;
             data_read = rdata_out;
         end
@@ -108,10 +114,11 @@ module axi4_lite_system_tb;
     
     initial begin
         
-        $display("\n[TB] Iniciar testes (jun, 1 2026): ...");
+        $display("\n[TESTBENCH] Iniciar testes (jun, 1 2026): ...");
 
         // TESTE 1: Reset
         reset = 1'b1;
+        
         #20; 
         check_result(1, 32'h0, DUT_system.UUT_subordinate.reg_s[0], "Teste 1: Reset ativo. reg0 zerado");
         check_result(1, 32'h0, DUT_system.UUT_subordinate.reg_s[1], "Teste 1: Reset ativo. reg1 zerado");

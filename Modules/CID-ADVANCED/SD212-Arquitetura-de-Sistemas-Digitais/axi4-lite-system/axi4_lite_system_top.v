@@ -1,12 +1,14 @@
 `timescale 1ns / 1ps
 
 module axi4_lite_system_top (
+    
     input clk,
     input reset,
     input wr_en,
     input rd_en,
     input [31:0] addr,
     input [31:0] wdata_in,
+    
     output [31:0] rdata_out,
     output read_done,
     output write_done
