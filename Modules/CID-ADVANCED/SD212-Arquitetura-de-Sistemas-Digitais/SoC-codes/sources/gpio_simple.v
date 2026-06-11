@@ -12,8 +12,8 @@
 
 module gpio_simple #(
     parameter [31:0]	GPIO_ADDR = 32'h0200_0000,
-    parameter [31:0]	INIT_MASK = 32'h0000_0000
-    parameter integer	NUM_GPIO  = 1,
+    parameter [31:0]	INIT_MASK = 32'h0000_0000,
+    parameter integer	NUM_GPIO  = 1
 )(
     // interface de clock e reset
     input         clk,

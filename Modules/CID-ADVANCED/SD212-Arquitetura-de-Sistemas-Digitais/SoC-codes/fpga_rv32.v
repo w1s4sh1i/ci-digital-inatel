@@ -1,7 +1,13 @@
+`include "sources/alt_iobuf.v"
+`include "sources/gpio_simple.v"
+`include "sources/picorv32.v"
+`include "sources/ram_32bits.v"
+`include "testbench/testbench.v"
+
 `timescale 1 ns / 1 ps
 
 module fpga_rv32 #(
-	parameter INIT_RAM_FILE = "firmware.hex"
+	parameter INIT_RAM_FILE = "memory/firmware.hex"
 )(
 	input clk,
 	input resetn,

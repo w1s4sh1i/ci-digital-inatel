@@ -10,13 +10,13 @@ module testbench;
 
 	// dump and monitor;  
 	initial begin
-		$dumpfile("fpga_rv32_tb.vcd");
+		$dumpfile("Icarus/fpga_rv32_tb.vcd");
 		$dumpvars(0, testbench);
 		// $monitor();
 	end
 
 	fpga_rv32 # (
-		.INIT_RAM_FILE("firmware.hex")
+		.INIT_RAM_FILE("memorys/firmware.hex")
 	) soc_inst (
 		.clk(clk),
 		.resetn(resetn),

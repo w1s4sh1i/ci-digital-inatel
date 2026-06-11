@@ -1,0 +1,23 @@
+/home/bezerra-andre/0-INATEL-Development/BAW/ci-digital-inatel/Modules/CID-ADVANCED/SD212-Arquitetura-de-Sistemas-Digitais/SoC-codes/fpga_rv32.v {1 {vlog -work soc_codes -stats=none /home/bezerra-andre/0-INATEL-Development/BAW/ci-digital-inatel/Modules/CID-ADVANCED/SD212-Arquitetura-de-Sistemas-Digitais/SoC-codes/fpga_rv32.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module alt_iobuf
+-- Compiling module gpio_simple
+-- Compiling module picorv32
+-- Compiling module picorv32_regs
+-- Compiling module picorv32_pcpi_mul
+-- Compiling module picorv32_pcpi_fast_mul
+-- Compiling module picorv32_pcpi_div
+-- Compiling module picorv32_axi
+-- Compiling module picorv32_axi_adapter
+-- Compiling module picorv32_wb
+-- Compiling module ram_32bits
+-- Compiling module testbench
+-- Compiling module fpga_rv32
+
+Top level modules:
+	picorv32_regs
+	picorv32_axi
+	picorv32_wb
+	testbench
+
+} {} {}}
