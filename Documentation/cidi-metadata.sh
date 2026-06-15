@@ -2,7 +2,7 @@
 # CID DIGITAL STUDENT INFOR
 
 # [ ] Get date in system; 
-
+# [ ] Structure data for easy reusability; 
 # [ ] Dynamic Generate 
 # for item in "${ListArray[@]}"; do
 #    declare -A $item
