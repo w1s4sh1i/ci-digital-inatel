@@ -14,16 +14,12 @@ module alt_iobuf #(
 		output_termination    = "NONE",
 		lpm_type              = "alt_iobuf"
 ) (
-    input	i,
-    input	oe,
-    inout	io,
+    input	i, oe, io,
     output	o
 );
 
     // Lógica de buffer de três estados (Tri-state)
-    assign io = (oe == 1'b1) ? i : 1'bz;
-
-    // Lógica de entrada
+    assign io = (oe == 1'b1) ? i : 1'bz; // Alta impedância
     assign o = io;
 
 endmodule

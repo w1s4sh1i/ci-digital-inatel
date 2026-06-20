@@ -1,6 +1,15 @@
 `timescale 1ns / 1ps
 
+// [ ] Parametrizar as entradas;
+// [ ] Reduzir as redundâncias de sinais; 
+
 module axi4_lite_master (
+    
+    // MASTER output
+    output [31:0] rdata_out,
+    output read_done, 
+    output write_done,
+    
     // MASTER INPUT
     input clk, 
     input reset,
@@ -8,11 +17,6 @@ module axi4_lite_master (
     input rd_en,
     input [31:0] addr,
     input [31:0] wdata_in,
-
-    // MASTER output
-    output [31:0] rdata_out,
-    output read_done, 
-    output write_done,
 
     // AW
     output [31:0] awaddr,
@@ -25,9 +29,9 @@ module axi4_lite_master (
     input wready,
 
     // B
+    output bready,
     input bvalid,
     input [1:0] bresp,
-    output bready,
 
     // AR
     output [31:0] araddr,
@@ -41,40 +45,38 @@ module axi4_lite_master (
     input [1:0] rresp
 );
 
-    parameter W_IDLE  = 3'b000;
-    parameter W_AW    = 3'b001;
-    parameter W_W     = 3'b010;
-    parameter W_B     = 3'b011;
-    parameter W_DONE  = 3'b100;
+    localparam	W_IDLE  = 3'b000,
+    		W_AW    = 3'b001,
+    		W_W     = 3'b010,
+    		W_B     = 3'b011,
+    		W_DONE  = 3'b100;
 
     reg [2:0] w_state;
 
-    parameter R_IDLE  = 2'b00;
-    parameter R_AR    = 2'b01;
-    parameter R_R     = 2'b10;
-    parameter R_DONE  = 2'b11;
+    localparam	R_IDLE  = 2'b00,
+    		R_AR    = 2'b01,
+    		R_R     = 2'b10,
+    		R_DONE  = 2'b11;
 
     reg [1:0] r_state;
 
     // INTERNAL LATCH
-    reg [31:0] waddr_latch;
-    reg [31:0] wdata_latch;
-    reg [31:0] raddr_latch;
+    reg [31:0] waddr_latch, wdata_latch, raddr_latch;
 
     // Registradores internos equivalentes para controle sequencial das saídas
     
-    reg        read_done_int;
-    reg        write_done_int;
-    reg        awvalid_int;
-    reg        wvalid_int;
-    reg        bready_int;
-    reg        arvalid_int;
-    reg        rready_int;
+    reg		read_done_int,
+    		write_done_int,
+    		awvalid_int,
+    		wvalid_int,
+    		bready_int,
+    		arvalid_int,
+    		rready_int;
     
-    reg [31:0] rdata_out_int;
-    reg [31:0] awaddr_int;
-    reg [31:0] wdata_int;
-    reg [31:0] araddr_int;
+    reg [31:0]	rdata_out_int,
+    		awaddr_int,
+    		wdata_int,
+    		araddr_int;
 
     always @(posedge clk) begin
         if(reset) begin
@@ -82,22 +84,22 @@ module axi4_lite_master (
             wvalid_int     <= 1'b0;
             bready_int     <= 1'b0;
             write_done_int <= 1'b0;
-            awaddr_int     <= 1'b0;
-            wdata_int      <= 1'b0;
+            awaddr_int     <= 32'b0;
+            wdata_int      <= 32'b0;
             w_state        <= W_IDLE;
 
             // Read channel reset
             arvalid_int    <= 1'b0;
             rready_int     <= 1'b0;
             read_done_int  <= 1'b0;
-            araddr_int     <= 1'b0;
-            rdata_out_int  <= 1'b0;
+            araddr_int     <= 32'b0;
+            rdata_out_int  <= 32'b0;
             r_state        <= R_IDLE;
 
             // LATCH
-            waddr_latch    <= 1'b0;
-            wdata_latch    <= 1'b0;
-            raddr_latch    <= 1'b0;
+            waddr_latch    <= 32'b0;
+            wdata_latch    <= 32'b0;
+            raddr_latch    <= 32'b0;
         
         end else begin
             case(w_state)
@@ -160,7 +162,7 @@ module axi4_lite_master (
                 end
                 R_R: begin
                     if(rvalid) begin
-                        rdata_out_int <= rdata;
+                        rdata_out_int <= rdata; // Envia para saída
                         rready_int <= 1'b0;
                         r_state <= R_DONE; 
                     end
