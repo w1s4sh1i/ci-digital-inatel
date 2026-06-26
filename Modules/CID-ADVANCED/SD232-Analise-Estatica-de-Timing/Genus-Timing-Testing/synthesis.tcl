@@ -9,10 +9,10 @@ set RTL_PATH        "."
 set SDC_PATH        "."
 
 # All HDL files, separated by spaces
-set RTL_LIST        {async_counter.v}
+set RTL_LIST        {picorv32.v}
 
 # Top-level module name for synthesis
-set DESIGN          "async_counter"
+set DESIGN          "picorv32"
 
 # PDK Library and LEF Paths
 set LIB_PATH        "/opt/pdks/asap7/asap7sc7p5t_28/LIB/NLDM/"

@@ -1,0 +1,45 @@
+11 directories, 33 files
+
+. RISC-V-PROCESSOR
+├── ALU
+│   ├── ALU_tb.v
+│   ├── ALU.v
+│   ├── ALU_wave.vcd
+│   └── risc-v-ula
+├── Control Unit
+│   ├── Control_tb.v
+│   └── CONTROL.v
+├── Datapath
+│   ├── Datapath_tb.v
+│   ├── Datapath.v
+│   └── output_wave.vcd
+├── Images
+│   ├── Processor.png
+│   ├── RISCV.png
+│   └── Waveform.png
+├── Instruction Fetch Unit
+│   ├── IFU_output_wave.vcd
+│   ├── IFU_tb.v
+│   ├── IFU.v
+│   ├── INST_MEM_tb.v
+│   ├── INST_MEM.v
+│   └── output_wave.vcd
+├── Processor
+│   ├── ALU.v
+│   ├── CONTROL.v
+│   ├── DATAPATH.v
+│   ├── IFU.v
+│   ├── INST_MEM.v
+│   ├── Processor_tb.v
+│   ├── PROCESSOR.v
+│   ├── processor_wave.vcd
+│   ├── REG_FILE.v
+│   └── risc-v-processor
+├── README.md
+├── Register file
+│   ├── output_wave.vcd
+│   ├── REG_FILE.v
+│   └── Register File_tb.v
+├── Sources
+├── Testbench
+└── Waves

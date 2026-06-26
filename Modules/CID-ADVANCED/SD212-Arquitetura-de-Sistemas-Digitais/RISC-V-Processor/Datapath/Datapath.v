@@ -1,7 +1,9 @@
 `include "./../Register file/REG_FILE.v"
 `include "./../ALU/ALU.v"
 
-module DATAPATH(
+`timescale 1 ns / 1 ps
+
+module DATAPATH (
     input [4:0]read_reg_num1,
     input [4:0]read_reg_num2,
     input [4:0]write_reg,
@@ -19,15 +21,15 @@ module DATAPATH(
 
     // Instantiating the register file
     REG_FILE reg_file_module(
-    read_reg_num1,
-    read_reg_num2,
-    write_reg,
-    write_data,
-    read_data1,
-    read_data2,
-    regwrite,
-    clock,
-    reset
+	    read_reg_num1,
+	    read_reg_num2,
+	    write_reg,
+	    write_data,
+	    read_data1,
+	    read_data2,
+	    regwrite,
+	    clock,
+	    reset
     );
 
     // Instanting ALU

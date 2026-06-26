@@ -1,4 +1,6 @@
-`include "DATAPATH.v"
+`include "Datapath.v"
+
+`timescale 1 ns / 1 ps
 
 module stimulus ();
 
@@ -9,16 +11,19 @@ module stimulus ();
     reg regwrite;
     reg clock;
     reg reset;
+    
+    wire zero_flag;
 
     DATAPATH DATAPATH_module( 
-     read_reg_num1,
-     read_reg_num2,
-     write_reg,
-     alu_control,
-     regwrite,
-     clock,
-     reset,
-     zero_flag);
+	     read_reg_num1,
+	     read_reg_num2,
+	     write_reg,
+	     alu_control,
+	     regwrite,
+	     clock,
+	     reset,
+	     zero_flag
+     );
 
     initial begin
         $dumpfile("output_wave.vcd");
