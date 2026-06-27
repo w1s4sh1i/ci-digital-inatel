@@ -1,0 +1,29 @@
+/home/bezerra-andre/0-INATEL-Development/BAW/ci-digital-inatel/Modules/CID-ADVANCED/SD212-Arquitetura-de-Sistemas-Digitais/AXI4-Lite-system/axi4_lite_system_tb.v {1 {vlog -work work -stats=none /home/bezerra-andre/0-INATEL-Development/BAW/ci-digital-inatel/Modules/CID-ADVANCED/SD212-Arquitetura-de-Sistemas-Digitais/AXI4-Lite-system/axi4_lite_system_tb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module axi4_lite_system_tb
+
+Top level modules:
+	axi4_lite_system_tb
+
+} {} {}} /home/bezerra-andre/0-INATEL-Development/BAW/ci-digital-inatel/Modules/CID-ADVANCED/SD212-Arquitetura-de-Sistemas-Digitais/AXI4-Lite-system/axi4_lite_system_top.v {1 {vlog -work work -stats=none /home/bezerra-andre/0-INATEL-Development/BAW/ci-digital-inatel/Modules/CID-ADVANCED/SD212-Arquitetura-de-Sistemas-Digitais/AXI4-Lite-system/axi4_lite_system_top.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module axi4_lite_system_top
+
+Top level modules:
+	axi4_lite_system_top
+
+} {} {}} /home/bezerra-andre/0-INATEL-Development/BAW/ci-digital-inatel/Modules/CID-ADVANCED/SD212-Arquitetura-de-Sistemas-Digitais/AXI4-Lite-system/axi4_lite_master.v {1 {vlog -work work -stats=none /home/bezerra-andre/0-INATEL-Development/BAW/ci-digital-inatel/Modules/CID-ADVANCED/SD212-Arquitetura-de-Sistemas-Digitais/AXI4-Lite-system/axi4_lite_master.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module axi4_lite_master
+
+Top level modules:
+	axi4_lite_master
+
+} {} {}} /home/bezerra-andre/0-INATEL-Development/BAW/ci-digital-inatel/Modules/CID-ADVANCED/SD212-Arquitetura-de-Sistemas-Digitais/AXI4-Lite-system/axi4_lite_subordinate.v {1 {vlog -work work -stats=none /home/bezerra-andre/0-INATEL-Development/BAW/ci-digital-inatel/Modules/CID-ADVANCED/SD212-Arquitetura-de-Sistemas-Digitais/AXI4-Lite-system/axi4_lite_subordinate.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module axi4_lite_subordinate
+
+Top level modules:
+	axi4_lite_subordinate
+
+} {} {}}

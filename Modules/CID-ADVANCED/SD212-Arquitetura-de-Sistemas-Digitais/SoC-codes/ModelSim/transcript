@@ -1,0 +1,105 @@
+# Loading project soc_codes
+# reading /home/bezerra-andre/intelFPGA/20.1/modelsim_ase/linuxaloem/../modelsim.ini
+# Loading project AXI4-master
+# Compile of axi4_lite_master.v was successful.
+# Compile of axi4_lite_subordinate.v was successful.
+# Compile of axi4_lite_system_tb.v was successful.
+# Compile of axi4_lite_system_top.v was successful.
+# 4 compiles, 0 failed with no errors.
+vsim work.axi4_lite_system_tb
+# vsim work.axi4_lite_system_tb 
+# Start time: 21:01:19 on Jun 20,2026
+# Loading work.axi4_lite_system_tb
+# Loading work.axi4_lite_system_top
+# Loading work.axi4_lite_master
+# Loading work.axi4_lite_subordinate
+add wave -r /axi4_lite_system_top/*
+# ** UI-Msg: (vish-4014) No objects found matching '/axi4_lite_system_top/*'.
+add wave -all
+# Missing signal name or pattern.
+add wave all
+# ** UI-Msg: (vish-4014) No objects found matching 'all'.
+add wave *
+run -all
+# 
+# [TB] Iniciar testes (jun, 1 2026): ...
+# [OK] Teste 1: Reset ativo. reg0 zerado;
+# [OK] Teste 1: Reset ativo. reg1 zerado;
+# [OK] Teste 2: Escrita bem sucedida no reg0 (0x00);
+# [OK] Teste 3: Escrita bem sucedida no reg1 (0x04);
+# [OK] Teste 4: Injetado valor externo em reg2_din;
+# [OK] Teste 5: Injetado valor externo em reg3_din;
+# [OK] Teste 6: Leitura do reg0 (0x00);
+# [OK] Teste 7: Leitura do reg1 (0x04);
+# [OK] Teste 8: Leitura do reg2 (0x08 - Externo);
+# [OK] Teste 9: Leitura do reg3 (0x0C - Externo);
+# [OK] Teste 10: Respostas do protocolo AXI OKAY (2'b00);
+# [OK] Teste 11: Escrita rejeitada em reg2 (Read-Only) | Esperado: 0x00000033, Obtido: 0xdeadbeef;
+# [OK] Teste 12: Escrita rejeitada em reg3 (Read-Only) | Esperado: 0x00000044, Obtido: 0xaaaaffff;
+# 
+#                 RELATORIO DE COBERTURA DE TESTES          
+# ------------------------------------------------------------
+#  Total de Casos Executados: 12;
+#  Percentual de testes: 
+# > Positivos (OK) : 100.00% (12 testes); 
+# > Negativos (ERRO) : 0.00% (0 testes); 
+# 
+# 
+# ** Note: $finish    : /home/bezerra-andre/0-INATEL-Development/BAW/ci-digital-inatel/Modules/CID-ADVANCED/SD212-Arquitetura-de-Sistemas-Digitais/AXI4-Lite-system/axi4_lite_system_tb.v(196)
+#    Time: 806 ns  Iteration: 0  Instance: /axi4_lite_system_tb
+# 1
+# Break in Module axi4_lite_system_tb at /home/bezerra-andre/0-INATEL-Development/BAW/ci-digital-inatel/Modules/CID-ADVANCED/SD212-Arquitetura-de-Sistemas-Digitais/AXI4-Lite-system/axi4_lite_system_tb.v line 196
+# Compile of axi4_lite_master.v was successful.
+# Compile of axi4_lite_subordinate.v was successful.
+# Compile of axi4_lite_system_tb.v was successful.
+# Compile of axi4_lite_system_top.v was successful.
+# 4 compiles, 0 failed with no errors.
+vsim work.axi4_lite_system_tb
+# End time: 21:14:42 on Jun 20,2026, Elapsed time: 0:13:23
+# Errors: 0, Warnings: 6
+# vsim work.axi4_lite_system_tb 
+# Start time: 21:14:42 on Jun 20,2026
+# Loading work.axi4_lite_system_tb
+# Loading work.axi4_lite_system_top
+# Loading work.axi4_lite_master
+# Loading work.axi4_lite_subordinate
+add wave /axi4_lite_system_top/*
+# ** UI-Msg: (vish-4014) No objects found matching '/axi4_lite_system_top/*'.
+add wave /axi4_lite_system_top/UUT_master/*
+# ** UI-Msg: (vish-4014) No objects found matching '/axi4_lite_system_top/UUT_master/*'.
+add wave /axi4_lite_system_top/DUT_system/*
+# ** UI-Msg: (vish-4014) No objects found matching '/axi4_lite_system_top/DUT_system/*'.
+add wave -r /*
+run all 
+# Invalid time value: all
+run -all
+# 
+# [TB] Iniciar testes (jun, 1 2026): ...
+# [OK] Teste 1: Reset ativo. reg0 zerado;
+# [OK] Teste 1: Reset ativo. reg1 zerado;
+# [OK] Teste 2: Escrita bem sucedida no reg0 (0x00);
+# [OK] Teste 3: Escrita bem sucedida no reg1 (0x04);
+# [OK] Teste 4: Injetado valor externo em reg2_din;
+# [OK] Teste 5: Injetado valor externo em reg3_din;
+# [OK] Teste 6: Leitura do reg0 (0x00);
+# [OK] Teste 7: Leitura do reg1 (0x04);
+# [OK] Teste 8: Leitura do reg2 (0x08 - Externo);
+# [OK] Teste 9: Leitura do reg3 (0x0C - Externo);
+# [OK] Teste 10: Respostas do protocolo AXI OKAY (2'b00);
+# [OK] Teste 11: Escrita rejeitada em reg2 (Read-Only) | Esperado: 0x00000033, Obtido: 0xdeadbeef;
+# [OK] Teste 12: Escrita rejeitada em reg3 (Read-Only) | Esperado: 0x00000044, Obtido: 0xaaaaffff;
+# 
+#                 RELATORIO DE COBERTURA DE TESTES          
+# ------------------------------------------------------------
+#  Total de Casos Executados: 12;
+#  Percentual de testes: 
+# > Positivos (OK) : 100.00% (12 testes); 
+# > Negativos (ERRO) : 0.00% (0 testes); 
+# 
+# 
+# ** Note: $finish    : /home/bezerra-andre/0-INATEL-Development/BAW/ci-digital-inatel/Modules/CID-ADVANCED/SD212-Arquitetura-de-Sistemas-Digitais/AXI4-Lite-system/axi4_lite_system_tb.v(196)
+#    Time: 806 ns  Iteration: 0  Instance: /axi4_lite_system_tb
+# 1
+# Break in Module axi4_lite_system_tb at /home/bezerra-andre/0-INATEL-Development/BAW/ci-digital-inatel/Modules/CID-ADVANCED/SD212-Arquitetura-de-Sistemas-Digitais/AXI4-Lite-system/axi4_lite_system_tb.v line 196
+# End time: 21:31:18 on Jun 20,2026, Elapsed time: 0:16:36
+# Errors: 0, Warnings: 1

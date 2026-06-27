@@ -1,0 +1,42 @@
+[*]
+[*] GTKWave Analyzer v3.3.127 (w)1999-2026 BSI
+[*] Fri Jun 26 04:21:45 2026
+[*]
+[dumpfile] "/home/bezerra-andre/0-INATEL-Development/BAW/ci-digital-inatel/Modules/CID-ADVANCED/SD232-Analise-Estatica-de-Timing/Clock-Domain-Crossing/cdc-1/cdc_3ss-sim.vcd"
+[dumpfile_mtime] "Fri Jun 26 04:15:37 2026"
+[dumpfile_size] 2237
+[savefile] "/home/bezerra-andre/0-INATEL-Development/BAW/ci-digital-inatel/Modules/CID-ADVANCED/SD232-Analise-Estatica-de-Timing/Clock-Domain-Crossing/cdc-1/cdc_3ss-sim.gtkw"
+[timestart] 0
+[size] 1920 1001
+[pos] -25 -22
+*-13.305328 9970 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] cdc_3stage_sync_tb.
+[sst_width] 261
+[signals_width] 327
+[sst_expanded] 1
+[sst_vpaned_height] 294
+@420
+[color] 2
+cdc_3stage_sync_tb.PRECISION
+[color] 2
+cdc_3stage_sync_tb.DUT_cdc_3ss.WIDTH
+@28
+[color] 2
+cdc_3stage_sync_tb.FREQ_SRC
+cdc_3stage_sync_tb.DUT_cdc_3ss.src_clk
+[color] 3
+cdc_3stage_sync_tb.DUT_cdc_3ss.src_arstn
+cdc_3stage_sync_tb.DUT_cdc_3ss.dest_clk
+[color] 2
+cdc_3stage_sync_tb.FREQ_DEST
+[color] 3
+cdc_3stage_sync_tb.dest_arstn
+@29
+cdc_3stage_sync_tb.DUT_cdc_3ss.ff_src[7:0]
+cdc_3stage_sync_tb.DUT_cdc_3ss.ff_sync_chain1[7:0]
+cdc_3stage_sync_tb.DUT_cdc_3ss.ff_sync_chain2[7:0]
+@22
+cdc_3stage_sync_tb.DUT_cdc_3ss.src_data[7:0]
+cdc_3stage_sync_tb.DUT_cdc_3ss.dest_data[7:0]
+[pattern_trace] 1
+[pattern_trace] 0

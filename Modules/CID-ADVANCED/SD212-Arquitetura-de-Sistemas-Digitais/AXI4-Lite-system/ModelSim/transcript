@@ -1,0 +1,79 @@
+# Loading project AXI4-master
+# reading /home/bezerra-andre/intelFPGA/20.1/modelsim_ase/linuxaloem/../modelsim.ini
+# Loading project picorv32-testing
+# Compile of alt_iobuf.vhd was successful.
+# Compile of fpga_rv32.v was successful.
+# Compile of gpio_simple.v was successful.
+# Compile of picorv32.v was successful.
+# Compile of ram_32bits.v was successful.
+# Compile of testbench.v was successful.
+# 6 compiles, 0 failed with no errors.
+# Load canceled
+ls
+# alt_iobuf.vhd
+# firmware.hex.txt
+# fpga_rv32.v
+# gpio_simple.v
+# picorv32_soc.mpf
+# picorv32-testing.mpf
+# picorv32.v
+# ram_32bits.v
+# soc_lvl_wave.do
+# testbench.v
+# work
+do soc_lvl_wave.do
+run -all
+# No Design Loaded!
+vsim work.testbench
+# vsim work.testbench 
+# Start time: 22:15:44 on Jun 21,2026
+# Loading work.testbench
+# Loading work.fpga_rv32
+# Loading work.picorv32
+# Loading work.ram_32bits
+# Loading work.gpio_simple
+# Loading work.picorv32_pcpi_mul
+# Loading work.picorv32_pcpi_div
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.alt_iobuf(behavior)
+do soc_lvl_wave.do
+run all
+# Invalid time value: all
+run -all
+# ** Warning: (vsim-PLI-3408) Too few data words read on line 19 of file "firmware.hex.txt". Expected 1024, found 20.    : /home/bezerra-andre/Downloads/CI-DIGITAL/TITUS/PicoRV32/fpga_rv32.v(103)
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/soc_inst
+# Break key hit
+# Simulation stop requested.
+
+
+stop
+# Compile of alt_iobuf.vhd was successful.
+# Compile of fpga_rv32.v was successful.
+# Compile of gpio_simple.v was successful.
+# Compile of picorv32.v was successful.
+# Compile of ram_32bits.v was successful.
+# Compile of testbench.v was successful.
+# 6 compiles, 0 failed with no errors.
+vsim work.testbench
+# End time: 22:17:48 on Jun 21,2026, Elapsed time: 0:02:04
+# Errors: 0, Warnings: 7
+# vsim work.testbench 
+# Start time: 22:17:48 on Jun 21,2026
+# Loading work.testbench
+# Loading work.fpga_rv32
+# Loading work.picorv32
+# Loading work.ram_32bits
+# Loading work.gpio_simple
+# Loading work.picorv32_pcpi_mul
+# Loading work.picorv32_pcpi_div
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.alt_iobuf(behavior)
+do soc_lvl_wave.do
+run 500 ns
+# ** Warning: (vsim-PLI-3408) Too few data words read on line 19 of file "firmware.hex.txt". Expected 1024, found 20.    : /home/bezerra-andre/Downloads/CI-DIGITAL/TITUS/PicoRV32/fpga_rv32.v(103)
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/soc_inst
+run 500 ns

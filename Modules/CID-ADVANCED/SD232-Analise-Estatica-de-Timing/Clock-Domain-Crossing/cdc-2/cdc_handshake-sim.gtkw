@@ -1,0 +1,51 @@
+[*]
+[*] GTKWave Analyzer v3.3.127 (w)1999-2026 BSI
+[*] Fri Jun 26 05:27:32 2026
+[*]
+[dumpfile] "/home/bezerra-andre/0-INATEL-Development/BAW/ci-digital-inatel/Modules/CID-ADVANCED/SD232-Analise-Estatica-de-Timing/Clock-Domain-Crossing/cdc-2/cdc_handshake-sim.vcd"
+[dumpfile_mtime] "Fri Jun 26 05:27:21 2026"
+[dumpfile_size] 2747
+[savefile] "/home/bezerra-andre/0-INATEL-Development/BAW/ci-digital-inatel/Modules/CID-ADVANCED/SD232-Analise-Estatica-de-Timing/Clock-Domain-Crossing/cdc-2/cdc_handshake-sim.gtkw"
+[timestart] 0
+[size] 1920 1001
+[pos] -25 -22
+*-13.363624 30000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] cdc_mcp_handshake_tb.
+[sst_width] 261
+[signals_width] 285
+[sst_expanded] 1
+[sst_vpaned_height] 294
+@29
+[color] 2
+cdc_mcp_handshake_tb.FREQ_SRC
+@28
+[color] 2
+cdc_mcp_handshake_tb.FREQ_DEST
+@420
+[color] 2
+cdc_mcp_handshake_tb.PRECISION
+[color] 2
+cdc_mcp_handshake_tb.WIDTH
+@28
+[color] 3
+cdc_mcp_handshake_tb.dut.src_clk
+cdc_mcp_handshake_tb.dut.src_arstn
+cdc_mcp_handshake_tb.dut.src_valid
+cdc_mcp_handshake_tb.dut.src_ready
+[color] 3
+cdc_mcp_handshake_tb.dest_clk
+cdc_mcp_handshake_tb.dest_arstn
+cdc_mcp_handshake_tb.dest_valid
+cdc_mcp_handshake_tb.dut.dest_en
+cdc_mcp_handshake_tb.dut.ack_sync[2:0]
+@22
+cdc_mcp_handshake_tb.dut.ff_src[7:0]
+@28
+cdc_mcp_handshake_tb.dut.req_sync[2:0]
+cdc_mcp_handshake_tb.dut.req_toggle
+@22
+cdc_mcp_handshake_tb.send_data.data[7:0]
+cdc_mcp_handshake_tb.src_data[7:0]
+cdc_mcp_handshake_tb.dut.dest_data[7:0]
+[pattern_trace] 1
+[pattern_trace] 0

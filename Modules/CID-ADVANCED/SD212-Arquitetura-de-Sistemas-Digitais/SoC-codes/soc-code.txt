@@ -1,0 +1,62 @@
+.
+├── assembly.asm
+├── fpga-rv32
+├── fpga_rv32.v
+├── Icarus
+│   ├── fpga_rv32_tb.gtkw
+│   └── fpga_rv32_tb.vcd
+├── images
+│   ├── 0_testbench_wave.png
+│   ├── 1_soc_int_wave.png
+│   ├── 2_1_1_cpu_riscv_wave.png
+│   ├── 2_1_2_cpu_riscv_wave.png
+│   ├── 2_1_3_cpu_riscv_wave.png
+│   ├── 2_1_4_cpu_riscv_wave.png
+│   ├── 2_1_5_cpu_riscv_wave.png
+│   ├── 2_1_6_cpu_riscv_wave.png
+│   ├── 2_2_led_buff_wave.png
+│   ├── 2_3_led_gpio_wave.png
+│   ├── 2_4_main_mem_wave.png
+│   ├── 3_1_cpu_riscv-pcpi_mul_wave.png
+│   ├── 3_2_cpu_riscv-pcpi_div_wave.png
+│   └── picorv32-internal.png
+├── memory
+│   └── firmware.hex
+├── ModelSim
+│   ├── dump.vcd
+│   ├── picorv32_soc.mpf
+│   ├── soc_codes
+│   │   ├── _info
+│   │   ├── _lib1_2.qdb
+│   │   ├── _lib1_2.qpg
+│   │   ├── _lib1_2.qtl
+│   │   ├── _lib.qdb
+│   │   └── _vmake
+│   ├── soc_codes.cr.mti
+│   ├── soc_codes.mpf
+│   ├── soc_lvl_wave.do
+│   ├── transcript
+│   └── vsim.wlf
+├── README.md
+├── soc-code.txt
+├── sources
+│   ├── alt_iobuf.v
+│   ├── alt_iobuf.vhd
+│   ├── gpio_simple.v
+│   ├── picorv32
+│   │   ├── pico-rv32
+│   │   ├── picorv32_axi_adapter.v
+│   │   ├── picorv32_axi.v
+│   │   ├── picorv32_pcpi_div.v
+│   │   ├── picorv32_pcpi_fast_mul.v
+│   │   ├── picorv32_pcpi_mul.v
+│   │   ├── picorv32_regs.v
+│   │   ├── picorv32.txt
+│   │   ├── picorv32.v
+│   │   └── picorv32_wb.v
+│   ├── picorv32.v
+│   └── ram_32bits.v
+└── testbench
+    └── testbench.v
+
+9 directories, 51 files
