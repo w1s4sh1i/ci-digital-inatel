@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Tue Jun 30 05:39:32 2026
+# Process ID         : 12915
+# Current directory  : /home/bezerra-andre/0-INATEL-Development/BAW/ci-digital-inatel/Modules/CID-ADVANCED/SD232-Analise-Estatica-de-Timing/Clock-Domain-Crossing/cdc-1/atv_23-cdc/atv_23-cdc.runs/synth_1
+# Command line       : vivado -log cdc_3stage_sync.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source cdc_3stage_sync.tcl
+# Log file           : /home/bezerra-andre/0-INATEL-Development/BAW/ci-digital-inatel/Modules/CID-ADVANCED/SD232-Analise-Estatica-de-Timing/Clock-Domain-Crossing/cdc-1/atv_23-cdc/atv_23-cdc.runs/synth_1/cdc_3stage_sync.vds
+# Journal file       : /home/bezerra-andre/0-INATEL-Development/BAW/ci-digital-inatel/Modules/CID-ADVANCED/SD232-Analise-Estatica-de-Timing/Clock-Domain-Crossing/cdc-1/atv_23-cdc/atv_23-cdc.runs/synth_1/vivado.jou
+# Running On         : SDD-BEZERRA
+# Platform           : ManjaroLinux
+# Operating System   : Manjaro Linux
+# Processor Detail   : Intel(R) Core(TM) i7-8700 CPU @ 3.20GHz
+# CPU Frequency      : 4396.913 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 33477 MB
+# Swap memory        : 0 MB
+# Total Virtual      : 33477 MB
+# Available Virtual  : 27086 MB
+#-----------------------------------------------------------
+source cdc_3stage_sync.tcl -notrace
