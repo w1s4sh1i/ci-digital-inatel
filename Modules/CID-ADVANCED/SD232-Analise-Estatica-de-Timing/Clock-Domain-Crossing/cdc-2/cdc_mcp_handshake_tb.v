@@ -23,6 +23,17 @@ module cdc_mcp_handshake_tb;
 
 	always #(FREQ_SRC/2) src_clk = ~src_clk;
 	always #(FREQ_DEST/2) dest_clk = ~dest_clk;
+	
+	// Monitoramento no console
+	initial begin
+	
+		$dumpfile("cdc_handshake-sim.vcd");
+		$dumpvars(0, cdc_mcp_handshake_tb);
+		$display("|Time	|src_ready	|src_data	||dest_valid	|dest_data	|");
+		$monitor("|%0t	|%h 		|%h		||%b		|%h		|", 
+						$time, src_data, dest_data, dest_valid, dest_data);
+	
+	end
 
 	// Tarefa para envio de dados com handshake
 	task send_data(
@@ -71,16 +82,5 @@ module cdc_mcp_handshake_tb;
 		#250; 
 		$finish;
 	end 
-	
-	// Monitoramento no console
-	initial begin
-	
-		$dumpfile("cdc_handshake-sim.vcd");
-		$dumpvars(0, cdc_mcp_handshake_tb);
-		$display("|Time	|src_ready	|src_data	||dest_valid	|dest_data	|");
-		$monitor("|%0t	|%h 		|%h		||%b		|%h		|", 
-						$time, src_data, dest_data, dest_valid, dest_data);
-	
-	end
 
 endmodule

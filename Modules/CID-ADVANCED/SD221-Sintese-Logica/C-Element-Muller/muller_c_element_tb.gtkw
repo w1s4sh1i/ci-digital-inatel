@@ -1,0 +1,26 @@
+[*]
+[*] GTKWave Analyzer v3.3.116 (w)1999-2023 BSI
+[*] Tue Jun 30 07:22:43 2026
+[*]
+[dumpfile] "/home/w1s4sh1i/BAW-Development/INATEL/CI-DIGITAL/ci-digital-inatel/Modules/CID-ADVANCED/SD221-Sintese-Logica/C-Element-Muller/muller_c_element_tb.vcd"
+[dumpfile_mtime] "Tue Jun 30 07:17:33 2026"
+[dumpfile_size] 623
+[savefile] "/home/w1s4sh1i/BAW-Development/INATEL/CI-DIGITAL/ci-digital-inatel/Modules/CID-ADVANCED/SD221-Sintese-Logica/C-Element-Muller/muller_c_element_tb.gtkw"
+[timestart] 0
+[size] 1866 1001
+[pos] -51 -51
+*-13.388298 24920 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] muller_c_element_tb.
+[sst_width] 278
+[signals_width] 163
+[sst_expanded] 1
+[sst_vpaned_height] 297
+@28
+muller_c_element_tb.a
+muller_c_element_tb.b
+muller_c_element_tb.q
+@29
+[color] 3
+muller_c_element_tb.rst_n
+[pattern_trace] 1
+[pattern_trace] 0
