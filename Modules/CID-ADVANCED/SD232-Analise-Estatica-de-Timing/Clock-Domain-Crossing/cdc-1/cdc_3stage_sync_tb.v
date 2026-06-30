@@ -1,3 +1,5 @@
+`include "cdc_3stage_sync.v"
+
 `timescale 1ns / 1ps
 
 module cdc_3stage_sync_tb;

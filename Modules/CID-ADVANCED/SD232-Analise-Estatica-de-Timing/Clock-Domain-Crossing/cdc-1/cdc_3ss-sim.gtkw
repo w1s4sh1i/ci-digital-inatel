@@ -1,20 +1,20 @@
 [*]
-[*] GTKWave Analyzer v3.3.127 (w)1999-2026 BSI
-[*] Fri Jun 26 04:21:45 2026
+[*] GTKWave Analyzer v3.3.116 (w)1999-2023 BSI
+[*] Tue Jun 30 05:16:10 2026
 [*]
-[dumpfile] "/home/bezerra-andre/0-INATEL-Development/BAW/ci-digital-inatel/Modules/CID-ADVANCED/SD232-Analise-Estatica-de-Timing/Clock-Domain-Crossing/cdc-1/cdc_3ss-sim.vcd"
-[dumpfile_mtime] "Fri Jun 26 04:15:37 2026"
+[dumpfile] "/home/w1s4sh1i/BAW-Development/INATEL/CI-DIGITAL/ci-digital-inatel/Modules/CID-ADVANCED/SD232-Analise-Estatica-de-Timing/Clock-Domain-Crossing/cdc-1/cdc_3ss-sim.vcd"
+[dumpfile_mtime] "Tue Jun 30 05:11:00 2026"
 [dumpfile_size] 2237
-[savefile] "/home/bezerra-andre/0-INATEL-Development/BAW/ci-digital-inatel/Modules/CID-ADVANCED/SD232-Analise-Estatica-de-Timing/Clock-Domain-Crossing/cdc-1/cdc_3ss-sim.gtkw"
+[savefile] "/home/w1s4sh1i/BAW-Development/INATEL/CI-DIGITAL/ci-digital-inatel/Modules/CID-ADVANCED/SD232-Analise-Estatica-de-Timing/Clock-Domain-Crossing/cdc-1/cdc_3ss-sim.gtkw"
 [timestart] 0
-[size] 1920 1001
-[pos] -25 -22
+[size] 1866 1001
+[pos] -1 -1
 *-13.305328 9970 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] cdc_3stage_sync_tb.
-[sst_width] 261
+[sst_width] 278
 [signals_width] 327
 [sst_expanded] 1
-[sst_vpaned_height] 294
+[sst_vpaned_height] 277
 @420
 [color] 2
 cdc_3stage_sync_tb.PRECISION
